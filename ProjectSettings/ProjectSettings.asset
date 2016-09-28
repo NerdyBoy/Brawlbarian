@@ -4,14 +4,14 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 8
-  productGUID: f333a83cbd4c50448b1ca0d17316e160
+  productGUID: 619d67375b7938b44a00ca55a35d618c
   AndroidProfiler: 0
   defaultScreenOrientation: 4
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: Project
+  productName: Brawlbarian
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenStyle: 0
@@ -336,14 +336,14 @@ PlayerSettings:
   psmSplashimage: {fileID: 0}
   spritePackerPolicy: 
   scriptingDefineSymbols: {}
-  metroPackageName: Project
+  metroPackageName: Brawlbarian
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: Project
+  metroApplicationDescription: Brawlbarian
   wsaImages: {}
   metroTileShortName: 
   metroCommandLineArgsFile: 
@@ -527,7 +527,7 @@ PlayerSettings:
   XboxOne::VR::enabledDevices: []
   iOS::VR::enabledDevices: []
   tvOS::VR::enabledDevices: []
-  cloudProjectId: 00d58ffc-6b86-4c08-952e-397b415588e2
-  projectName: Project
+  cloudProjectId: 3a656cde-5cad-4120-815a-5c3b77fe22c6
+  projectName: Brawlbarian
   organizationId: nerdyboy1104
   cloudEnabled: 0
