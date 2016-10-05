@@ -13,9 +13,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - hide_in_game
+  - hide_in_editor
+  - hide_in_editor_and_game
   - 
   - 
   - 
