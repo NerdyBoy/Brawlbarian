@@ -8,6 +8,9 @@ public class t_destructible_physics_object : t_physics_object {
     private bool has_shattered_version;
     [SerializeField]
     private GameObject shattered_version;
+
+    bool object_shattered = false;
+
     [SerializeField]
     private GameObject loot_object;
 
@@ -35,7 +38,6 @@ public class t_destructible_physics_object : t_physics_object {
     public void Hit (float _force) {
         if (true == Break_Check (_force * incoming_force_modifier)) {
             Break_Physics_Object ();
-            Destroy (this.gameObject);
         }
         else {
             break_force -= _force * incoming_force_modifier;
@@ -51,9 +53,13 @@ public class t_destructible_physics_object : t_physics_object {
     }
 
     protected virtual void Break_Physics_Object () {
-        Spawn_Replacement ();
-        Spawn_Loot_Object ();
-        Destroy (this.gameObject);
+        if (false == object_shattered)
+        {
+            Spawn_Replacement();
+            Spawn_Loot_Object();
+            Destroy(this.gameObject);
+            object_shattered = true;
+        }
     }
 
     private void Spawn_Replacement () {

@@ -14,14 +14,15 @@ public class t_temp_destruction_script : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         destructible_object_rigidbody = GetComponent<Rigidbody> ();
-        StartCoroutine (Destroy_After_Time_And_Stop ());
+        StartCoroutine (Deactivate_After_Time_And_Stop ());
 	}
 
-    IEnumerator Destroy_After_Time_And_Stop () {
-        while(destructible_object_rigidbody.velocity != Vector3.zero) {
+    IEnumerator Deactivate_After_Time_And_Stop () {
+        while(GetComponent<Rigidbody>().velocity != Vector3.zero) {
+            print(GetComponent<Rigidbody>().velocity);
             yield return new WaitForFixedUpdate ();
         }
         yield return new WaitForSeconds (destruction_wait_time);
-        Destroy (this.gameObject);
+        Destroy(this.gameObject);
     }
 }

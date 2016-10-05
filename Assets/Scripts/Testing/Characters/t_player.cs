@@ -128,10 +128,8 @@ public class t_player : MonoBehaviour {
 
     void OnCollisionEnter(Collision _col) {
         if(null != _col.gameObject.GetComponent<t_loot_controller> ()) {
-            print ("Loot object collided");
             coins += _col.gameObject.GetComponent<t_loot_controller> ().Get_Loot_Coin_Value ();
             if(null != ui_stat_controller) {
-                print ("Have stat controller");
                 Update_Stats ();
             }
             Destroy (_col.gameObject);
