@@ -42,7 +42,11 @@ public class t_player : MonoBehaviour {
             Ignore_All_Child_Colliders ();
         }
         else {
-            Debug.LogError ("No t_weapon attached or heirarchy incorrect. Camera->weapon_position->weapon_object(contains t_weapon)");
+            Debug.LogError ("No t_weapon attached or hierarchy incorrect. Camera->weapon_position->weapon_object(contains t_weapon)");
+        }
+
+        if(Input.GetJoystickNames().Length != 0){
+            input_type = input_types.gamepad;
         }
 	}
 
@@ -69,27 +73,45 @@ public class t_player : MonoBehaviour {
 
     void Handle_Mouse_Input() {
         //mouse input
-        float horizontal_delta = Input.GetAxis ("Horizontal");
-        float vertical_delta = Input.GetAxis ("Vertical");
+        float horizontal_delta = Input.GetAxis("Horizontal");
+        float vertical_delta = Input.GetAxis("Vertical");
 
-        float mouse_x_delta = Input.GetAxis ("Mouse X");
-        float mouse_y_delta = Input.GetAxis ("Mouse Y");
+        float mouse_x_delta = Input.GetAxis("Mouse X");
+        float mouse_y_delta = Input.GetAxis("Mouse Y");
 
-        if (Input.GetKeyDown (KeyCode.Space)) {
-            Jump ();
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            Jump();
         }
 
-        Move_Body (horizontal_delta, vertical_delta);
-        Rotate_Camera (mouse_y_delta);
-        Rotate_Body (mouse_x_delta);
+        Move_Body(horizontal_delta, vertical_delta);
+        Rotate_Camera(mouse_y_delta);
+        Rotate_Body(mouse_x_delta);
 
-        if (Input.GetMouseButtonDown (0)) {
-            Attack ();
+        if (Input.GetMouseButtonDown(0)) {
+            Attack();
         }
+        
     }
 
     void Handle_Gamepad_Input () {
-        //gamepad input
+        float horizontal_delta = Input.GetAxis("Horizontal");
+        float vertical_delta = Input.GetAxis("Vertical");
+
+        float mouse_x_delta = Input.GetAxis("Right_Stick_X_Axis");
+        float mouse_y_delta = Input.GetAxis("Right_Stick_Y_Axis");
+
+        if (Input.GetButtonDown("A")) {
+            Jump();
+        }
+
+        Move_Body(horizontal_delta, vertical_delta);
+        Rotate_Camera(mouse_y_delta * 2); //2 is sensitivity
+        Rotate_Body(mouse_x_delta * 2); //2 is sensitivity
+
+        
+        if (Input.GetButtonDown("B")) {
+            Attack();
+        }
     }
 
     void Rotate_Camera(float _y_delta) {
