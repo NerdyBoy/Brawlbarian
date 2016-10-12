@@ -27,7 +27,7 @@ public class t_player : MonoBehaviour {
     [SerializeField]
     private float sideways_speed = 1.0f;
 
-    public int coins = 0;
+    public int score = 0;
 
     // Use this for initialization
     void Start () {
@@ -150,7 +150,7 @@ public class t_player : MonoBehaviour {
 
     void OnCollisionEnter(Collision _col) {
         if(null != _col.gameObject.GetComponent<t_loot_controller> ()) {
-            coins += _col.gameObject.GetComponent<t_loot_controller> ().Get_Loot_Coin_Value ();
+            score += _col.gameObject.GetComponent<t_loot_controller> ().Get_Loot_Coin_Value ();
             if(null != ui_stat_controller) {
                 Update_Stats ();
             }
@@ -166,7 +166,12 @@ public class t_player : MonoBehaviour {
         ui_stat_controller = _stat_controller;
     }
 
+    public void Add_Score(int _input) {
+        score += _input;
+        Update_Stats();
+    }
+
     public void Update_Stats () {
-        ui_stat_controller.Update_Coin_Text (coins);
+        ui_stat_controller.Update_Coin_Text (score);
     }
 }

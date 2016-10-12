@@ -4,22 +4,21 @@ using System.Collections;
 
 public class t_player_stat_controller : MonoBehaviour {
 
-    private Text coin_text;
+    private Text score_text;
     private t_player linked_player;
 
 	// Use this for initialization
 	void Start () {
-        coin_text = GetComponentInChildren<Text> ();
+        score_text = GetComponentInChildren<Text> ();
         StartCoroutine (Get_Player ());
 	}
 	
 	public void Update_Coin_Text (int _new_value) {
-        coin_text.text = "Coins: " + _new_value.ToString ();
+        score_text.text = "Score: " + _new_value.ToString ();
     }
 
     IEnumerator Get_Player () {
         while(Object.FindObjectsOfType<t_player>().Length == 0) {
-            print (Object.FindObjectsOfType<t_player>().Length);
             yield return new WaitForSeconds (0); //better way of doing this? Time based?
         }
         Link_Player ();
