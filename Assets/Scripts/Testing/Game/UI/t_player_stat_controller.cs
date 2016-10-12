@@ -27,7 +27,6 @@ public class t_player_stat_controller : MonoBehaviour {
 
     private void Link_Player () {
         t_player[] all_players = FindObjectsOfType (typeof (t_player)) as t_player[];
-        print (all_players.Length);
         for(int player = 0; player < all_players.Length; player++) {
             if(null == all_players[player].Get_Stat_Controller ()) {
                 all_players[player].Set_Stat_Controller (this);
