@@ -63,4 +63,8 @@ public class t_weapon : MonoBehaviour {
     public bool Is_Attacking() {
         return is_attacking;
     }
+
+    public void Set_Weapon_Strength(float _new_strength) {
+        weapon_strength = _new_strength;
+    }
 }

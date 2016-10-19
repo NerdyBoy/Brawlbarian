@@ -27,10 +27,12 @@ public class t_player : MonoBehaviour {
     [SerializeField]
     private float sideways_speed = 1.0f;
 
+    public int total_score = 0;
     public int score = 0;
 
     // Use this for initialization
     void Start () {
+        DontDestroyOnLoad(this.gameObject);
         player_rigidbody = GetComponent<Rigidbody> ();
         player_rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
         camera_object = GetComponentInChildren<Camera> ().gameObject;
@@ -50,6 +52,11 @@ public class t_player : MonoBehaviour {
         }
 	}
 
+    void OnLevelWasLoaded() {
+        score = 0;
+        this.transform.position = GameObject.FindGameObjectWithTag("spawn_point").transform.position;
+    }
+
     void Ignore_All_Child_Colliders () {
         Collider[] child_colliders = GetComponentsInChildren<Collider> ();
         for (int i = 0; i < child_colliders.Length; i++) {
@@ -63,11 +70,13 @@ public class t_player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if(input_types.mouse == input_type) {
-            Handle_Mouse_Input ();
-        }
-        else if(input_types.gamepad == input_type) {
-            Handle_Gamepad_Input ();
+        if (true == t_game_controller.game_controller.Get_Round_In_Progress()) {
+            if (input_types.mouse == input_type) {
+                Handle_Mouse_Input();
+            }
+            else if (input_types.gamepad == input_type) {
+                Handle_Gamepad_Input();
+            }
         }
 	}
 
@@ -90,7 +99,6 @@ public class t_player : MonoBehaviour {
         if (Input.GetMouseButtonDown(0)) {
             Attack();
         }
-        
     }
 
     void Handle_Gamepad_Input () {
@@ -167,11 +175,30 @@ public class t_player : MonoBehaviour {
     }
 
     public void Add_Score(int _input) {
+        total_score += _input;
         score += _input;
         Update_Stats();
     }
 
+    public int Get_Score() {
+        return score;
+    }
+
     public void Update_Stats () {
         ui_stat_controller.Update_Coin_Text (score);
+    }
+
+    public void Set_Weapon_Force(float _new_strength) {
+        if(null != weapon_script) {
+            weapon_script.Set_Weapon_Strength(_new_strength);
+        }
+    }
+
+    public float Get_Weapon_Force() {
+        if(null != weapon_script) {
+            return weapon_script.Get_Weapon_Strength();
+        }
+        UnityEngine.Debug.Log("No weapon set");
+        return 0;
     }
 }

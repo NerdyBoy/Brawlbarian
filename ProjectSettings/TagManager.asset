@@ -6,6 +6,7 @@ TagManager:
   tags:
   - player
   - weapon
+  - spawn_point
   layers:
   - Default
   - TransparentFX

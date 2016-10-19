@@ -96,7 +96,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!65 &65000012306034608
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shattered_object_prefab: {fileID: 1000014020715692, guid: 905f694f0ead58848b12dfd3bdee923d,
     type: 2}
-  force_left_required_to_break: 100
+  force_left_required_to_break: 50
   text_object_prefab: {fileID: 1000012742831098, guid: 96aa6cd6f7d0a644ab1affaeb1b2b34f,
     type: 2}
   damage_rate_limit: 0.25
