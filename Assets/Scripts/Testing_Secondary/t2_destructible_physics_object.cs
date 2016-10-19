@@ -47,6 +47,7 @@ public class t2_destructible_physics_object : t2_physics_object {
     protected virtual void Instantiate_Replacement_Object() {
         if (null != shattered_object_prefab) {
             GameObject shattered_object = Instantiate(shattered_object_prefab, this.transform.position, Quaternion.identity) as GameObject;
+            shattered_object.transform.rotation = this.transform.rotation;
             shattered_object.GetComponent<Rigidbody>().velocity = physics_rigidbody.velocity;
         }
     }

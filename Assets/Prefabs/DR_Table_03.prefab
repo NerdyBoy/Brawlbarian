@@ -771,7 +771,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shattered_object_prefab: {fileID: 1000013529920946, guid: b2783dea23aa4c64d9536ceb73a9f7db,
     type: 2}
-  force_left_required_to_break: 150
+  force_left_required_to_break: 60
   text_object_prefab: {fileID: 1000012742831098, guid: 96aa6cd6f7d0a644ab1affaeb1b2b34f,
     type: 2}
   damage_rate_limit: 0.25

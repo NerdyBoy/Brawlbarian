@@ -18,5 +18,6 @@ public class t_end_scene_controller : MonoBehaviour {
             yield return new WaitForSeconds(0);
         }
         final_score_text.text = "Final score: " + player.total_score;
+        Destroy(player.gameObject);
     }
 }
