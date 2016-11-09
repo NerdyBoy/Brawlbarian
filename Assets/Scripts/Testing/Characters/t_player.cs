@@ -6,9 +6,8 @@ using System.Collections;
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(CapsuleCollider))]
 public class t_player : MonoBehaviour {
-
-    enum input_types { mouse, gamepad};
-    input_types input_type = input_types.mouse;
+    public enum input_types {none, mouse, gamepad};
+    public input_types input_type = input_types.mouse;
 
     private Rigidbody player_rigidbody;
     private GameObject camera_object;
@@ -46,11 +45,11 @@ public class t_player : MonoBehaviour {
         else {
             Debug.LogError ("No t_weapon attached or hierarchy incorrect. Camera->weapon_position->weapon_object(contains t_weapon)");
         }
-
-        if(Input.GetJoystickNames().Length != 0){
-            input_type = input_types.gamepad;
-        }
 	}
+
+    public void Assign_Controller(input_types _type) {
+        input_type = _type;
+    }
 
     void OnLevelWasLoaded() {
         score = 0;
@@ -77,13 +76,14 @@ public class t_player : MonoBehaviour {
             else if (input_types.gamepad == input_type) {
                 Handle_Gamepad_Input();
             }
+            
         }
 	}
 
     void Handle_Mouse_Input() {
         //mouse input
-        float horizontal_delta = Input.GetAxis("Horizontal");
-        float vertical_delta = Input.GetAxis("Vertical");
+        float horizontal_delta = Input.GetAxis("Horizontal_Keyboard");
+        float vertical_delta = Input.GetAxis("Vertical_Keyboard");
 
         float mouse_x_delta = Input.GetAxis("Mouse X");
         float mouse_y_delta = Input.GetAxis("Mouse Y");
@@ -102,13 +102,14 @@ public class t_player : MonoBehaviour {
     }
 
     void Handle_Gamepad_Input () {
-        float horizontal_delta = Input.GetAxis("Horizontal");
-        float vertical_delta = Input.GetAxis("Vertical");
+        float horizontal_delta = Input.GetAxis("J1_Left_Stick_X_Axis");
+        float vertical_delta =  Input.GetAxis("J1_Left_Stick_Y_Axis");
 
-        float mouse_x_delta = Input.GetAxis("Right_Stick_X_Axis");
-        float mouse_y_delta = Input.GetAxis("Right_Stick_Y_Axis");
+        float mouse_x_delta = Input.GetAxis("J1_Right_Stick_X_Axis");
+        float mouse_y_delta = Input.GetAxis("J1_Right_Stick_Y_Axis");
+        print(mouse_x_delta + " " + mouse_y_delta);
 
-        if (Input.GetButtonDown("A")) {
+        if (Input.GetButtonDown("J1_A")) {
             Jump();
         }
 
@@ -117,7 +118,7 @@ public class t_player : MonoBehaviour {
         Rotate_Body(mouse_x_delta * 2); //2 is sensitivity
 
         
-        if (Input.GetButtonDown("B")) {
+        if (Input.GetButtonDown("J1_B")) {
             Attack();
         }
     }

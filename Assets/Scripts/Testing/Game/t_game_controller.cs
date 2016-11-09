@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System;
-using System.Diagnostics;
 using System.Collections;
 
 public class t_game_controller : MonoBehaviour {
@@ -10,16 +10,10 @@ public class t_game_controller : MonoBehaviour {
     public round_states round_state = round_states.starting;
 
     public static t_game_controller game_controller;
-    
-    private Stopwatch stopwatch;
+
+    private t2_timer timer;
 
     private t_player[] players;
-
-    public bool show_fps = false;
-    float update_interval = 0.5f;
-    float accum = 0.0f;
-    int frames = 0;
-    float time_left = 0.0f;
 
     [SerializeField]
     private Text ui_player_weapon_upgrade = null;
@@ -68,33 +62,23 @@ public class t_game_controller : MonoBehaviour {
         }
 
         players = GameObject.FindObjectsOfType<t_player>();
-
+        timer = GetComponent<t2_timer>();
         Switch_State(round_states.starting);
+        Assign_Player_Controls();
+
+        
     }
 
-    void Setup_Time() {
-        total_round_length_seconds = (round_length_minutes * 60) + round_length_seconds;
-        stopwatch = new Stopwatch();
-        stopwatch.Start();
+    void Assign_Player_Controls() {
+        players[0].Assign_Controller(t_player.input_types.mouse);
+        for (int i = 1; i < players.Length; i++) {
+            players[i].Assign_Controller(t_player.input_types.gamepad);
+        }
+
     }
 
     // Update is called once per frame
     void Update() {
-        if(true == show_fps) {
-            time_left -= Time.deltaTime;
-            accum += Time.timeScale / Time.deltaTime;
-            ++frames;
-
-            // Interval ended - update GUI text and start new interval
-            if (time_left <= 0.0) {
-                // display two fractional digits (f2 format)
-                print(accum / frames);
-                time_left= update_interval;
-                accum = 0.0f;
-                frames = 0;
-            }
-        }
-
         switch (round_state) {
             case round_states.starting:
                 Start_Update();
@@ -118,17 +102,18 @@ public class t_game_controller : MonoBehaviour {
 
     void Start_Update() {
         if (Input.GetKeyDown(KeyCode.Return)) {
-            Setup_Time();
+            timer.Set_Time(round_length_minutes, round_length_seconds);
             round_in_progress = true;
             Switch_State(round_states.playing);
         }
     }
 
     void Play_Update() {
-        if (stopwatch.Elapsed.Seconds > total_round_length_seconds || 0 == furniture.transform.childCount) {
+        if (0 >= timer.Get_Seconds_Remaining() || 0 == furniture.transform.childCount) {
             Switch_State(round_states.ending);
         }
         if (true == Input.GetKeyDown(KeyCode.Escape)) {
+            t_pause_controller.pause_controller.Pause();
             Switch_State(round_states.paused);
         }
         Update_UI_Time();
@@ -136,6 +121,7 @@ public class t_game_controller : MonoBehaviour {
 
     void Paused_Update() {
         if (true == Input.GetKeyDown(KeyCode.Escape)) {
+            t_pause_controller.pause_controller.Unpause();
             Switch_State(round_states.playing);
         }
     }
@@ -161,11 +147,11 @@ public class t_game_controller : MonoBehaviour {
 
         if (_desired_state == round_states.ending || _desired_state == round_states.ended || _desired_state == round_states.paused) {
             Cursor.lockState = CursorLockMode.None;
-            stopwatch.Stop();
+            timer.Stop_Timer();
             round_in_progress = false;
 
             if(_desired_state == round_states.ending) {
-                time_points = total_round_length_seconds - stopwatch.Elapsed.Seconds;
+                time_points = timer.Get_Seconds_Remaining();
                 StartCoroutine(Distribute_Points());
             }
 
@@ -182,17 +168,19 @@ public class t_game_controller : MonoBehaviour {
                 start_splash.SetActive(false);
             }
             Cursor.lockState = CursorLockMode.Locked;
-            stopwatch.Start();
+            timer.Start_Timer();
             round_in_progress = true;
         }
         round_state = _desired_state;
     }
 
+    public void Unpause() {
+        Switch_State(round_states.playing);
+    }
+
     void Update_UI_Time() {
-        int current_time = total_round_length_seconds - stopwatch.Elapsed.Seconds;
-        int minutes_remaining = current_time / 60;
-        int seconds_remaining = current_time % 60;
-        t_ui_round_time.ui_round_time.Update_Time(string.Format("{0:D2}:{1:D2}", minutes_remaining, seconds_remaining));
+        print(timer.Get_Current_Time_Minutes() + ":" + timer.Get_Current_Time_Seconds() + "    " + timer.Get_Seconds_Remaining());
+        t_ui_round_time.ui_round_time.Update_Time(string.Format("{0:D2}:{1:D2}", timer.Get_Current_Time_Minutes(), timer.Get_Current_Time_Seconds()));
     }
 
     void Update_UI_Time_Score_Based() {

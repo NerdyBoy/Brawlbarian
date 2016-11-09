@@ -4078,18 +4078,13 @@ Prefab:
       objectReference: {fileID: 862542304}
     - target: {fileID: 114000012616850006, guid: 86c08aba6c74a4547b8f246deb8c985d,
         type: 2}
-      propertyPath: show_fps
+      propertyPath: round_length_minutes
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114000012616850006, guid: 86c08aba6c74a4547b8f246deb8c985d,
         type: 2}
-      propertyPath: round_length_minutes
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012616850006, guid: 86c08aba6c74a4547b8f246deb8c985d,
-        type: 2}
       propertyPath: round_length_seconds
-      value: 45
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 86c08aba6c74a4547b8f246deb8c985d, type: 2}
@@ -4929,6 +4924,11 @@ Prefab:
       propertyPath: m_Animations.Array.data[0]
       value: 
       objectReference: {fileID: 7400000, guid: d5ee18cb0b36c174a8c2f43e8def1289, type: 2}
+    - target: {fileID: 23000010922923310, guid: 8eb9b9969102423498d72c574886e5a4,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0cd466bba23f32244a70d62cf3c32b01, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8eb9b9969102423498d72c574886e5a4, type: 2}
   m_IsPrefabParent: 0
@@ -6301,21 +6301,6 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000013276027842, guid: 63df0436be589c744bda54dcdd8ebc48,
-        type: 2}
-      propertyPath: m_Color.r
-      value: 0.9264706
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000013276027842, guid: 63df0436be589c744bda54dcdd8ebc48,
-        type: 2}
-      propertyPath: m_Color.g
-      value: 0.9264706
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000013276027842, guid: 63df0436be589c744bda54dcdd8ebc48,
-        type: 2}
-      propertyPath: m_Color.b
-      value: 0.9264706
       objectReference: {fileID: 0}
     - target: {fileID: 224000011959126692, guid: 63df0436be589c744bda54dcdd8ebc48,
         type: 2}
