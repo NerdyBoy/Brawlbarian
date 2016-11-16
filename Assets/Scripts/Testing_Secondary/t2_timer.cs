@@ -63,7 +63,6 @@ public class t2_timer : MonoBehaviour {
 	}
 
     void Calculate_Current_Time() {
-        print("Calculating");
         elapsed_time += Time.deltaTime;
         current_time = total_time_in_seconds - (int)elapsed_time;
     }

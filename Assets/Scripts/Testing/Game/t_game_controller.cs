@@ -179,7 +179,6 @@ public class t_game_controller : MonoBehaviour {
     }
 
     void Update_UI_Time() {
-        print(timer.Get_Current_Time_Minutes() + ":" + timer.Get_Current_Time_Seconds() + "    " + timer.Get_Seconds_Remaining());
         t_ui_round_time.ui_round_time.Update_Time(string.Format("{0:D2}:{1:D2}", timer.Get_Current_Time_Minutes(), timer.Get_Current_Time_Seconds()));
     }
 
