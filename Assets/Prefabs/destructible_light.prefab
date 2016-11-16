@@ -72,10 +72,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011430891008}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.05, y: 1.3, z: -4.094}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.610625, y: 6.5729923, z: -5.7723436}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
   m_Children:
   - {fileID: 4000012336612500}
   - {fileID: 4000010763088944}
@@ -88,7 +88,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013013239054}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.081, y: 0.281, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -100,10 +100,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013953738194}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.48, z: 0}
+  m_LocalRotation: {x: -0.70080495, y: -0.094193876, z: 0.094193906, w: 0.70080495}
+  m_LocalPosition: {x: -0.08100009, y: 0.283, z: 0}
   m_LocalScale: {x: 0.32672924, y: 0.32672924, z: 0.32672924}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -105.334, y: 89.99999, z: -90}
   m_Children: []
   m_Father: {fileID: 4000010327071104}
   m_RootOrder: 0
@@ -142,7 +142,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011430891008}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4300000, guid: 13f96e9d456175640a67c43853876de1, type: 3}
 --- !u!54 &54000011188534410
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -179,9 +179,9 @@ Light:
   m_Enabled: 1
   serializedVersion: 7
   m_Type: 2
-  m_Color: {r: 1, g: 0.55862063, b: 0, a: 1}
-  m_Intensity: 1
-  m_Range: 7.76
+  m_Color: {r: 0.83861566, g: 0.875, b: 0.711, a: 1}
+  m_Intensity: 1.49
+  m_Range: 5.93
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -454,7 +454,7 @@ ParticleSystem:
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0.7254902, b: 0, a: 1}
+      maxColor: {r: 0, g: 1, b: 0.25490198, a: 1}
       minMaxState: 0
     startSize:
       scalar: 0.74
@@ -674,9 +674,9 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 2
     enabled: 1
-    type: 5
-    radius: 0.52
-    angle: 18.95
+    type: 4
+    radius: 0.22
+    angle: 53.13
     length: 5
     boxX: 1
     boxY: 1
@@ -1998,7 +1998,7 @@ ParticleSystemRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0228a39e5e5b26a42a9149a17b12247d, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
