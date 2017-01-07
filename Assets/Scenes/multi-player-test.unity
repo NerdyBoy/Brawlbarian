@@ -1010,6 +1010,11 @@ Prefab:
       propertyPath: m_NormalizedViewPortRect.height
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 20000013190194432, guid: 8eb9b9969102423498d72c574886e5a4,
+        type: 2}
+      propertyPath: field of view
+      value: 45
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 92000012508161274, guid: 8eb9b9969102423498d72c574886e5a4, type: 2}
     - {fileID: 124000013022250432, guid: 8eb9b9969102423498d72c574886e5a4, type: 2}
@@ -2194,6 +2199,11 @@ Prefab:
         type: 2}
       propertyPath: m_NormalizedViewPortRect.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 20000013190194432, guid: 8eb9b9969102423498d72c574886e5a4,
+        type: 2}
+      propertyPath: field of view
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 81000011222432572, guid: 8eb9b9969102423498d72c574886e5a4, type: 2}

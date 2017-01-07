@@ -70,10 +70,6 @@ public class t_game_controller : MonoBehaviour {
     }
 
     void Assign_Player_Controls() {
-        players[0].Assign_Controller(t_player.input_types.mouse);
-        for (int i = 1; i < players.Length; i++) {
-            players[i].Assign_Controller(t_player.input_types.gamepad);
-        }
 
     }
 
@@ -203,28 +199,5 @@ public class t_game_controller : MonoBehaviour {
     }
 
     void Perform_Weapon_Upgrades() {
-        for(int i = 0; i < players.Length; i++) {
-            if(players[i].Get_Score() > upgrade_one_score_requirement) {
-                string weapon_strength = "Old weapon strength: " + players[i].Get_Weapon_Force().ToString();
-                players[i].Set_Weapon_Force(players[i].Get_Weapon_Force() * upgrade_one);
-                weapon_strength += "\nNew weapon strength: " + players[i].Get_Weapon_Force().ToString();
-                ui_player_weapon_upgrade.text = weapon_strength;
-            }
-            else if(players[i].Get_Score() > upgrade_two_score_requirement) {
-                string weapon_strength = "Old weapon strength: " + players[i].Get_Weapon_Force().ToString();
-                players[i].Set_Weapon_Force(players[i].Get_Weapon_Force() * upgrade_two);
-                weapon_strength += "\nNew weapon strength: " + players[i].Get_Weapon_Force().ToString();
-                ui_player_weapon_upgrade.text = weapon_strength;
-            }
-            else if(players[i].Get_Score() > upgrade_three_score_requirement) {
-                string weapon_strength = "Old weapon strength: " + players[i].Get_Weapon_Force().ToString();
-                players[i].Set_Weapon_Force(players[i].Get_Weapon_Force() * upgrade_three);
-                weapon_strength += "\nNew weapon strength: " + players[i].Get_Weapon_Force().ToString();
-                ui_player_weapon_upgrade.text = weapon_strength;
-            }
-            else {
-                ui_player_weapon_upgrade.text = "Score too low.\nNo weapon upgrade.";
-            }
-        }
     }
 }

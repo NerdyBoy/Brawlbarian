@@ -22,10 +22,9 @@ GameObject:
   - 33: {fileID: 33000011127920344}
   - 23: {fileID: 23000013170281544}
   - 65: {fileID: 65000010383819080}
-  - 114: {fileID: 114000012580204532}
-  - 54: {fileID: 54000011188534410}
-  - 114: {fileID: 114000010815776576}
-  - 114: {fileID: 114000013788197490}
+  - 54: {fileID: 54000010674076412}
+  - 114: {fileID: 114000012379260482}
+  - 114: {fileID: 114000010384394956}
   m_Layer: 0
   m_Name: destructible_light
   m_TagString: Untagged
@@ -72,10 +71,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011430891008}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.610625, y: 6.5729923, z: -5.7723436}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -0.48382986, y: 0.842, z: -7.6070843}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_Children:
   - {fileID: 4000012336612500}
   - {fileID: 4000010763088944}
@@ -143,7 +142,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011430891008}
   m_Mesh: {fileID: 4300000, guid: 13f96e9d456175640a67c43853876de1, type: 3}
---- !u!54 &54000011188534410
+--- !u!54 &54000010674076412
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -154,9 +153,9 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!65 &65000010383819080
 BoxCollider:
@@ -168,8 +167,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.28452903, y: 0.61987114, z: 0.24885425}
+  m_Center: {x: 0.008207321, y: 0.015005112, z: 0.03270054}
 --- !u!108 &108000010490296320
 Light:
   m_ObjectHideFlags: 1
@@ -204,7 +203,7 @@ Light:
   m_BounceIntensity: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114000010815776576
+--- !u!114 &114000010384394956
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -212,14 +211,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000011430891008}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87a4205d47c24349940abcf926190ac, type: 3}
+  m_Script: {fileID: 11500000, guid: cc85eec5375d1d842a5daa4184cd57d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shattered_object_prefab: {fileID: 0}
-  force_left_required_to_break: 50
-  text_object_prefab: {fileID: 0}
-  damage_rate_limit: 0.25
---- !u!114 &114000012580204532
+  health_value: 10
+--- !u!114 &114000012379260482
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -227,21 +223,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000011430891008}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53ad5ae457faaf04fab86dbad2a08f46, type: 3}
+  m_Script: {fileID: 11500000, guid: dd22cbf6b897d1843b93d4c3d1628ace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114000013788197490
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011430891008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 264c7d09eed695045b351aa133d5e906, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitting_object: {fileID: 0}
+  replacement_object: {fileID: 0}
 --- !u!198 &198000014221079994
 ParticleSystem:
   m_ObjectHideFlags: 1

@@ -1,20 +1,64 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+public struct weapon_struct {
+    public Vector2 mouse_delta;
+    public int button_index;
+
+    public weapon_struct(Vector2 _mouse_delta, int _button_index) {
+        mouse_delta = _mouse_delta;
+        button_index = _button_index;
+    }
+}
+
+public struct movement_struct {
+    public float horizontal_delta;
+    public float vertical_delta;
+}
+
+public struct rotation_struct {
+    public GameObject rotation_object;
+
+    public float horizontal_delta;
+    public float vertical_delta;
+
+    public bool rotate_vertical;
+    public bool rotate_horizontal;
+
+    public float min_vertical_clamp;
+    public float max_vertical_clamp;
+
+    public float min_horizontal_clamp;
+    public float max_horizontal_clamp;
+
+    public rotation_struct(GameObject _rotation_object, float _horizontal_delta, float _vertical_delta, bool _rotate_vertical, bool _rotate_horizontal, 
+        float _min_vertical_clamp, float _max_vertical_clamp, float _min_horizontal_clamp, float _max_horizontal_clamp) {
+        rotation_object = _rotation_object;
+        horizontal_delta = _horizontal_delta;
+        vertical_delta = _vertical_delta;
+        rotate_horizontal = _rotate_horizontal;
+        rotate_vertical = _rotate_vertical;
+        min_vertical_clamp = _min_vertical_clamp;
+        max_vertical_clamp = _max_vertical_clamp;
+        min_horizontal_clamp = _min_horizontal_clamp;
+        max_horizontal_clamp = _max_horizontal_clamp;
+    }
+}
+
+[RequireComponent(typeof(t_movement))]
+[RequireComponent(typeof(t_rotation))]
 [RequireComponent(typeof(MeshFilter))]
 [RequireComponent(typeof(MeshRenderer))]
-[RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(CapsuleCollider))]
 public class t_player : MonoBehaviour {
     public enum input_types {none, mouse, gamepad};
     public input_types input_type = input_types.mouse;
-
-    private Rigidbody player_rigidbody;
+    
     private GameObject camera_object;
 
+    public GameObject axe_object;
+
     private GameObject weapon_position;
-    private GameObject weapon_object;
-    private t_weapon weapon_script;
 
     t_player_stat_controller ui_stat_controller = null;
 
@@ -29,22 +73,19 @@ public class t_player : MonoBehaviour {
     public int total_score = 0;
     public int score = 0;
 
+    private bool look_enabled = true;
+
+    Vector3 initial_position;
+    Quaternion initial_rotation;
+    Transform initial_parent;
+
+
     // Use this for initialization
     void Start () {
         DontDestroyOnLoad(this.gameObject);
-        player_rigidbody = GetComponent<Rigidbody> ();
-        player_rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
+        initial_position = this.transform.position;
+        initial_rotation = this.transform.rotation;
         camera_object = GetComponentInChildren<Camera> ().gameObject;
-
-        weapon_script = GetComponentInChildren<t_weapon> ();
-        if(null != weapon_script) {
-            weapon_object = weapon_script.gameObject;
-            weapon_position = weapon_object.transform.parent.gameObject;
-            Ignore_All_Child_Colliders ();
-        }
-        else {
-            Debug.LogError ("No t_weapon attached or hierarchy incorrect. Camera->weapon_position->weapon_object(contains t_weapon)");
-        }
 	}
 
     public void Assign_Controller(input_types _type) {
@@ -80,90 +121,67 @@ public class t_player : MonoBehaviour {
         }
 	}
 
+    void Set_Look_Enabled(bool _enabled) {
+        look_enabled = _enabled;
+    }
+
     void Handle_Mouse_Input() {
         //mouse input
-        float horizontal_delta = Input.GetAxis("Horizontal_Keyboard");
-        float vertical_delta = Input.GetAxis("Vertical_Keyboard");
+        if (true == look_enabled) {
+            float horizontal_delta = Input.GetAxis("Horizontal_Keyboard");
+            float vertical_delta = Input.GetAxis("Vertical_Keyboard");
 
-        float mouse_x_delta = Input.GetAxis("Mouse X");
-        float mouse_y_delta = Input.GetAxis("Mouse Y");
+            float mouse_x_delta = Input.GetAxis("Mouse X");
+            float mouse_y_delta = Input.GetAxis("Mouse Y");
 
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            Jump();
-        }
+            movement_struct movement_values;
+            movement_values.horizontal_delta = horizontal_delta;
+            movement_values.vertical_delta = vertical_delta;
+            SendMessage("Move", movement_values);
+            
+            rotation_struct head_rotation_values = new rotation_struct(camera_object, -mouse_x_delta, -mouse_y_delta, false, true, 0.0f, 0.0f, 0.0f, 0.0f);
+            SendMessage("Rotate_Object", head_rotation_values);
 
-        Move_Body(horizontal_delta, vertical_delta);
-        Rotate_Camera(mouse_y_delta);
-        Rotate_Body(mouse_x_delta);
+            rotation_struct body_rotation_values = new rotation_struct(this.gameObject, mouse_x_delta, mouse_y_delta, true, false, 0.0f, 0.0f, 0.0f, 0.0f);
+            SendMessage("Rotate_Object", body_rotation_values);
+            
 
-        if (Input.GetMouseButtonDown(0)) {
-            Attack();
+            if (Input.GetMouseButton(0)) {
+                BroadcastMessage("Start_Attack", 0, SendMessageOptions.DontRequireReceiver);
+                BroadcastMessage("Calculate_Swing", new weapon_struct(new Vector2(mouse_x_delta, mouse_y_delta), 0));
+            }
+
+            else if (Input.GetMouseButtonDown(1)) {
+                BroadcastMessage("Calculate_Swing", new weapon_struct(new Vector2(mouse_x_delta, mouse_y_delta), 1));
+                
+
+            }
         }
     }
 
     void Handle_Gamepad_Input () {
-        float horizontal_delta = Input.GetAxis("J1_Left_Stick_X_Axis");
-        float vertical_delta =  Input.GetAxis("J1_Left_Stick_Y_Axis");
+        if (true == look_enabled) {
+            float horizontal_delta = Input.GetAxis("J1_Left_Stick_X_Axis");
+            float vertical_delta = Input.GetAxis("J1_Left_Stick_Y_Axis");
 
-        float mouse_x_delta = Input.GetAxis("J1_Right_Stick_X_Axis");
-        float mouse_y_delta = Input.GetAxis("J1_Right_Stick_Y_Axis");
-        print(mouse_x_delta + " " + mouse_y_delta);
+            float mouse_x_delta = Input.GetAxis("J1_Right_Stick_X_Axis");
+            float mouse_y_delta = Input.GetAxis("J1_Right_Stick_Y_Axis");
 
-        if (Input.GetButtonDown("J1_A")) {
-            Jump();
-        }
+            movement_struct movement_values;
+            movement_values.horizontal_delta = horizontal_delta;
+            movement_values.vertical_delta = vertical_delta;
+            SendMessage("Move", movement_values);
 
-        Move_Body(horizontal_delta, vertical_delta);
-        Rotate_Camera(mouse_y_delta * 2); //2 is sensitivity
-        Rotate_Body(mouse_x_delta * 2); //2 is sensitivity
+            rotation_struct head_rotation_values = new rotation_struct(camera_object, mouse_x_delta, mouse_y_delta, false, true, 0.0f, 0.0f, 0.0f, 0.0f);
+            SendMessage("Rotate_Object", head_rotation_values);
 
-        
-        if (Input.GetButtonDown("J1_B")) {
-            Attack();
-        }
-    }
+            rotation_struct body_rotation_values = new rotation_struct(this.gameObject, mouse_x_delta, mouse_y_delta, true, false, 0.0f, 0.0f, 0.0f, 0.0f);
+            SendMessage("Rotate_Object", body_rotation_values);
 
-    void Rotate_Camera(float _y_delta) {
-        camera_object.transform.Rotate (new Vector3 (-_y_delta, 0, 0));
-    }
 
-    void Rotate_Body(float _x_delta) {
-        this.transform.Rotate (new Vector3 (0, _x_delta, 0));
-    }
-
-    void Move_Body (float _horizontal_delta, float _vertical_delta) {
-        Vector3 current_velocity = player_rigidbody.velocity;
-        Vector3 forward_movement = this.transform.forward * (_vertical_delta * (forward_speed * Time.deltaTime));
-        Vector3 sideways_movement = this.transform.right * (_horizontal_delta * (sideways_speed * Time.deltaTime));
-        Vector3 movement_vector = forward_movement + sideways_movement;
-        movement_vector.y = current_velocity.y;
-        player_rigidbody.velocity = movement_vector;
-    }
-
-    void Jump () {
-        if(true == Can_Jump ()) {
-            player_rigidbody.AddForce (new Vector3 (0, jump_force, 0), ForceMode.Impulse);
-        }
-    }
-
-    bool Can_Jump () {
-        //raycast down to check for floor
-        return true;
-    }
-
-    void Attack () {
-        if(null != weapon_script) {
-            weapon_script.Attack ();
-        }
-    }
-
-    void OnCollisionEnter(Collision _col) {
-        if(null != _col.gameObject.GetComponent<t_loot_controller> ()) {
-            score += _col.gameObject.GetComponent<t_loot_controller> ().Get_Loot_Coin_Value ();
-            if(null != ui_stat_controller) {
-                Update_Stats ();
+            if (Input.GetButtonDown("J1_B")) {
+                //Attack(0);
             }
-            Destroy (_col.gameObject);
         }
     }
 
@@ -186,20 +204,6 @@ public class t_player : MonoBehaviour {
     }
 
     public void Update_Stats () {
-        ui_stat_controller.Update_Coin_Text (score);
-    }
-
-    public void Set_Weapon_Force(float _new_strength) {
-        if(null != weapon_script) {
-            weapon_script.Set_Weapon_Strength(_new_strength);
-        }
-    }
-
-    public float Get_Weapon_Force() {
-        if(null != weapon_script) {
-            return weapon_script.Get_Weapon_Strength();
-        }
-        UnityEngine.Debug.Log("No weapon set");
-        return 0;
+        ui_stat_controller.Update_Coin_Text (score.ToString());
     }
 }

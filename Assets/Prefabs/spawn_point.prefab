@@ -9,16 +9,16 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1000013732277600}
+  m_RootGameObject: {fileID: 1000011494858598}
   m_IsPrefabParent: 1
---- !u!1 &1000013732277600
+--- !u!1 &1000011494858598
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 4000012670788158}
+  - 4: {fileID: 4000013989182076}
   m_Layer: 0
   m_Name: spawn_point
   m_TagString: spawn_point
@@ -26,14 +26,14 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4000012670788158
+--- !u!4 &4000013989182076
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013732277600}
+  m_GameObject: {fileID: 1000011494858598}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.87, y: 0.32, z: -2.06}
+  m_LocalPosition: {x: -5.676533, y: -0.89666617, z: -0.1847266}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []

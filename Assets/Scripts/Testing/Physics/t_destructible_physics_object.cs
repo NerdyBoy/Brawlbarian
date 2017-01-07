@@ -64,7 +64,7 @@ public class t_destructible_physics_object : t_physics_object {
         GameObject text_object = Instantiate(text_game_object, this.transform.position, Quaternion.identity) as GameObject;
         t_object_score_display score_display = text_game_object.GetComponent<t_object_score_display>();
         score_display.Initialize();
-        score_display.Setup(_score, _color);
+        //score_display.Setup(_score.ToString(), _color, _color);
     }
 
     protected virtual bool Break_Check (float _force) {

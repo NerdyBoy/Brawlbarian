@@ -56,7 +56,7 @@ public class t2_destructible_physics_object : t2_physics_object {
         GameObject display_object = Instantiate(text_object_prefab, this.transform.position, Quaternion.identity) as GameObject;
         if(null != display_object.GetComponent<t_object_score_display>()) {
             t_object_score_display display_object_script = display_object.GetComponent<t_object_score_display>();
-            display_object_script.Setup(Mathf.RoundToInt(_force), Color.yellow);
+            //display_object_script.Setup(Mathf.RoundToInt(_force), Color.yellow);
         }
     }
 

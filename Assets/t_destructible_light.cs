@@ -15,7 +15,6 @@ public class t_destructible_light : MonoBehaviour {
 
     void OnCollisionEnter(Collision _col) {
         t_weapon weapon = _col.gameObject.GetComponent<t_weapon>();
-        print(_col.gameObject.name);
         Destroy(this.gameObject);
         
     }
