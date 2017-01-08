@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 [RequireComponent(typeof(input_recorder_component))]
@@ -22,11 +23,23 @@ public class character_controller : MonoBehaviour, input_button_interface
     private float next_activation_time;
 
     private bool can_attack = true;
-
+    
     private void Start()
     {
         DontDestroyOnLoad(this.gameObject);
         input_record = GetComponent<input_recorder_component>();
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        OnSceneLoaded(SceneManager.GetActiveScene(), LoadSceneMode.Single);
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
+    {
+        GameObject spawn = GameObject.FindGameObjectWithTag("spawn_point");
+        if(null != spawn)
+        {
+            this.transform.position = spawn.transform.position;
+            this.transform.rotation = spawn.transform.rotation;
+        }
     }
 
     void Weapon_Equipped(bool _weapon_equipped)

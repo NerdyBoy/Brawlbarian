@@ -15,6 +15,11 @@ public class t_end_scene_controller : MonoBehaviour {
         StartCoroutine(Get_Player());
     }
 
+    void Start()
+    {
+        cursor_display.Enable_Cursor();
+    }
+
     IEnumerator Get_Player() {
         while (null == player) {
             player = GameObject.FindGameObjectWithTag("player").GetComponent<t_player>();
