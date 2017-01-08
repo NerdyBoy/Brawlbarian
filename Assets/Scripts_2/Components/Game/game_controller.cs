@@ -2,6 +2,7 @@
 using UnityEngine.SceneManagement;
 using System.Collections;
 
+[RequireComponent(typeof(level_management))]
 public class game_controller : MonoBehaviour {
 
     [SerializeField]
@@ -17,8 +18,11 @@ public class game_controller : MonoBehaviour {
 
     game_state_controller state_controller;
 
+    level_management level_manager;
+
 	// Use this for initialization
 	void Start () {
+        level_manager = GetComponent<level_management>();
         game_countdown = this.gameObject.AddComponent<countdown>();
         state_controller = this.gameObject.AddComponent<game_state_controller>();
         game_countdown.Set_Time(round_start_coundown_time);
@@ -72,8 +76,8 @@ public class game_controller : MonoBehaviour {
     {
         if(game_countdown.Get_Time_Remaining() <= 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            //load next scene
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            level_manager.Load_Next_Scene();
         }
     }
 
@@ -97,13 +101,13 @@ public class game_controller : MonoBehaviour {
 
     void Begin_Round_End()
     {
-        game_countdown.Set_Time(15);
+        game_countdown.Set_Time(3);
         game_countdown.Start_Timer();
     }
 
     void Position_Players()
     {
-        GameObject[] players = GameObject.FindGameObjectsWithTag("player");
+        /*GameObject[] players = GameObject.FindGameObjectsWithTag("player");
         GameObject[] spawn_points = GameObject.FindGameObjectsWithTag("spawn_point");
 
         for(int i = 0; i < players.Length; i++)
@@ -119,6 +123,6 @@ public class game_controller : MonoBehaviour {
                     break;
                 }
             }
-        }
+        }*/
     }
 }
