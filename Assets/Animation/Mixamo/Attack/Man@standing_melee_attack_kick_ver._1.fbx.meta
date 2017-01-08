@@ -1,0 +1,1112 @@
+fileFormatVersion: 2
+guid: 198baa76f33e20f40a18f587b723dce5
+timeCreated: 1481706674
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Man_Rig:Rig_Man:Head
+    100004: Man_Rig:Rig_Man:HeadTop_End
+    100006: Man_Rig:Rig_Man:Hips
+    100008: Man_Rig:Rig_Man:LeftArm
+    100010: Man_Rig:Rig_Man:LeftFoot
+    100012: Man_Rig:Rig_Man:LeftForeArm
+    100014: Man_Rig:Rig_Man:LeftHand
+    100016: Man_Rig:Rig_Man:LeftHandIndex1
+    100018: Man_Rig:Rig_Man:LeftHandIndex2
+    100020: Man_Rig:Rig_Man:LeftHandIndex3
+    100022: Man_Rig:Rig_Man:LeftHandIndex4
+    100024: Man_Rig:Rig_Man:LeftHandMiddle1
+    100026: Man_Rig:Rig_Man:LeftHandMiddle2
+    100028: Man_Rig:Rig_Man:LeftHandMiddle3
+    100030: Man_Rig:Rig_Man:LeftHandMiddle4
+    100032: Man_Rig:Rig_Man:LeftHandPinky1
+    100034: Man_Rig:Rig_Man:LeftHandPinky2
+    100036: Man_Rig:Rig_Man:LeftHandPinky3
+    100038: Man_Rig:Rig_Man:LeftHandPinky4
+    100040: Man_Rig:Rig_Man:LeftHandRing1
+    100042: Man_Rig:Rig_Man:LeftHandRing2
+    100044: Man_Rig:Rig_Man:LeftHandRing3
+    100046: Man_Rig:Rig_Man:LeftHandRing4
+    100048: Man_Rig:Rig_Man:LeftHandThumb1
+    100050: Man_Rig:Rig_Man:LeftHandThumb2
+    100052: Man_Rig:Rig_Man:LeftHandThumb3
+    100054: Man_Rig:Rig_Man:LeftHandThumb4
+    100056: Man_Rig:Rig_Man:LeftLeg
+    100058: Man_Rig:Rig_Man:LeftShoulder
+    100060: Man_Rig:Rig_Man:LeftToe_End
+    100062: Man_Rig:Rig_Man:LeftToeBase
+    100064: Man_Rig:Rig_Man:LeftUpLeg
+    100066: Man_Rig:Rig_Man:Neck
+    100068: Man_Rig:Rig_Man:RightArm
+    100070: Man_Rig:Rig_Man:RightFoot
+    100072: Man_Rig:Rig_Man:RightForeArm
+    100074: Man_Rig:Rig_Man:RightHand
+    100076: Man_Rig:Rig_Man:RightHandIndex1
+    100078: Man_Rig:Rig_Man:RightHandIndex2
+    100080: Man_Rig:Rig_Man:RightHandIndex3
+    100082: Man_Rig:Rig_Man:RightHandIndex4
+    100084: Man_Rig:Rig_Man:RightHandMiddle1
+    100086: Man_Rig:Rig_Man:RightHandMiddle2
+    100088: Man_Rig:Rig_Man:RightHandMiddle3
+    100090: Man_Rig:Rig_Man:RightHandMiddle4
+    100092: Man_Rig:Rig_Man:RightHandPinky1
+    100094: Man_Rig:Rig_Man:RightHandPinky2
+    100096: Man_Rig:Rig_Man:RightHandPinky3
+    100098: Man_Rig:Rig_Man:RightHandPinky4
+    100100: Man_Rig:Rig_Man:RightHandRing1
+    100102: Man_Rig:Rig_Man:RightHandRing2
+    100104: Man_Rig:Rig_Man:RightHandRing3
+    100106: Man_Rig:Rig_Man:RightHandRing4
+    100108: Man_Rig:Rig_Man:RightHandThumb1
+    100110: Man_Rig:Rig_Man:RightHandThumb2
+    100112: Man_Rig:Rig_Man:RightHandThumb3
+    100114: Man_Rig:Rig_Man:RightHandThumb4
+    100116: Man_Rig:Rig_Man:RightLeg
+    100118: Man_Rig:Rig_Man:RightShoulder
+    100120: Man_Rig:Rig_Man:RightToe_End
+    100122: Man_Rig:Rig_Man:RightToeBase
+    100124: Man_Rig:Rig_Man:RightUpLeg
+    100126: Man_Rig:Rig_Man:Spine
+    100128: Man_Rig:Rig_Man:Spine1
+    100130: Man_Rig:Rig_Man:Spine2
+    400000: //RootNode
+    400002: Man_Rig:Rig_Man:Head
+    400004: Man_Rig:Rig_Man:HeadTop_End
+    400006: Man_Rig:Rig_Man:Hips
+    400008: Man_Rig:Rig_Man:LeftArm
+    400010: Man_Rig:Rig_Man:LeftFoot
+    400012: Man_Rig:Rig_Man:LeftForeArm
+    400014: Man_Rig:Rig_Man:LeftHand
+    400016: Man_Rig:Rig_Man:LeftHandIndex1
+    400018: Man_Rig:Rig_Man:LeftHandIndex2
+    400020: Man_Rig:Rig_Man:LeftHandIndex3
+    400022: Man_Rig:Rig_Man:LeftHandIndex4
+    400024: Man_Rig:Rig_Man:LeftHandMiddle1
+    400026: Man_Rig:Rig_Man:LeftHandMiddle2
+    400028: Man_Rig:Rig_Man:LeftHandMiddle3
+    400030: Man_Rig:Rig_Man:LeftHandMiddle4
+    400032: Man_Rig:Rig_Man:LeftHandPinky1
+    400034: Man_Rig:Rig_Man:LeftHandPinky2
+    400036: Man_Rig:Rig_Man:LeftHandPinky3
+    400038: Man_Rig:Rig_Man:LeftHandPinky4
+    400040: Man_Rig:Rig_Man:LeftHandRing1
+    400042: Man_Rig:Rig_Man:LeftHandRing2
+    400044: Man_Rig:Rig_Man:LeftHandRing3
+    400046: Man_Rig:Rig_Man:LeftHandRing4
+    400048: Man_Rig:Rig_Man:LeftHandThumb1
+    400050: Man_Rig:Rig_Man:LeftHandThumb2
+    400052: Man_Rig:Rig_Man:LeftHandThumb3
+    400054: Man_Rig:Rig_Man:LeftHandThumb4
+    400056: Man_Rig:Rig_Man:LeftLeg
+    400058: Man_Rig:Rig_Man:LeftShoulder
+    400060: Man_Rig:Rig_Man:LeftToe_End
+    400062: Man_Rig:Rig_Man:LeftToeBase
+    400064: Man_Rig:Rig_Man:LeftUpLeg
+    400066: Man_Rig:Rig_Man:Neck
+    400068: Man_Rig:Rig_Man:RightArm
+    400070: Man_Rig:Rig_Man:RightFoot
+    400072: Man_Rig:Rig_Man:RightForeArm
+    400074: Man_Rig:Rig_Man:RightHand
+    400076: Man_Rig:Rig_Man:RightHandIndex1
+    400078: Man_Rig:Rig_Man:RightHandIndex2
+    400080: Man_Rig:Rig_Man:RightHandIndex3
+    400082: Man_Rig:Rig_Man:RightHandIndex4
+    400084: Man_Rig:Rig_Man:RightHandMiddle1
+    400086: Man_Rig:Rig_Man:RightHandMiddle2
+    400088: Man_Rig:Rig_Man:RightHandMiddle3
+    400090: Man_Rig:Rig_Man:RightHandMiddle4
+    400092: Man_Rig:Rig_Man:RightHandPinky1
+    400094: Man_Rig:Rig_Man:RightHandPinky2
+    400096: Man_Rig:Rig_Man:RightHandPinky3
+    400098: Man_Rig:Rig_Man:RightHandPinky4
+    400100: Man_Rig:Rig_Man:RightHandRing1
+    400102: Man_Rig:Rig_Man:RightHandRing2
+    400104: Man_Rig:Rig_Man:RightHandRing3
+    400106: Man_Rig:Rig_Man:RightHandRing4
+    400108: Man_Rig:Rig_Man:RightHandThumb1
+    400110: Man_Rig:Rig_Man:RightHandThumb2
+    400112: Man_Rig:Rig_Man:RightHandThumb3
+    400114: Man_Rig:Rig_Man:RightHandThumb4
+    400116: Man_Rig:Rig_Man:RightLeg
+    400118: Man_Rig:Rig_Man:RightShoulder
+    400120: Man_Rig:Rig_Man:RightToe_End
+    400122: Man_Rig:Rig_Man:RightToeBase
+    400124: Man_Rig:Rig_Man:RightUpLeg
+    400126: Man_Rig:Rig_Man:Spine
+    400128: Man_Rig:Rig_Man:Spine1
+    400130: Man_Rig:Rig_Man:Spine2
+    7400000: standing_melee_attack_kick_ver._1
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'mixamo.com' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
+      improve retargeting quality.\n\t'Man_Rig:Rig_Man:Spine2' is inbetween humanoid
+      transforms and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: standing_melee_attack_kick_ver._1
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 56
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:LeftUpLeg
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:LeftUpLeg/Man_Rig:Rig_Man:LeftLeg
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:LeftUpLeg/Man_Rig:Rig_Man:LeftLeg/Man_Rig:Rig_Man:LeftFoot
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:LeftUpLeg/Man_Rig:Rig_Man:LeftLeg/Man_Rig:Rig_Man:LeftFoot/Man_Rig:Rig_Man:LeftToeBase
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:LeftUpLeg/Man_Rig:Rig_Man:LeftLeg/Man_Rig:Rig_Man:LeftFoot/Man_Rig:Rig_Man:LeftToeBase/Man_Rig:Rig_Man:LeftToe_End
+        weight: 0
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:RightUpLeg
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:RightUpLeg/Man_Rig:Rig_Man:RightLeg
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:RightUpLeg/Man_Rig:Rig_Man:RightLeg/Man_Rig:Rig_Man:RightFoot
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:RightUpLeg/Man_Rig:Rig_Man:RightLeg/Man_Rig:Rig_Man:RightFoot/Man_Rig:Rig_Man:RightToeBase
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:RightUpLeg/Man_Rig:Rig_Man:RightLeg/Man_Rig:Rig_Man:RightFoot/Man_Rig:Rig_Man:RightToeBase/Man_Rig:Rig_Man:RightToe_End
+        weight: 0
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:LeftShoulder
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:LeftShoulder/Man_Rig:Rig_Man:LeftArm
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:LeftShoulder/Man_Rig:Rig_Man:LeftArm/Man_Rig:Rig_Man:LeftForeArm
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:LeftShoulder/Man_Rig:Rig_Man:LeftArm/Man_Rig:Rig_Man:LeftForeArm/Man_Rig:Rig_Man:LeftHand
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:LeftShoulder/Man_Rig:Rig_Man:LeftArm/Man_Rig:Rig_Man:LeftForeArm/Man_Rig:Rig_Man:LeftHand/Man_Rig:Rig_Man:LeftHandIndex1
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:LeftShoulder/Man_Rig:Rig_Man:LeftArm/Man_Rig:Rig_Man:LeftForeArm/Man_Rig:Rig_Man:LeftHand/Man_Rig:Rig_Man:LeftHandIndex1/Man_Rig:Rig_Man:LeftHandIndex2
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:LeftShoulder/Man_Rig:Rig_Man:LeftArm/Man_Rig:Rig_Man:LeftForeArm/Man_Rig:Rig_Man:LeftHand/Man_Rig:Rig_Man:LeftHandIndex1/Man_Rig:Rig_Man:LeftHandIndex2/Man_Rig:Rig_Man:LeftHandIndex3
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:LeftShoulder/Man_Rig:Rig_Man:LeftArm/Man_Rig:Rig_Man:LeftForeArm/Man_Rig:Rig_Man:LeftHand/Man_Rig:Rig_Man:LeftHandIndex1/Man_Rig:Rig_Man:LeftHandIndex2/Man_Rig:Rig_Man:LeftHandIndex3/Man_Rig:Rig_Man:LeftHandIndex4
+        weight: 0
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:LeftShoulder/Man_Rig:Rig_Man:LeftArm/Man_Rig:Rig_Man:LeftForeArm/Man_Rig:Rig_Man:LeftHand/Man_Rig:Rig_Man:LeftHandMiddle1
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:LeftShoulder/Man_Rig:Rig_Man:LeftArm/Man_Rig:Rig_Man:LeftForeArm/Man_Rig:Rig_Man:LeftHand/Man_Rig:Rig_Man:LeftHandMiddle1/Man_Rig:Rig_Man:LeftHandMiddle2
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:LeftShoulder/Man_Rig:Rig_Man:LeftArm/Man_Rig:Rig_Man:LeftForeArm/Man_Rig:Rig_Man:LeftHand/Man_Rig:Rig_Man:LeftHandMiddle1/Man_Rig:Rig_Man:LeftHandMiddle2/Man_Rig:Rig_Man:LeftHandMiddle3
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:LeftShoulder/Man_Rig:Rig_Man:LeftArm/Man_Rig:Rig_Man:LeftForeArm/Man_Rig:Rig_Man:LeftHand/Man_Rig:Rig_Man:LeftHandMiddle1/Man_Rig:Rig_Man:LeftHandMiddle2/Man_Rig:Rig_Man:LeftHandMiddle3/Man_Rig:Rig_Man:LeftHandMiddle4
+        weight: 0
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:LeftShoulder/Man_Rig:Rig_Man:LeftArm/Man_Rig:Rig_Man:LeftForeArm/Man_Rig:Rig_Man:LeftHand/Man_Rig:Rig_Man:LeftHandPinky1
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:LeftShoulder/Man_Rig:Rig_Man:LeftArm/Man_Rig:Rig_Man:LeftForeArm/Man_Rig:Rig_Man:LeftHand/Man_Rig:Rig_Man:LeftHandPinky1/Man_Rig:Rig_Man:LeftHandPinky2
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:LeftShoulder/Man_Rig:Rig_Man:LeftArm/Man_Rig:Rig_Man:LeftForeArm/Man_Rig:Rig_Man:LeftHand/Man_Rig:Rig_Man:LeftHandPinky1/Man_Rig:Rig_Man:LeftHandPinky2/Man_Rig:Rig_Man:LeftHandPinky3
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:LeftShoulder/Man_Rig:Rig_Man:LeftArm/Man_Rig:Rig_Man:LeftForeArm/Man_Rig:Rig_Man:LeftHand/Man_Rig:Rig_Man:LeftHandPinky1/Man_Rig:Rig_Man:LeftHandPinky2/Man_Rig:Rig_Man:LeftHandPinky3/Man_Rig:Rig_Man:LeftHandPinky4
+        weight: 0
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:LeftShoulder/Man_Rig:Rig_Man:LeftArm/Man_Rig:Rig_Man:LeftForeArm/Man_Rig:Rig_Man:LeftHand/Man_Rig:Rig_Man:LeftHandRing1
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:LeftShoulder/Man_Rig:Rig_Man:LeftArm/Man_Rig:Rig_Man:LeftForeArm/Man_Rig:Rig_Man:LeftHand/Man_Rig:Rig_Man:LeftHandRing1/Man_Rig:Rig_Man:LeftHandRing2
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:LeftShoulder/Man_Rig:Rig_Man:LeftArm/Man_Rig:Rig_Man:LeftForeArm/Man_Rig:Rig_Man:LeftHand/Man_Rig:Rig_Man:LeftHandRing1/Man_Rig:Rig_Man:LeftHandRing2/Man_Rig:Rig_Man:LeftHandRing3
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:LeftShoulder/Man_Rig:Rig_Man:LeftArm/Man_Rig:Rig_Man:LeftForeArm/Man_Rig:Rig_Man:LeftHand/Man_Rig:Rig_Man:LeftHandRing1/Man_Rig:Rig_Man:LeftHandRing2/Man_Rig:Rig_Man:LeftHandRing3/Man_Rig:Rig_Man:LeftHandRing4
+        weight: 0
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:LeftShoulder/Man_Rig:Rig_Man:LeftArm/Man_Rig:Rig_Man:LeftForeArm/Man_Rig:Rig_Man:LeftHand/Man_Rig:Rig_Man:LeftHandThumb1
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:LeftShoulder/Man_Rig:Rig_Man:LeftArm/Man_Rig:Rig_Man:LeftForeArm/Man_Rig:Rig_Man:LeftHand/Man_Rig:Rig_Man:LeftHandThumb1/Man_Rig:Rig_Man:LeftHandThumb2
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:LeftShoulder/Man_Rig:Rig_Man:LeftArm/Man_Rig:Rig_Man:LeftForeArm/Man_Rig:Rig_Man:LeftHand/Man_Rig:Rig_Man:LeftHandThumb1/Man_Rig:Rig_Man:LeftHandThumb2/Man_Rig:Rig_Man:LeftHandThumb3
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:LeftShoulder/Man_Rig:Rig_Man:LeftArm/Man_Rig:Rig_Man:LeftForeArm/Man_Rig:Rig_Man:LeftHand/Man_Rig:Rig_Man:LeftHandThumb1/Man_Rig:Rig_Man:LeftHandThumb2/Man_Rig:Rig_Man:LeftHandThumb3/Man_Rig:Rig_Man:LeftHandThumb4
+        weight: 0
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:Neck
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:Neck/Man_Rig:Rig_Man:Head
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:Neck/Man_Rig:Rig_Man:Head/Man_Rig:Rig_Man:HeadTop_End
+        weight: 0
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:RightShoulder
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:RightShoulder/Man_Rig:Rig_Man:RightArm
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:RightShoulder/Man_Rig:Rig_Man:RightArm/Man_Rig:Rig_Man:RightForeArm
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:RightShoulder/Man_Rig:Rig_Man:RightArm/Man_Rig:Rig_Man:RightForeArm/Man_Rig:Rig_Man:RightHand
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:RightShoulder/Man_Rig:Rig_Man:RightArm/Man_Rig:Rig_Man:RightForeArm/Man_Rig:Rig_Man:RightHand/Man_Rig:Rig_Man:RightHandIndex1
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:RightShoulder/Man_Rig:Rig_Man:RightArm/Man_Rig:Rig_Man:RightForeArm/Man_Rig:Rig_Man:RightHand/Man_Rig:Rig_Man:RightHandIndex1/Man_Rig:Rig_Man:RightHandIndex2
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:RightShoulder/Man_Rig:Rig_Man:RightArm/Man_Rig:Rig_Man:RightForeArm/Man_Rig:Rig_Man:RightHand/Man_Rig:Rig_Man:RightHandIndex1/Man_Rig:Rig_Man:RightHandIndex2/Man_Rig:Rig_Man:RightHandIndex3
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:RightShoulder/Man_Rig:Rig_Man:RightArm/Man_Rig:Rig_Man:RightForeArm/Man_Rig:Rig_Man:RightHand/Man_Rig:Rig_Man:RightHandIndex1/Man_Rig:Rig_Man:RightHandIndex2/Man_Rig:Rig_Man:RightHandIndex3/Man_Rig:Rig_Man:RightHandIndex4
+        weight: 0
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:RightShoulder/Man_Rig:Rig_Man:RightArm/Man_Rig:Rig_Man:RightForeArm/Man_Rig:Rig_Man:RightHand/Man_Rig:Rig_Man:RightHandMiddle1
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:RightShoulder/Man_Rig:Rig_Man:RightArm/Man_Rig:Rig_Man:RightForeArm/Man_Rig:Rig_Man:RightHand/Man_Rig:Rig_Man:RightHandMiddle1/Man_Rig:Rig_Man:RightHandMiddle2
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:RightShoulder/Man_Rig:Rig_Man:RightArm/Man_Rig:Rig_Man:RightForeArm/Man_Rig:Rig_Man:RightHand/Man_Rig:Rig_Man:RightHandMiddle1/Man_Rig:Rig_Man:RightHandMiddle2/Man_Rig:Rig_Man:RightHandMiddle3
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:RightShoulder/Man_Rig:Rig_Man:RightArm/Man_Rig:Rig_Man:RightForeArm/Man_Rig:Rig_Man:RightHand/Man_Rig:Rig_Man:RightHandMiddle1/Man_Rig:Rig_Man:RightHandMiddle2/Man_Rig:Rig_Man:RightHandMiddle3/Man_Rig:Rig_Man:RightHandMiddle4
+        weight: 0
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:RightShoulder/Man_Rig:Rig_Man:RightArm/Man_Rig:Rig_Man:RightForeArm/Man_Rig:Rig_Man:RightHand/Man_Rig:Rig_Man:RightHandPinky1
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:RightShoulder/Man_Rig:Rig_Man:RightArm/Man_Rig:Rig_Man:RightForeArm/Man_Rig:Rig_Man:RightHand/Man_Rig:Rig_Man:RightHandPinky1/Man_Rig:Rig_Man:RightHandPinky2
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:RightShoulder/Man_Rig:Rig_Man:RightArm/Man_Rig:Rig_Man:RightForeArm/Man_Rig:Rig_Man:RightHand/Man_Rig:Rig_Man:RightHandPinky1/Man_Rig:Rig_Man:RightHandPinky2/Man_Rig:Rig_Man:RightHandPinky3
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:RightShoulder/Man_Rig:Rig_Man:RightArm/Man_Rig:Rig_Man:RightForeArm/Man_Rig:Rig_Man:RightHand/Man_Rig:Rig_Man:RightHandPinky1/Man_Rig:Rig_Man:RightHandPinky2/Man_Rig:Rig_Man:RightHandPinky3/Man_Rig:Rig_Man:RightHandPinky4
+        weight: 0
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:RightShoulder/Man_Rig:Rig_Man:RightArm/Man_Rig:Rig_Man:RightForeArm/Man_Rig:Rig_Man:RightHand/Man_Rig:Rig_Man:RightHandRing1
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:RightShoulder/Man_Rig:Rig_Man:RightArm/Man_Rig:Rig_Man:RightForeArm/Man_Rig:Rig_Man:RightHand/Man_Rig:Rig_Man:RightHandRing1/Man_Rig:Rig_Man:RightHandRing2
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:RightShoulder/Man_Rig:Rig_Man:RightArm/Man_Rig:Rig_Man:RightForeArm/Man_Rig:Rig_Man:RightHand/Man_Rig:Rig_Man:RightHandRing1/Man_Rig:Rig_Man:RightHandRing2/Man_Rig:Rig_Man:RightHandRing3
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:RightShoulder/Man_Rig:Rig_Man:RightArm/Man_Rig:Rig_Man:RightForeArm/Man_Rig:Rig_Man:RightHand/Man_Rig:Rig_Man:RightHandRing1/Man_Rig:Rig_Man:RightHandRing2/Man_Rig:Rig_Man:RightHandRing3/Man_Rig:Rig_Man:RightHandRing4
+        weight: 0
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:RightShoulder/Man_Rig:Rig_Man:RightArm/Man_Rig:Rig_Man:RightForeArm/Man_Rig:Rig_Man:RightHand/Man_Rig:Rig_Man:RightHandThumb1
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:RightShoulder/Man_Rig:Rig_Man:RightArm/Man_Rig:Rig_Man:RightForeArm/Man_Rig:Rig_Man:RightHand/Man_Rig:Rig_Man:RightHandThumb1/Man_Rig:Rig_Man:RightHandThumb2
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:RightShoulder/Man_Rig:Rig_Man:RightArm/Man_Rig:Rig_Man:RightForeArm/Man_Rig:Rig_Man:RightHand/Man_Rig:Rig_Man:RightHandThumb1/Man_Rig:Rig_Man:RightHandThumb2/Man_Rig:Rig_Man:RightHandThumb3
+        weight: 1
+      - path: Man_Rig:Rig_Man:Hips/Man_Rig:Rig_Man:Spine/Man_Rig:Rig_Man:Spine1/Man_Rig:Rig_Man:Spine2/Man_Rig:Rig_Man:RightShoulder/Man_Rig:Rig_Man:RightArm/Man_Rig:Rig_Man:RightForeArm/Man_Rig:Rig_Man:RightHand/Man_Rig:Rig_Man:RightHandThumb1/Man_Rig:Rig_Man:RightHandThumb2/Man_Rig:Rig_Man:RightHandThumb3/Man_Rig:Rig_Man:RightHandThumb4
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    human:
+    - boneName: Man_Rig:Rig_Man:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:LeftHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:LeftHandRing3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:LeftHandPinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:LeftHandPinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:LeftHandPinky3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:RightHandRing3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:RightHandPinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:RightHandPinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Man_Rig:Rig_Man:RightHandPinky3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Man_Rig(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:pSphere3
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: 5.0532154e-16}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:Hips
+      position: {x: 0.000061011717, y: 0.988257, z: -0.009302666}
+      rotation: {x: 0.0000036177403, y: 0.000017396642, z: -0.00051845005, w: 0.9999999}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftUpLeg
+      position: {x: -0.10927106, y: -0.059022367, z: 0.008239193}
+      rotation: {x: 0.0010036808, y: -0.00090098137, z: 0.99992216, w: 0.012405576}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftLeg
+      position: {x: -9.872781e-10, y: 0.40812582, z: 1.9049011e-10}
+      rotation: {x: -0.03164468, y: -0.0005168029, z: 0.02716381, w: 0.9991299}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftFoot
+      position: {x: 6.3833444e-10, y: 0.37206396, z: -1.1181878e-10}
+      rotation: {x: 0.5056209, y: -0.06086177, z: -0.012274056, w: 0.8605189}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftToeBase
+      position: {x: -0.0000000016753992, y: 0.26938578, z: -0.0000000071701307}
+      rotation: {x: 0.27415228, y: 0.022405367, z: -0.006389076, w: 0.9614041}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftToe_End
+      position: {x: 3.9397538e-10, y: 0.116320655, z: 9.603249e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightUpLeg
+      position: {x: 0.10927106, y: -0.059022367, z: 0.00976412}
+      rotation: {x: -0.001575558, y: 0.004084149, z: 0.99990064, w: -0.013400514}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightLeg
+      position: {x: 0.0000000013440515, y: 0.40833506, z: -1.8105614e-11}
+      rotation: {x: -0.04415822, y: 0.0004971703, z: -0.027141068, w: 0.9986557}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightFoot
+      position: {x: -0.0000000010885077, y: 0.37204692, z: -2.1992679e-11}
+      rotation: {x: 0.51066816, y: 0.061691772, z: 0.013408942, w: 0.8574569}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightToeBase
+      position: {x: -9.2142827e-10, y: 0.26794332, z: 0.0000000054695293}
+      rotation: {x: 0.27587587, y: -0.024534345, z: 0.007044176, w: 0.9608543}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightToe_End
+      position: {x: 1.7965028e-10, y: 0.11724373, z: -7.538091e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:Spine
+      position: {x: -0, y: 0.10621422, z: -0.009214713}
+      rotation: {x: -0.043259773, y: -0.000039806167, z: 0.00051721226, w: 0.99906373}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:Spine1
+      position: {x: -0, y: 0.124381855, z: -8.629343e-11}
+      rotation: {x: 6.855437e-26, y: -1.01429234e-13, z: 6.758837e-13, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:Spine2
+      position: {x: -0, y: 0.14215091, z: -3.2977052e-10}
+      rotation: {x: 0, y: -0, z: -9.466331e-30, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:Neck
+      position: {x: -0, y: 0.15991959, z: -0.000000009136844}
+      rotation: {x: 0.043256126, y: 3.275771e-14, z: 2.2900494e-13, w: 0.999064}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:Head
+      position: {x: -0, y: 0.037645567, z: 0.020296535}
+      rotation: {x: 0, y: 0, z: 2.4936977e-30, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:HeadTop_End
+      position: {x: -0, y: 0.22856353, z: 0.12322958}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftShoulder
+      position: {x: -0.089438446, y: 0.13672383, z: -0.0010260928}
+      rotation: {x: 0.5364363, y: -0.4599537, z: 0.53848445, w: 0.45903507}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftArm
+      position: {x: -6.9324574e-11, y: 0.18577734, z: 0.0000000021606328}
+      rotation: {x: -0.07793575, y: 0.01535241, z: -0.0027278487, w: 0.9968365}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftForeArm
+      position: {x: 1.5006915e-10, y: 0.2515326, z: -1.0064895e-10}
+      rotation: {x: -0.0000002099265, y: 0.0051314817, z: -0.00000024182077, w: 0.9999868}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftHand
+      position: {x: -6.6674444e-10, y: 0.26615602, z: -7.9434953e-10}
+      rotation: {x: 0.008988764, y: -0.063697375, z: 0.06553742, w: 0.99577445}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftHandRing1
+      position: {x: -0.025174638, y: 0.16285989, z: -0.0052884864}
+      rotation: {x: -0.012777536, y: 0.005772434, z: -0.06472745, w: 0.99780446}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftHandRing2
+      position: {x: 0.000015782063, y: 0.044889875, z: -3.0709657e-11}
+      rotation: {x: -0.00000019994253, y: 0.0000029210587, z: -0.00030031803, w: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftHandRing3
+      position: {x: -0.000010501838, y: 0.045032084, z: -0.0000000043166395}
+      rotation: {x: -0.00000020508979, y: 0.0000011614618, z: 0.00005638601, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftHandRing4
+      position: {x: -0.000005277967, y: 0.03804522, z: -0.0000000010511414}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftHandPinky1
+      position: {x: -0.066887386, y: 0.15539137, z: -0.0026896703}
+      rotation: {x: -0.012525823, y: 0.00974055, z: -0.065539844, w: 0.9977238}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftHandPinky2
+      position: {x: -0.000043693653, y: 0.03758305, z: -0.0000000012264928}
+      rotation: {x: -0.00000031451987, y: -0.00000437179, z: 0.00025944426, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftHandPinky3
+      position: {x: -0.000021301248, y: 0.032219037, z: -7.6288953e-10}
+      rotation: {x: -0.00000014517158, y: -0.00009681895, z: 0.0015988502, w: 0.99999875}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftHandPinky4
+      position: {x: 0.00006499673, y: 0.02553034, z: -0.0000000012386809}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftHandMiddle1
+      position: {x: 0.021660557, y: 0.1659612, z: -0.0043952833}
+      rotation: {x: -0.012730218, y: 0.006490425, z: -0.06456124, w: 0.99781144}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftHandMiddle2
+      position: {x: 0.000040775456, y: 0.05800665, z: -0.0000000021607487}
+      rotation: {x: -0.00000036562744, y: 0.000018268574, z: -0.0003440678, w: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftHandMiddle3
+      position: {x: 0.00000053864, y: 0.05339147, z: -2.7463243e-10}
+      rotation: {x: 0.000000058773253, y: -0.000025988347, z: -0.00045070055, w: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftHandMiddle4
+      position: {x: -0.00004131569, y: 0.046453696, z: 4.8767074e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftHandIndex1
+      position: {x: 0.07040148, y: 0.15990809, z: -0.0033138522}
+      rotation: {x: -0.0127285365, y: 0.0065204552, z: -0.064693555, w: 0.99780273}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftHandIndex2
+      position: {x: 0.000022844037, y: 0.051954888, z: 5.365416e-10}
+      rotation: {x: 0.00000036305437, y: 0.0000048429174, z: -0.00037547943, w: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftHandIndex3
+      position: {x: -0.00001509289, y: 0.048642557, z: 0.000000001196349}
+      rotation: {x: -0.00000027188113, y: 0.0000070190194, z: 0.00006017089, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftHandIndex4
+      position: {x: -0.000007750503, y: 0.04258044, z: -0.00000000191349}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftHandThumb1
+      position: {x: 0.05158645, y: 0.052613337, z: 0.033580866}
+      rotation: {x: 0.068660975, y: 0.0073806327, z: -0.327092, w: 0.94246596}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftHandThumb2
+      position: {x: 0.011082279, y: 0.06382525, z: 0.000000001643952}
+      rotation: {x: 0.00004871667, y: 0.00062770286, z: -0.09381072, w: 0.99558985}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftHandThumb3
+      position: {x: -0.0009362924, y: 0.058565687, z: 0.0000000013215569}
+      rotation: {x: -0.0018452697, y: 0.015122056, z: -0.10523148, w: 0.99433106}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:LeftHandThumb4
+      position: {x: -0.01014599, y: 0.043954033, z: -0.0000000013801952}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightShoulder
+      position: {x: 0.089438446, y: 0.13689369, z: -0.0029839324}
+      rotation: {x: -0.52967227, y: -0.46484315, z: 0.54430646, w: -0.4550809}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightArm
+      position: {x: 3.379588e-10, y: 0.18577738, z: 0.0000000020601627}
+      rotation: {x: -0.07680486, y: -0.0145295365, z: 0.01350706, w: 0.99684876}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightForeArm
+      position: {x: -6.1835664e-10, y: 0.25108412, z: -0.000000001931698}
+      rotation: {x: -0.00000020224623, y: -0.004985788, z: -0.00000015331204, w: 0.9999876}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightHand
+      position: {x: -2.1841e-11, y: 0.26634896, z: -0.0000000026556153}
+      rotation: {x: 0.012496293, y: 0.06433811, z: -0.0648278, w: 0.99574184}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightHandRing1
+      position: {x: 0.025498137, y: 0.1615328, z: -0.0056317914}
+      rotation: {x: -0.016155215, y: -0.007729995, z: 0.06399212, w: 0.9977897}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightHandRing2
+      position: {x: -0.0000016682441, y: 0.04600511, z: 9.020954e-10}
+      rotation: {x: 0.00000035148403, y: -0.0000005820897, z: 0.000032886855, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightHandRing3
+      position: {x: 0.0000009667125, y: 0.04492186, z: -8.9879276e-10}
+      rotation: {x: 0.00000031359556, y: -0.00000019419406, z: 0.0000022053725, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightHandRing4
+      position: {x: 0.0000006986089, y: 0.03731327, z: 0.0000000026427625}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightHandPinky1
+      position: {x: 0.06679872, y: 0.15315402, z: -0.0028741944}
+      rotation: {x: -0.015911726, y: -0.011558666, z: 0.064320244, w: 0.9977355}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightHandPinky2
+      position: {x: 0.000019307228, y: 0.038660806, z: 0.0000000016507641}
+      rotation: {x: -0.00000041302619, y: 0.00000088175494, z: -0.00021506847, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightHandPinky3
+      position: {x: 0.0000018785045, y: 0.032655295, z: -1.4739754e-10}
+      rotation: {x: -0.0000002041938, y: 0.000026304238, z: -0.00042672464, w: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightHandPinky4
+      position: {x: -0.000021184596, y: 0.0265111, z: 6.047543e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightHandMiddle1
+      position: {x: -0.021148583, y: 0.16443467, z: -0.005511721}
+      rotation: {x: -0.016113047, y: -0.008376738, z: 0.06393941, w: 0.99778855}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightHandMiddle2
+      position: {x: -0.000009548178, y: 0.058884393, z: 0.0000000032365357}
+      rotation: {x: 0.00000016241701, y: -0.0000064533024, z: -0.000008389354, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightHandMiddle3
+      position: {x: -0.0000100522975, y: 0.05360043, z: -0.0000000019459079}
+      rotation: {x: 0.0000002657732, y: 0.000015052471, z: 0.0003069937, w: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightHandMiddle4
+      position: {x: 0.000019601015, y: 0.046787094, z: -2.3021783e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightHandIndex1
+      position: {x: -0.07114826, y: 0.16652995, z: -0.0034985607}
+      rotation: {x: -0.016088624, y: -0.008772546, z: 0.06409953, w: 0.99777526}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightHandIndex2
+      position: {x: 0.0000067218216, y: 0.051071275, z: -0.0000000016569964}
+      rotation: {x: -0.000000033771503, y: -0.0000023974935, z: -0.00017578898, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightHandIndex3
+      position: {x: -0.000009601211, y: 0.04657523, z: -1.4976934e-10}
+      rotation: {x: 0.000000042738645, y: 0.0000012050651, z: 0.00014463063, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightHandIndex4
+      position: {x: 0.0000028826776, y: 0.040056817, z: 0.0000000013140311}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightHandThumb1
+      position: {x: -0.048816927, y: 0.05132175, z: 0.03033585}
+      rotation: {x: 0.06627758, y: -0.008175189, z: 0.32849413, w: 0.94214225}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightHandThumb2
+      position: {x: -0.010236007, y: 0.060787223, z: 0.0000000021152227}
+      rotation: {x: 0.00046959735, y: -0.0045135217, z: 0.06319389, w: 0.99799097}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightHandThumb3
+      position: {x: -0.0024651869, y: 0.061053757, z: -0.000000001496891}
+      rotation: {x: -0.0014779642, y: -0.013562736, z: 0.14831759, w: 0.9888457}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Man_Rig:Rig_Man:RightHandThumb4
+      position: {x: 0.01270119, y: 0.048246775, z: 0.0000000010850953}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 2d2a6e0b9da6b614a84d3bd46c140011,
+    type: 3}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

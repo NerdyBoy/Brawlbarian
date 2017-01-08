@@ -36,7 +36,9 @@ public class t2_destructible_physics_object : t2_physics_object {
     protected virtual void Break_Object() {
         if (false == object_has_been_broken) {
             object_has_been_broken = true;
-            Instantiate_Replacement_Object();
+            if (null != shattered_object_prefab) {
+                Instantiate_Replacement_Object();
+            }
             Destroy(this.gameObject);
         }
 
@@ -45,6 +47,7 @@ public class t2_destructible_physics_object : t2_physics_object {
     protected virtual void Instantiate_Replacement_Object() {
         if (null != shattered_object_prefab) {
             GameObject shattered_object = Instantiate(shattered_object_prefab, this.transform.position, Quaternion.identity) as GameObject;
+            shattered_object.transform.rotation = this.transform.rotation;
             shattered_object.GetComponent<Rigidbody>().velocity = physics_rigidbody.velocity;
         }
     }
@@ -53,16 +56,17 @@ public class t2_destructible_physics_object : t2_physics_object {
         GameObject display_object = Instantiate(text_object_prefab, this.transform.position, Quaternion.identity) as GameObject;
         if(null != display_object.GetComponent<t_object_score_display>()) {
             t_object_score_display display_object_script = display_object.GetComponent<t_object_score_display>();
-            display_object_script.Setup(Mathf.RoundToInt(_force), Color.yellow);
+            //display_object_script.Setup(Mathf.RoundToInt(_force), Color.yellow);
         }
     }
 
     protected virtual void Send_Score_To_Player(float _force) {
-        hitting_object.Get_Hitting_Object().GetComponent<t_player>().Add_Score(Mathf.RoundToInt(_force));
+        if (hitting_object != null && hitting_object.Get_Hitting_Object() != null) {
+            hitting_object.Get_Hitting_Object().GetComponent<t_player>().Add_Score(Mathf.RoundToInt(_force));
+        }
     }
 
     protected override void Add_Force(Vector3 _direction, float _force) {
-        print(_force);
         base.Add_Force(_direction, _force);
         if (Time.fixedTime > next_damage_time) {
             Hit(_force);

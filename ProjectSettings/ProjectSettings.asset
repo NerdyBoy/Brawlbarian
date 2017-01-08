@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 8
-  productGUID: 619d67375b7938b44a00ca55a35d618c
+  productGUID: b0e73cc8a62d8ed41843be48df076455
   AndroidProfiler: 0
   defaultScreenOrientation: 4
   targetDevice: 2
@@ -484,7 +484,7 @@ PlayerSettings:
   Game_Performance_ServiceEnabled::Game_Performance_ServiceEnabled: False
   Hub_ServiceEnabled::Hub_ServiceEnabled: False
   Purchasing_ServiceEnabled::Purchasing_ServiceEnabled: False
-  UNet_ServiceEnabled::UNet_ServiceEnabled: True
+  UNet_ServiceEnabled::UNet_ServiceEnabled: False
   Unity_Ads_ServiceEnabled::Unity_Ads_ServiceEnabled: False
   WebGL::emscriptenArgs: 
   WebGL::template: APPLICATION:Default
@@ -527,7 +527,7 @@ PlayerSettings:
   XboxOne::VR::enabledDevices: []
   iOS::VR::enabledDevices: []
   tvOS::VR::enabledDevices: []
-  cloudProjectId: 3a656cde-5cad-4120-815a-5c3b77fe22c6
-  projectName: Brawlbarian
-  organizationId: nerdyboy1104
+  cloudProjectId: 
+  projectName: 
+  organizationId: 
   cloudEnabled: 0

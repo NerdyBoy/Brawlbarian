@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000011573735250}
+  m_IsPrefabParent: 1
+--- !u!1 &1000011573735250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000013269903272}
+  - 114: {fileID: 114000012616850006}
+  - 114: {fileID: 114000011023822914}
+  m_Layer: 0
+  m_Name: game_controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000013269903272
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011573735250}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.3891602, y: 1.3653564, z: -0.29699707}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114000011023822914
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011573735250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fe3c515f411fca4a9c699c307da9ef3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  game_time_minutes: 0
+  game_time_seconds: 0
+  total_time_in_seconds: 0
+  current_time: 0
+  timer_active: 0
+--- !u!114 &114000012616850006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011573735250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42bd910ddcff8ce4d861ebb3d92bce25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  round_state: 0
+  ui_player_weapon_upgrade: {fileID: 0}
+  start_splash: {fileID: 0}
+  end_splash: {fileID: 0}
+  furniture: {fileID: 0}
+  round_length_minutes: 0
+  round_length_seconds: 45
+  upgrade_one_score_requirement: 1000
+  upgrade_one: 1.35
+  upgrade_two_score_requirement: 800
+  upgrade_two: 1.25
+  upgrade_three_score_requirement: 600
+  upgrade_three: 1.15
