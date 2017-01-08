@@ -13,8 +13,8 @@ public class t_player_stat_controller : MonoBehaviour {
         StartCoroutine (Get_Player ());
 	}
 	
-	public void Update_Coin_Text (int _new_value) {
-        score_text.text = "Score: " + _new_value.ToString ();
+	public void Update_Coin_Text (string _new_value) {
+        score_text.text = "Score: " + _new_value;
     }
 
     IEnumerator Get_Player () {

@@ -36,13 +36,12 @@ public class t_object_score_display : MonoBehaviour {
 
     }
 
-    public void Setup(int _score, Color _color) {
+    public void Setup(string _score, string _combo) {
         if(null == text_mesh) {
             text_mesh = GetComponent<TextMesh>();
         }
         if (null != text_mesh) {
-            text_mesh.text = _score.ToString();
-            text_mesh.color = _color;
+            text_mesh.text = "<color=#ffff00ff>" + _score + "</color> <color=#00ff00ff>" + _combo + "</color>";
             active = true;
         }
     }
