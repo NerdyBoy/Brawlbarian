@@ -48,7 +48,11 @@ Material:
     - first:
         name: _MainTex
       second:
+<<<<<<< HEAD:Assets/Models/Furniture/Materials/big_barrel.mat
         m_Texture: {fileID: 2800000, guid: e1a77d37dc1922648954c00a23192c6e, type: 3}
+=======
+        m_Texture: {fileID: 2800000, guid: d89d932396437da4e94660da9d56ed96, type: 3}
+>>>>>>> refs/remotes/origin/master:Assets/Models/Furniture/Materials/lambert1.mat
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
