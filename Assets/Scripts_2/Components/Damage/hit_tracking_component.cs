@@ -4,23 +4,47 @@ using System;
 
 public class hit_tracking_component : MonoBehaviour, hit_tracking_interface {
 
-    private character_score_component root_hit_character_score;
+    private character_controller root_hit_character;
+    private GameObject hit_object;
 
-    public character_score_component Get_Hit_Root_Character_Score()
+    private int number_of_objects_hit = 0;
+
+    public character_controller Get_Hit_Root_Character()
     {
-        return root_hit_character_score;
+        return root_hit_character;
     }
 
-    public void Set_Hit_Root_Character(character_score_component _charater_score)
+    public void Set_Hit_Root_Character(character_controller _character)
     {
-        root_hit_character_score= _charater_score;
+        root_hit_character = _character;
     }
 
-    public void Increase_Hit_Root_Score(int _amount)
+    public void Set_Hit_Object(GameObject _hit_object)
     {
-        if(null != root_hit_character_score)
+        hit_object = _hit_object;
+    }
+
+    public int Get_Number_Of_Objects_Hit()
+    {
+        return number_of_objects_hit;
+    }
+
+    private void OnCollisionEnter(Collision _collision)
+    {
+        hit_tracking_component hit_tracker = _collision.gameObject.GetComponent<hit_tracking_component>();
+        weapon_component weapon = _collision.gameObject.GetComponent<weapon_component>();
+        if(null != weapon)
         {
-            root_hit_character_score.Modify_Score(_amount);
+            number_of_objects_hit = 0;
+        }
+
+        if(null != hit_tracker)
+        {
+            number_of_objects_hit = hit_tracker.Get_Number_Of_Objects_Hit() + 1;
+            if(null != hit_tracker.Get_Hit_Root_Character())
+            {
+                Set_Hit_Root_Character(hit_tracker.Get_Hit_Root_Character());
+            }
         }
     }
 }

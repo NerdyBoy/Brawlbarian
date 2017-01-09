@@ -26,7 +26,8 @@ GameObject:
   - 114: {fileID: 114000012379260482}
   - 114: {fileID: 114000010384394956}
   - 114: {fileID: 114000011993405660}
-  m_Layer: 0
+  - 114: {fileID: 114000012525634904}
+  m_Layer: 13
   m_Name: destructible_light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +43,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000010763088944}
   - 108: {fileID: 108000010490296320}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,7 +60,7 @@ GameObject:
   - 4: {fileID: 4000012336612500}
   - 198: {fileID: 198000014221079994}
   - 199: {fileID: 199000013172449964}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,10 +73,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011430891008}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -5.9884377, y: -0.30456245, z: 9.39}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.73, y: -0.30456245, z: -2.91}
   m_LocalScale: {x: 1.0000014, y: 1, z: 1.0000014}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4000012336612500}
   - {fileID: 4000010763088944}
@@ -215,7 +216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc85eec5375d1d842a5daa4184cd57d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health_value: 10
+  health_value: 100
 --- !u!114 &114000011993405660
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -239,6 +240,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   replacement_object: {fileID: 0}
+--- !u!114 &114000012525634904
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011430891008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9820a528b8d05b49ba53b36807751a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &198000014221079994
 ParticleSystem:
   m_ObjectHideFlags: 1

@@ -18,7 +18,9 @@ public class physics_enable_on_hit : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(null != light_rigidbody)
+        physics_object_component physics_object = collision.gameObject.GetComponent<physics_object_component>();
+        physics_damage_component physics_damage_object = collision.gameObject.GetComponent<physics_damage_component>();
+        if (null != light_rigidbody && (null != physics_object || null != physics_damage_object)) 
         {
             light_rigidbody.constraints = RigidbodyConstraints.None;
         }

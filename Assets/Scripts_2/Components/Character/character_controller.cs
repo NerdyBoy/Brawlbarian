@@ -111,6 +111,10 @@ public class character_controller : MonoBehaviour, input_button_interface
                     }
                 }
             }
+            else if(action_buttons.secondary_button == _action_button &&(true == can_attack))
+            {
+                BroadcastMessage("Launch_Equipped_Weapon");
+            }
         }
     }
     

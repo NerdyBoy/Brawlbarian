@@ -20,7 +20,7 @@ public class physics_damage_component : MonoBehaviour {
     private damage_modifier_component damage_modifier;
 
     private velocity_tracking_component velocity_tracker;
-
+    private hit_tracking_component hit_tracking_component;
     private character_score_component score_component;
 
     [SerializeField]
@@ -36,6 +36,8 @@ public class physics_damage_component : MonoBehaviour {
         velocity_tracker = GetComponent<velocity_tracking_component>();
 
         score_component = this.transform.root.GetComponent<character_score_component>();
+
+        hit_tracking_component = GetComponent<hit_tracking_component>();
     }
 
     private void OnCollisionEnter(Collision _collision)
@@ -71,17 +73,17 @@ public class physics_damage_component : MonoBehaviour {
             score_component = this.transform.root.GetComponent<character_score_component>();
         }
 
-        if (null != score_component)
-        {
-            ExecuteEvents.Execute<hit_tracking_interface>(_collision.gameObject, null, (hit_tracking_interface _handle, BaseEventData _data) => _handle.Set_Hit_Root_Character(score_component));
-        }
-
         if (true == overwrite_physics)
         {
-            if (null != score_component)
+            if (null != score_component && null != this.transform.root.GetComponent<character_controller>())
             {
                 //this is a horrible workaround that gets the direction based on character controller, not good, very bad, fix
-                ExecuteEvents.Execute<physics_object_interface>(_collision.gameObject, null, (physics_object_interface _handler, BaseEventData _data) => _handler.On_Add_Force(this.transform.root.GetComponent<character_controller>().Get_Attack_Direction(), force_value * Random.Range(0.75f, 1.25f)));
+                float force_amount = force_value * Random.Range(0.75f, 1.25f);
+                ExecuteEvents.Execute<physics_object_interface>(_collision.gameObject, null, (physics_object_interface _handler, BaseEventData _data) => _handler.On_Add_Force(this.transform.root.GetComponent<character_controller>().Get_Attack_Direction(), force_amount));
+                if(null != hit_tracking_component)
+                {
+                    hit_tracking_component.Get_Hit_Root_Character().gameObject.SendMessage("Increase_Score", force_amount);
+                }
             }
             else
             {
