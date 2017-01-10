@@ -131,6 +131,7 @@ GameObject:
   - 114: {fileID: 114000010547058006}
   - 114: {fileID: 114000011546448582}
   - 114: {fileID: 114000013336276814}
+  - 114: {fileID: 114000013961167816}
   m_Layer: 13
   m_Name: DR_Table_03
   m_TagString: Untagged
@@ -238,10 +239,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012424898114}
-  m_LocalRotation: {x: -0, y: 0.019062785, z: -0, w: 0.9998183}
-  m_LocalPosition: {x: -0.23736954, y: 0.5, z: -2.885547}
+  m_LocalRotation: {x: -0, y: -0.012841854, z: -0, w: 0.99991757}
+  m_LocalPosition: {x: 5.072631, y: 0.5, z: 2.6944532}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 2.121, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -1.4280001, z: 0}
   m_Children:
   - {fileID: 4000013214580742}
   - {fileID: 4000012896965746}
@@ -846,3 +847,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage_amount: 10
+--- !u!114 &114000013961167816
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012424898114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a12fbdd013a4c6341ae749084f096102, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

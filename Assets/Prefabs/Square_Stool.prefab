@@ -31,6 +31,7 @@ GameObject:
   - 114: {fileID: 114000011758772166}
   - 114: {fileID: 114000013299826184}
   - 114: {fileID: 114000010267935228}
+  - 114: {fileID: 114000010936354382}
   m_Layer: 13
   m_Name: Square_Stool
   m_TagString: Untagged
@@ -44,10 +45,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014013118336}
-  m_LocalRotation: {x: -0, y: 0.060213055, z: -0, w: 0.9981856}
-  m_LocalPosition: {x: -0.23736954, y: 0.5, z: -2.385547}
+  m_LocalRotation: {x: -0, y: 0.028339196, z: -0, w: 0.9995984}
+  m_LocalPosition: {x: 4.8926306, y: 0.5, z: 1.5044532}
   m_LocalScale: {x: 1.2553089, y: 1.2553079, z: 1.2553084}
-  m_LocalEulerAnglesHint: {x: 0, y: 6.714, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 3.154, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -155,6 +156,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monitor_point: {fileID: 0}
+--- !u!114 &114000010936354382
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014013118336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a12fbdd013a4c6341ae749084f096102, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114000011758772166
 MonoBehaviour:
   m_ObjectHideFlags: 1
