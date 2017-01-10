@@ -4,7 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 public enum controller_types {keyboard, xbox_360};
-public enum action_buttons { primary_button, secondary_button, jump_button, interact_button, use_button };
+public enum action_buttons { primary_button, secondary_button, ternary_button, scroll_up, scroll_down, jump_button, interact_button, use_button };
 public enum action_button_states { up, down, held};
 
 public class input_component : MonoBehaviour

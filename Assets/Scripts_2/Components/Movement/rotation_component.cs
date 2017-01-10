@@ -12,6 +12,9 @@ public class rotation_component : MonoBehaviour, rotation_input_interface, input
     private GameObject horizontal_rotate_object;
 
     private bool primary_button_down;
+    [SerializeField]
+    private float slow_down_speed = 1.0f;
+
     private float button_down_speed_offset = 1.0f;
 
     private fps_camera_clamp_component camera_clamp;
@@ -44,7 +47,7 @@ public class rotation_component : MonoBehaviour, rotation_input_interface, input
         if(action_buttons.primary_button == _button_action && action_button_states.down == _button_state)
         {
             primary_button_down = true;
-            button_down_speed_offset = 0.2f;
+            button_down_speed_offset = slow_down_speed;
         }
         else if(action_buttons.primary_button == _button_action && action_button_states.up == _button_state)
         {
