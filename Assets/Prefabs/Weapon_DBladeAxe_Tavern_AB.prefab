@@ -32,9 +32,9 @@ GameObject:
   - 114: {fileID: 114000012498446466}
   - 114: {fileID: 114000011398683110}
   - 114: {fileID: 114000012483755820}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Weapon_DBladeAxe_Tavern_AB
-  m_TagString: Untagged
+  m_TagString: weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,10 +45,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012660934214}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.477, y: 0.521, z: 1.332}
+  m_LocalRotation: {x: -0.25747752, y: 0.6530482, z: 0.4726981, w: 0.5327194}
+  m_LocalPosition: {x: -6.616, y: -0.077, z: 1.327}
   m_LocalScale: {x: 0.45282546, y: 0.38881332, z: 0.41903755}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -63.071003, y: 88.22201, z: 21.445002}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -102,7 +102,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!65 &65000012749078040
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -113,8 +113,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5193057, y: 0.38882482, z: 4.373605}
-  m_Center: {x: 0.011803687, y: -0.030846365, z: 1.4792365}
+  m_Size: {x: 1.5519516, y: 1.13, z: 6.1772676}
+  m_Center: {x: 0.014858762, y: -0.03085247, z: 2.3810797}
 --- !u!95 &95000013678756826
 Animator:
   serializedVersion: 3
