@@ -51,11 +51,51 @@ public class character_controller : MonoBehaviour, input_button_interface
     {
         if (true == weapon_equipped && game_state_controller.current_state_controller.Get_Current_State() == game_state_controller.game_states.in_play)
         {
+            float current_time = Time.fixedTime;
+
             if (action_button_states.up == _action_button_state)
             {
                 can_attack = true;
             }
-            float hold_time = input_record.Get_Button_Hold_Time();
+
+            if(action_buttons.primary_button == _action_button && action_button_states.down == _action_button_state)
+            {
+                attack_direction = -this.transform.right;
+                character_animator.SetTrigger("swipe_left");
+                next_activation_time = current_time + activation_time_delay;
+                //attack left
+            }
+            else if(action_buttons.secondary_button == _action_button && action_button_states.down == _action_button_state)
+            {
+                attack_direction = this.transform.right;
+                character_animator.SetTrigger("swipe_right");
+                next_activation_time = current_time + activation_time_delay;
+                //attack right
+            }
+            else if(action_buttons.ternary_button == _action_button && action_button_states.down == _action_button_state)
+            {
+                print("THRUST");
+                attack_direction = this.transform.forward;
+                character_animator.SetTrigger("thrust");
+                next_activation_time = current_time + activation_time_delay;
+                //attack thrust
+            }
+            else if(action_buttons.scroll_up == _action_button && action_button_states.down == _action_button_state)
+            {
+                attack_direction = this.transform.up;
+                character_animator.SetTrigger("swipe_up");
+                next_activation_time = current_time + activation_time_delay;
+                //attack up
+            }
+            else if(action_buttons.scroll_down == _action_button && action_button_states.down == _action_button_state)
+            {
+                attack_direction = -this.transform.up;
+                character_animator.SetTrigger("swipe_down");
+                next_activation_time = current_time + activation_time_delay;
+                //attack down
+            }
+
+            /*float hold_time = input_record.Get_Button_Hold_Time();
             float average_magnitude = input_record.Get_Average_Magnitude();
             float current_time = Time.fixedTime;
             if (action_buttons.primary_button == _action_button &&
@@ -114,7 +154,7 @@ public class character_controller : MonoBehaviour, input_button_interface
             else if(action_buttons.secondary_button == _action_button &&(true == can_attack))
             {
                 BroadcastMessage("Launch_Equipped_Weapon");
-            }
+            }*/
         }
     }
     
