@@ -15,6 +15,11 @@ public class weapon_handling_component : MonoBehaviour, input_button_interface{
 
     private weapon_component found_weapon; //weapon found through casting
 
+    [SerializeField]
+    private int weapon_layer = 11;
+    [SerializeField]
+    private int destruction_layer = 13;
+
     private void Start()
     {
         if(null != equipped_weapon)
@@ -55,10 +60,10 @@ public class weapon_handling_component : MonoBehaviour, input_button_interface{
         if(null == equipped_weapon)
         {
             _weapon.gameObject.GetComponent<Rigidbody>().isKinematic = true;
-
             Parent_Weapon(_weapon, true);
             Position_Weapon(_weapon);
             Ignore_Weapon_Collision(_weapon, true);
+            equipped_weapon = _weapon;
             SendMessage("Weapon_Equipped", true);
         }
     }
@@ -68,6 +73,7 @@ public class weapon_handling_component : MonoBehaviour, input_button_interface{
         equipped_weapon.gameObject.GetComponent<Rigidbody>().isKinematic = false;
         Parent_Weapon(equipped_weapon, false);
         Ignore_Weapon_Collision(equipped_weapon, false);
+        equipped_weapon = null;
         SendMessage("Weapon_Equipped", false);
     }
 
@@ -92,5 +98,35 @@ public class weapon_handling_component : MonoBehaviour, input_button_interface{
     private void Ignore_Weapon_Collision(weapon_component _weapon, bool _ignore_collision)
     {
         Physics.IgnoreCollision(GetComponent<Collider>(), _weapon.gameObject.GetComponent<Collider>(), _ignore_collision);
+    }
+
+    void Attack_Start()
+    {
+        Physics.IgnoreLayerCollision(weapon_layer, destruction_layer, false);
+    }
+
+    void Attack_End()
+    {
+        Physics.IgnoreLayerCollision(weapon_layer, destruction_layer, true);
+    }
+
+    void Launch_Equipped_Weapon()
+    {
+        print("LAUNCH");
+        if(null != equipped_weapon)
+        {
+            weapon_component discarded_weapon = equipped_weapon;
+            Physics.IgnoreLayerCollision(weapon_layer, destruction_layer, false);
+            Discard_Weapon();
+            if (null != position_and_rotation_object)
+            {
+                discarded_weapon.Launch_Weapon(position_and_rotation_object.transform.forward);
+            }
+            else
+            {
+                discarded_weapon.Launch_Weapon(this.transform.forward);
+            }
+
+        }
     }
 }

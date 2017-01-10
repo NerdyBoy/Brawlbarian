@@ -29,10 +29,10 @@ GameObject:
   - 114: {fileID: 114000012864921588}
   - 114: {fileID: 114000010556199630}
   - 114: {fileID: 114000011758772166}
-  - 114: {fileID: 114000013663710650}
   - 114: {fileID: 114000013299826184}
   - 114: {fileID: 114000010267935228}
-  m_Layer: 0
+  - 114: {fileID: 114000010936354382}
+  m_Layer: 13
   m_Name: Square_Stool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,10 +45,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014013118336}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.85, y: 0.08, z: 1.97}
-  m_LocalScale: {x: 1.2553084, y: 1.2553079, z: 1.2553079}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.028339196, z: -0, w: 0.9995984}
+  m_LocalPosition: {x: 4.8926306, y: 0.5, z: 1.5044532}
+  m_LocalScale: {x: 1.2553089, y: 1.2553079, z: 1.2553084}
+  m_LocalEulerAnglesHint: {x: 0, y: 3.154, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -65,7 +65,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 4aa78db9c4744674cb8c6c9f9d662817, type: 2}
+  - {fileID: 2100000, guid: eefaaa98b3ff6af478fa2d7a287b54ac, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -156,6 +156,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monitor_point: {fileID: 0}
+--- !u!114 &114000010936354382
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014013118336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a12fbdd013a4c6341ae749084f096102, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114000011758772166
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -189,7 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f1c4b81b15924e4cb459d5b450a5ced, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage_amount: 0
+  damage_amount: 5
 --- !u!114 &114000013198429608
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -201,7 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc85eec5375d1d842a5daa4184cd57d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health_value: 30
+  health_value: 60
 --- !u!114 &114000013299826184
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -215,14 +226,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   replacement_object: {fileID: 1000010282174076, guid: 56888bd1729bdd04681d363375f4904d,
     type: 2}
---- !u!114 &114000013663710650
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000014013118336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a12fbdd013a4c6341ae749084f096102, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

@@ -24,9 +24,10 @@ public class physics_object_component : MonoBehaviour, physics_object_interface 
 
     void OnCollisionEnter(Collision _collision)
     {
-        if(null != hit_tracker && null != hit_tracker.Get_Hit_Root_Character_Score())
+        if(null != hit_tracker && null != hit_tracker.Get_Hit_Root_Character())
         {
-            ExecuteEvents.Execute<hit_tracking_interface>(_collision.gameObject, null, (hit_tracking_interface _handle, BaseEventData _data) => _handle.Set_Hit_Root_Character(hit_tracker.Get_Hit_Root_Character_Score()));
+            ExecuteEvents.Execute<hit_tracking_interface>(_collision.gameObject, null, (hit_tracking_interface _handle, BaseEventData _data) => _handle.Set_Hit_Root_Character(hit_tracker.Get_Hit_Root_Character()));
+            hit_tracker.Get_Hit_Root_Character().gameObject.SendMessage("Modify_Score", (int)_collision.relativeVelocity.magnitude * Mathf.Clamp(hit_tracker.Get_Number_Of_Objects_Hit(), 1, 5));
         }
     }
 

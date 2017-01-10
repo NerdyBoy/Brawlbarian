@@ -13,7 +13,6 @@ public class health_component : MonoBehaviour, health_interface {
     public void On_Modify_Health(int _amount)
     {
         health_value += _amount;
-        ExecuteEvents.Execute<hit_tracking_interface>(this.gameObject, null, (hit_tracking_interface _handler, BaseEventData _data) => _handler.Increase_Hit_Root_Score(Mathf.Abs(_amount)));
 
         if(0.0f >= health_value)
         {

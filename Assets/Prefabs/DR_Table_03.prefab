@@ -21,7 +21,7 @@ GameObject:
   - 4: {fileID: 4000012240391436}
   - 33: {fileID: 33000013449527058}
   - 23: {fileID: 23000010067091166}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Table_03:polySurface9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - 4: {fileID: 4000013685233352}
   - 33: {fileID: 33000012962918988}
   - 23: {fileID: 23000013229509712}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Table_03:polySurface10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - 4: {fileID: 4000013308781850}
   - 33: {fileID: 33000013842001312}
   - 23: {fileID: 23000013933290408}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Table_03:polySurface5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - 4: {fileID: 4000011921396750}
   - 33: {fileID: 33000011949883270}
   - 23: {fileID: 23000011238268894}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Table_03:polySurface3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   - 4: {fileID: 4000010911067286}
   - 33: {fileID: 33000011845255960}
   - 23: {fileID: 23000010108522636}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Table_03:polySurface6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - 4: {fileID: 4000010217810040}
   - 33: {fileID: 33000010232833820}
   - 23: {fileID: 23000012026082118}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Table_03:polySurface4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,9 +130,9 @@ GameObject:
   - 114: {fileID: 114000013733574258}
   - 114: {fileID: 114000010547058006}
   - 114: {fileID: 114000011546448582}
-  - 114: {fileID: 114000012022862322}
   - 114: {fileID: 114000013336276814}
-  m_Layer: 0
+  - 114: {fileID: 114000013961167816}
+  m_Layer: 13
   m_Name: DR_Table_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ GameObject:
   - 4: {fileID: 4000011185343114}
   - 33: {fileID: 33000010153693542}
   - 23: {fileID: 23000010073180554}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Table_03:polySurface7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ GameObject:
   - 4: {fileID: 4000012012071744}
   - 33: {fileID: 33000010340605748}
   - 23: {fileID: 23000010412078926}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Table_03:polySurface8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ GameObject:
   - 4: {fileID: 4000013214580742}
   - 33: {fileID: 33000013440925874}
   - 23: {fileID: 23000013352171706}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Table_03:polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   - 4: {fileID: 4000012896965746}
   - 33: {fileID: 33000012908762300}
   - 23: {fileID: 23000012671668982}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Table_03:polySurface2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -239,10 +239,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012424898114}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.9, y: 0.13, z: 1.34}
+  m_LocalRotation: {x: -0, y: -0.012841854, z: -0, w: 0.99991757}
+  m_LocalPosition: {x: 5.072631, y: 0.5, z: 2.6944532}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -1.4280001, z: 0}
   m_Children:
   - {fileID: 4000013214580742}
   - {fileID: 4000012896965746}
@@ -810,17 +810,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health_value: 75
---- !u!114 &114000012022862322
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012424898114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a12fbdd013a4c6341ae749084f096102, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114000013028834820
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -857,4 +846,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f1c4b81b15924e4cb459d5b450a5ced, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage_amount: 0
+  damage_amount: 10
+--- !u!114 &114000013961167816
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012424898114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a12fbdd013a4c6341ae749084f096102, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
