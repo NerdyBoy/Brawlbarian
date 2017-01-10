@@ -92,7 +92,7 @@ public class weapon_handling_component : MonoBehaviour, input_button_interface{
     private void Position_Weapon(weapon_component _weapon)
     {
         _weapon.transform.localPosition = new Vector3(-0.019f, 0.148f, 0.04f);
-        _weapon.transform.localEulerAngles = new Vector3(0.0f, -100.472f, 0.0f);
+        _weapon.transform.localEulerAngles = new Vector3(0.0f, -100.472f, 90.0f);
     }
 
     private void Ignore_Weapon_Collision(weapon_component _weapon, bool _ignore_collision)
