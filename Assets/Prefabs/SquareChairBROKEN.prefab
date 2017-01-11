@@ -268,6 +268,7 @@ GameObject:
   - 4: {fileID: 4000010062964520}
   - 95: {fileID: 95000011186696198}
   - 114: {fileID: 114000010973981848}
+  - 82: {fileID: 82000013223993090}
   m_Layer: 0
   m_Name: SquareChairBROKEN
   m_TagString: Untagged
@@ -1577,6 +1578,80 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.19133209, y: 0.055187255, z: 0.5290094}
   m_Center: {x: 0.17499796, y: 0.4810995, z: 0.053296775}
+--- !u!82 &82000013223993090
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013187879834}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &95000011186696198
 Animator:
   serializedVersion: 3
@@ -1605,4 +1680,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69d57c4ed785a8f4199a34726accd926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  powerups:
+  - {fileID: 1000010877518352, guid: 67f4007e46d936344b4779e6694aa6a1, type: 2}
+  - {fileID: 1000013674319394, guid: a2c213b8bc5a02044a0b4bb72cd743b6, type: 2}
+  - {fileID: 1000013084638948, guid: 9fba9e85f278cc94d9b951f099b35e38, type: 2}
+  - {fileID: 1000010477595682, guid: c5d88c44fb3c3204888c3bae5c2854e6, type: 2}
+  smash:
+  - {fileID: 8300000, guid: 12e9f230cab49724f834849452e22c6b, type: 3}
+  - {fileID: 8300000, guid: 014cc36c0d851bc4fac9a8c5a9dca65d, type: 3}
+  - {fileID: 8300000, guid: 36eec5312eaace54c9adb2846b6d9162, type: 3}
+  - {fileID: 8300000, guid: ef835998203cff544a04c73cf4cf1371, type: 3}
+  - {fileID: 8300000, guid: a9f7a95bf545eb2409dab3a82197d4b3, type: 3}
+  - {fileID: 8300000, guid: cb1bacf49fe6e694581fb73ce84d6852, type: 3}
   lifetime: 3

@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(AudioSource))]
 public class weapon_handling_component : MonoBehaviour, input_button_interface{
+
 
     [SerializeField]
     private float pickup_distance;
@@ -20,8 +22,11 @@ public class weapon_handling_component : MonoBehaviour, input_button_interface{
     [SerializeField]
     private int destruction_layer = 13;
 
+    private AudioSource source;
+
     private void Start()
     {
+        source = GetComponent<AudioSource>();
         if(null != equipped_weapon)
         {
             Equip_Weapon(equipped_weapon);
@@ -102,6 +107,7 @@ public class weapon_handling_component : MonoBehaviour, input_button_interface{
 
     void Attack_Start()
     {
+        source.Play();
         Physics.IgnoreLayerCollision(weapon_layer, destruction_layer, false);
     }
 

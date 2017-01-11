@@ -31,6 +31,11 @@ public class mouse_keyboard_input_component : input_component {
             On_Button(action_buttons.interact_button, action_button_states.down);
         }
 
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            On_Button(action_buttons.use_button, action_button_states.down);
+        }
+
         //left mouse button
         if (Input.GetMouseButtonDown(0))
         {

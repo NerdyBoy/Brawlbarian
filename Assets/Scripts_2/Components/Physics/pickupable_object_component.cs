@@ -13,9 +13,9 @@ public class pickupable_object_component : MonoBehaviour {
 
     public void Launch_Object(Vector3 _direction, float _force)
     {
-        /*if(null != physics_object)
+        if(null != physics_object)
         {
             physics_object.On_Add_Force(_direction, _force);
-        }*/
+        }
     }
 }
