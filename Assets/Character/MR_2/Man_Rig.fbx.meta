@@ -1,0 +1,209 @@
+fileFormatVersion: 2
+guid: 2a08a467913e69943ba4f299805ef8e5
+timeCreated: 1484073200
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Man_Rig:Rig_Man:Head
+    100004: Man_Rig:Rig_Man:HeadTop_End
+    100006: Man_Rig:Rig_Man:Hips
+    100008: Man_Rig:Rig_Man:LeftArm
+    100010: Man_Rig:Rig_Man:LeftFoot
+    100012: Man_Rig:Rig_Man:LeftForeArm
+    100014: Man_Rig:Rig_Man:LeftHand
+    100016: Man_Rig:Rig_Man:LeftHandIndex1
+    100018: Man_Rig:Rig_Man:LeftHandIndex2
+    100020: Man_Rig:Rig_Man:LeftHandIndex3
+    100022: Man_Rig:Rig_Man:LeftHandIndex4
+    100024: Man_Rig:Rig_Man:LeftHandMiddle1
+    100026: Man_Rig:Rig_Man:LeftHandMiddle2
+    100028: Man_Rig:Rig_Man:LeftHandMiddle3
+    100030: Man_Rig:Rig_Man:LeftHandMiddle4
+    100032: Man_Rig:Rig_Man:LeftHandPinky1
+    100034: Man_Rig:Rig_Man:LeftHandPinky2
+    100036: Man_Rig:Rig_Man:LeftHandPinky3
+    100038: Man_Rig:Rig_Man:LeftHandPinky4
+    100040: Man_Rig:Rig_Man:LeftHandRing1
+    100042: Man_Rig:Rig_Man:LeftHandRing2
+    100044: Man_Rig:Rig_Man:LeftHandRing3
+    100046: Man_Rig:Rig_Man:LeftHandRing4
+    100048: Man_Rig:Rig_Man:LeftHandThumb1
+    100050: Man_Rig:Rig_Man:LeftHandThumb2
+    100052: Man_Rig:Rig_Man:LeftHandThumb3
+    100054: Man_Rig:Rig_Man:LeftHandThumb4
+    100056: Man_Rig:Rig_Man:LeftLeg
+    100058: Man_Rig:Rig_Man:LeftShoulder
+    100060: Man_Rig:Rig_Man:LeftToe_End
+    100062: Man_Rig:Rig_Man:LeftToeBase
+    100064: Man_Rig:Rig_Man:LeftUpLeg
+    100066: Man_Rig:Rig_Man:Neck
+    100068: Man_Rig:Rig_Man:pSphere3
+    100070: Man_Rig:Rig_Man:RightArm
+    100072: Man_Rig:Rig_Man:RightFoot
+    100074: Man_Rig:Rig_Man:RightForeArm
+    100076: Man_Rig:Rig_Man:RightHand
+    100078: Man_Rig:Rig_Man:RightHandIndex1
+    100080: Man_Rig:Rig_Man:RightHandIndex2
+    100082: Man_Rig:Rig_Man:RightHandIndex3
+    100084: Man_Rig:Rig_Man:RightHandIndex4
+    100086: Man_Rig:Rig_Man:RightHandMiddle1
+    100088: Man_Rig:Rig_Man:RightHandMiddle2
+    100090: Man_Rig:Rig_Man:RightHandMiddle3
+    100092: Man_Rig:Rig_Man:RightHandMiddle4
+    100094: Man_Rig:Rig_Man:RightHandPinky1
+    100096: Man_Rig:Rig_Man:RightHandPinky2
+    100098: Man_Rig:Rig_Man:RightHandPinky3
+    100100: Man_Rig:Rig_Man:RightHandPinky4
+    100102: Man_Rig:Rig_Man:RightHandRing1
+    100104: Man_Rig:Rig_Man:RightHandRing2
+    100106: Man_Rig:Rig_Man:RightHandRing3
+    100108: Man_Rig:Rig_Man:RightHandRing4
+    100110: Man_Rig:Rig_Man:RightHandThumb1
+    100112: Man_Rig:Rig_Man:RightHandThumb2
+    100114: Man_Rig:Rig_Man:RightHandThumb3
+    100116: Man_Rig:Rig_Man:RightHandThumb4
+    100118: Man_Rig:Rig_Man:RightLeg
+    100120: Man_Rig:Rig_Man:RightShoulder
+    100122: Man_Rig:Rig_Man:RightToe_End
+    100124: Man_Rig:Rig_Man:RightToeBase
+    100126: Man_Rig:Rig_Man:RightUpLeg
+    100128: Man_Rig:Rig_Man:Spine
+    100130: Man_Rig:Rig_Man:Spine1
+    100132: Man_Rig:Rig_Man:Spine2
+    400000: //RootNode
+    400002: Man_Rig:Rig_Man:Head
+    400004: Man_Rig:Rig_Man:HeadTop_End
+    400006: Man_Rig:Rig_Man:Hips
+    400008: Man_Rig:Rig_Man:LeftArm
+    400010: Man_Rig:Rig_Man:LeftFoot
+    400012: Man_Rig:Rig_Man:LeftForeArm
+    400014: Man_Rig:Rig_Man:LeftHand
+    400016: Man_Rig:Rig_Man:LeftHandIndex1
+    400018: Man_Rig:Rig_Man:LeftHandIndex2
+    400020: Man_Rig:Rig_Man:LeftHandIndex3
+    400022: Man_Rig:Rig_Man:LeftHandIndex4
+    400024: Man_Rig:Rig_Man:LeftHandMiddle1
+    400026: Man_Rig:Rig_Man:LeftHandMiddle2
+    400028: Man_Rig:Rig_Man:LeftHandMiddle3
+    400030: Man_Rig:Rig_Man:LeftHandMiddle4
+    400032: Man_Rig:Rig_Man:LeftHandPinky1
+    400034: Man_Rig:Rig_Man:LeftHandPinky2
+    400036: Man_Rig:Rig_Man:LeftHandPinky3
+    400038: Man_Rig:Rig_Man:LeftHandPinky4
+    400040: Man_Rig:Rig_Man:LeftHandRing1
+    400042: Man_Rig:Rig_Man:LeftHandRing2
+    400044: Man_Rig:Rig_Man:LeftHandRing3
+    400046: Man_Rig:Rig_Man:LeftHandRing4
+    400048: Man_Rig:Rig_Man:LeftHandThumb1
+    400050: Man_Rig:Rig_Man:LeftHandThumb2
+    400052: Man_Rig:Rig_Man:LeftHandThumb3
+    400054: Man_Rig:Rig_Man:LeftHandThumb4
+    400056: Man_Rig:Rig_Man:LeftLeg
+    400058: Man_Rig:Rig_Man:LeftShoulder
+    400060: Man_Rig:Rig_Man:LeftToe_End
+    400062: Man_Rig:Rig_Man:LeftToeBase
+    400064: Man_Rig:Rig_Man:LeftUpLeg
+    400066: Man_Rig:Rig_Man:Neck
+    400068: Man_Rig:Rig_Man:pSphere3
+    400070: Man_Rig:Rig_Man:RightArm
+    400072: Man_Rig:Rig_Man:RightFoot
+    400074: Man_Rig:Rig_Man:RightForeArm
+    400076: Man_Rig:Rig_Man:RightHand
+    400078: Man_Rig:Rig_Man:RightHandIndex1
+    400080: Man_Rig:Rig_Man:RightHandIndex2
+    400082: Man_Rig:Rig_Man:RightHandIndex3
+    400084: Man_Rig:Rig_Man:RightHandIndex4
+    400086: Man_Rig:Rig_Man:RightHandMiddle1
+    400088: Man_Rig:Rig_Man:RightHandMiddle2
+    400090: Man_Rig:Rig_Man:RightHandMiddle3
+    400092: Man_Rig:Rig_Man:RightHandMiddle4
+    400094: Man_Rig:Rig_Man:RightHandPinky1
+    400096: Man_Rig:Rig_Man:RightHandPinky2
+    400098: Man_Rig:Rig_Man:RightHandPinky3
+    400100: Man_Rig:Rig_Man:RightHandPinky4
+    400102: Man_Rig:Rig_Man:RightHandRing1
+    400104: Man_Rig:Rig_Man:RightHandRing2
+    400106: Man_Rig:Rig_Man:RightHandRing3
+    400108: Man_Rig:Rig_Man:RightHandRing4
+    400110: Man_Rig:Rig_Man:RightHandThumb1
+    400112: Man_Rig:Rig_Man:RightHandThumb2
+    400114: Man_Rig:Rig_Man:RightHandThumb3
+    400116: Man_Rig:Rig_Man:RightHandThumb4
+    400118: Man_Rig:Rig_Man:RightLeg
+    400120: Man_Rig:Rig_Man:RightShoulder
+    400122: Man_Rig:Rig_Man:RightToe_End
+    400124: Man_Rig:Rig_Man:RightToeBase
+    400126: Man_Rig:Rig_Man:RightUpLeg
+    400128: Man_Rig:Rig_Man:Spine
+    400130: Man_Rig:Rig_Man:Spine1
+    400132: Man_Rig:Rig_Man:Spine2
+    4300000: Man_Rig:Rig_Man:pSphere3
+    7400000: mixamo.com
+    9500000: //RootNode
+    13700000: Man_Rig:Rig_Man:pSphere3
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
