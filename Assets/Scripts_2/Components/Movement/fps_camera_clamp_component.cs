@@ -14,7 +14,7 @@ public class fps_camera_clamp_component : MonoBehaviour {
     public void Clamp_Camera()
     {
         Vector3 camera_angles = player_camera.transform.rotation.eulerAngles;
-        if(camera_angles.x > 37.0f && camera_angles.x < 320.0f)
+        if(camera_angles.x > 37.0f && camera_angles.x < 300.0f)
         {
             if(camera_angles.x < 141.0f)
             {
@@ -22,7 +22,7 @@ public class fps_camera_clamp_component : MonoBehaviour {
             }
             else
             {
-                camera_angles.x = 320.0f;
+                camera_angles.x = 300.0f;
             }
 
             player_camera.transform.rotation = Quaternion.Euler(camera_angles);
