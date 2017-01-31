@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(AudioSource))]
 public class weapon_handling_component : MonoBehaviour, input_button_interface{
+
 
     [SerializeField]
     private float pickup_distance;
@@ -20,8 +22,11 @@ public class weapon_handling_component : MonoBehaviour, input_button_interface{
     [SerializeField]
     private int destruction_layer = 13;
 
+    private AudioSource source;
+
     private void Start()
     {
+        source = GetComponent<AudioSource>();
         if(null != equipped_weapon)
         {
             Equip_Weapon(equipped_weapon);
@@ -37,6 +42,14 @@ public class weapon_handling_component : MonoBehaviour, input_button_interface{
             if (null != found_weapon)
             {
                 Equip_Weapon(found_weapon);
+            }
+        }
+
+        if(action_buttons.special_button == _button_action && action_button_states.down == _button_state)
+        {
+            if(null != equipped_weapon)
+            {
+                
             }
         }
     }
@@ -102,6 +115,10 @@ public class weapon_handling_component : MonoBehaviour, input_button_interface{
 
     void Attack_Start()
     {
+        if (null != source)
+        {
+            source.Play();
+        } 
         Physics.IgnoreLayerCollision(weapon_layer, destruction_layer, false);
     }
 
@@ -112,7 +129,6 @@ public class weapon_handling_component : MonoBehaviour, input_button_interface{
 
     void Launch_Equipped_Weapon()
     {
-        print("LAUNCH");
         if(null != equipped_weapon)
         {
             weapon_component discarded_weapon = equipped_weapon;

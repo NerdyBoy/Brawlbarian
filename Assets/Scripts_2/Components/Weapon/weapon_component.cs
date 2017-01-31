@@ -11,16 +11,11 @@ public class weapon_component : MonoBehaviour {
 
     private Rigidbody weapon_rigidbody;
     private Collider weapon_collider;
-
+    
 	// Use this for initialization
 	void Start () {
         weapon_rigidbody = GetComponent<Rigidbody>();
         weapon_collider = GetComponent<Collider>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 
     public void Launch_Weapon(Vector3 _direction)
@@ -28,6 +23,14 @@ public class weapon_component : MonoBehaviour {
         weapon_rigidbody.isKinematic = false;
         weapon_rigidbody.AddForce(_direction * launch_force, ForceMode.Impulse);
         weapon_rigidbody.AddTorque(0, 0, spin_speed, ForceMode.Impulse);
+    }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (null != collision.gameObject.GetComponent<physics_damage_component>())
+        {
+            //this.transform.root.SendMessage("Attack_End");
+            this.transform.root.gameObject.SendMessage("On_Impact", null, SendMessageOptions.DontRequireReceiver);
+        }
     }
 }

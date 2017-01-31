@@ -2,7 +2,9 @@
 using System.Collections;
 
 [RequireComponent(typeof(Rigidbody))]
-public class movement_component : MonoBehaviour, movement_input_interface {
+public class movement_component : MonoBehaviour, movement_input_interface, input_button_interface {
+
+    bool sprinting;
 
     input_component input;
 
@@ -69,5 +71,23 @@ public class movement_component : MonoBehaviour, movement_input_interface {
         //raycast down to test for ground
             //if ground found
                 //add jump force
+    }
+
+    public void On_Button_Input(action_buttons _button_action, action_button_states _button_state)
+    {
+        if(action_buttons.sprint_button == _button_action)
+        {
+            if(action_button_states.down == _button_state)
+            {
+                sprinting = true;
+                speed_modifier.Set_Speed_Modifier_Value(2);
+            }
+            else if(action_button_states.up == _button_state)
+            {
+                sprinting = false;
+                speed_modifier.Set_Speed_Modifier_Value(1);
+            }
+        }
+        
     }
 }

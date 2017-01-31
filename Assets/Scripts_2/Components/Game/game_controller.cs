@@ -60,7 +60,7 @@ public class game_controller : MonoBehaviour {
 
     void In_Play_Update()
     {
-        if (game_countdown.Get_Time_Remaining() <= 0 || furniture_container.transform.childCount <= 0)
+        if (null != furniture_container && (game_countdown.Get_Time_Remaining() <= 0 || furniture_container.transform.childCount <= 0))
         {
             game_countdown.Pause_Timer();
             game_state_controller.current_state_controller.Switch_State(game_state_controller.game_states.round_end);
