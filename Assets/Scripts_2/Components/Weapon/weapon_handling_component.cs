@@ -44,6 +44,14 @@ public class weapon_handling_component : MonoBehaviour, input_button_interface{
                 Equip_Weapon(found_weapon);
             }
         }
+
+        if(action_buttons.special_button == _button_action && action_button_states.down == _button_state)
+        {
+            if(null != equipped_weapon)
+            {
+                
+            }
+        }
     }
 
     private weapon_component Get_Weapon()
@@ -107,7 +115,10 @@ public class weapon_handling_component : MonoBehaviour, input_button_interface{
 
     void Attack_Start()
     {
-        source.Play();
+        if (null != source)
+        {
+            source.Play();
+        } 
         Physics.IgnoreLayerCollision(weapon_layer, destruction_layer, false);
     }
 
@@ -118,7 +129,6 @@ public class weapon_handling_component : MonoBehaviour, input_button_interface{
 
     void Launch_Equipped_Weapon()
     {
-        print("LAUNCH");
         if(null != equipped_weapon)
         {
             weapon_component discarded_weapon = equipped_weapon;

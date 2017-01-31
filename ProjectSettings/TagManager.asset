@@ -7,6 +7,10 @@ TagManager:
   - player
   - weapon
   - spawn_point
+  - flammable
+  - inflammable
+  - floor
+  - burning
   layers:
   - Default
   - TransparentFX

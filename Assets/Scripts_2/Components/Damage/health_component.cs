@@ -8,9 +8,9 @@ public class health_component : MonoBehaviour, health_interface {
         = delegate (destruction_interface _handler, BaseEventData _data) { };
 
     [SerializeField]
-    private int health_value = 0;
+    private float health_value = 0;
 
-    public void On_Modify_Health(int _amount)
+    public void On_Modify_Health(float _amount)
     {
         health_value += _amount;
 

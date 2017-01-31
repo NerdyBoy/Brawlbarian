@@ -5,13 +5,6 @@ using System.Collections;
 [RequireComponent(typeof(damage_component))]
 [RequireComponent(typeof(velocity_tracking_component))]
 public class physics_damage_component : MonoBehaviour {
-    /*private static readonly ExecuteEvents.EventFunction<physics_object_interface> s_on_collision_physics
-        = delegate (physics_object_interface _handler, BaseEventData _data) { };
-    private static readonly ExecuteEvents.EventFunction<health_interface> s_on_collision_health
-        = delegate (health_interface _handler, BaseEventData _data) { };
-    private static readonly ExecuteEvents.EventFunction<character_score_interface> s_on_collision_score
-        = delegate (character_score_interface _handler, BaseEventData _data) { };*/
-
 
     private force_component force;
     private force_modifier_component force_modifier;
