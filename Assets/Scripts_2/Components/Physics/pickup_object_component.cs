@@ -13,6 +13,7 @@ public class pickup_object_component : MonoBehaviour, input_button_interface
     [SerializeField]
     private float object_launch_force;
 
+    [SerializeField]
     private pickupable_object_component picked_up_object;
 
     void Start()
@@ -56,7 +57,7 @@ public class pickup_object_component : MonoBehaviour, input_button_interface
             {
                 Release_Object();
             }
-            if(action_buttons.secondary_button == _button_action && action_button_states.down == _button_state)
+            if(action_buttons.use_button == _button_action && action_button_states.down == _button_state)
             {
                 Launch_Object();
             }
@@ -67,6 +68,7 @@ public class pickup_object_component : MonoBehaviour, input_button_interface
     {
         Parent_Pickupable_Object(_pickupable_object, true);
         Position_Pickupable_Object(_pickupable_object);
+        _pickupable_object.GetComponent<hit_tracking_component>().Set_Hit_Root_Character(this.transform.root.GetComponent<character_controller>());
         _pickupable_object.GetComponent<Rigidbody>().isKinematic = true;
         picked_up_object = _pickupable_object;
     }

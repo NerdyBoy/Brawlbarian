@@ -31,6 +31,25 @@ public class mouse_keyboard_input_component : input_component {
             On_Button(action_buttons.interact_button, action_button_states.down);
         }
 
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            On_Button(action_buttons.use_button, action_button_states.down);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            On_Button(action_buttons.special_button, action_button_states.down);
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            On_Button(action_buttons.sprint_button, action_button_states.down);
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            On_Button(action_buttons.sprint_button, action_button_states.up);
+        }
+
         //left mouse button
         if (Input.GetMouseButtonDown(0))
         {
@@ -62,7 +81,6 @@ public class mouse_keyboard_input_component : input_component {
         //middle mouse button
         if (Input.GetMouseButtonDown(2))
         {
-            print("DOWN");
             On_Button(action_buttons.ternary_button, action_button_states.down);
         }
 
@@ -70,7 +88,6 @@ public class mouse_keyboard_input_component : input_component {
         float scroll_wheel = Input.GetAxis("Mouse ScrollWheel");
         if(0.0f != scroll_wheel)
         {
-            print(scroll_wheel);
             if(scroll_wheel < 0.0f)
             {
                 On_Button(action_buttons.scroll_down, action_button_states.down);

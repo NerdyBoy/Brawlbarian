@@ -5,6 +5,7 @@ using System.Collections;
 public class ui_highscore : MonoBehaviour {
 
     private int hard_score = 15000;
+    int highscore;
 
     [SerializeField]
     private Text highscore_text;
@@ -15,8 +16,12 @@ public class ui_highscore : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        if (true == PlayerPrefs.HasKey("highscore"))
+        {
+            highscore = PlayerPrefs.GetInt("highscore");
+        }
         StartCoroutine(Find_Player());
-        highscore_text.text = "Highscore: " + hard_score;
+        highscore_text.text = "Highscore: " + highscore;
 	}
 
     IEnumerator Find_Player()
@@ -42,6 +47,7 @@ public class ui_highscore : MonoBehaviour {
     {
         yield return new WaitForSeconds(3);
         highscore_text.text = "Highscore: " + character.GetComponent<character_score_component>().Get_Score().ToString();
+        PlayerPrefs.SetInt("highscore", character.GetComponent<character_score_component>().Get_Score());
         highscore_text.color = Color.red;
     }
 }
