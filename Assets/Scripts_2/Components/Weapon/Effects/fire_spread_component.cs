@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 [RequireComponent(typeof(BoxCollider))]
 public class fire_spread_component : MonoBehaviour {
-
+    //comment to commit
     public float life_time;
     public GameObject origin;
     public float distance_from_start_origin;
