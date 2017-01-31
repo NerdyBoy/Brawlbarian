@@ -51,7 +51,7 @@ public class effect_controller : MonoBehaviour {
 
     private void OnCollisionEnter(Collision _collision)
     {
-        if(null != current_effect)
+        if(null != current_effect && null != _collision.gameObject.GetComponent<physics_object_component>())
         {
             current_effect.Activate_On_Collision(_collision);
         }
