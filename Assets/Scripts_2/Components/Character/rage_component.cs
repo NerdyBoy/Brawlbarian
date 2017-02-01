@@ -16,6 +16,20 @@ public class rage_component : MonoBehaviour {
         }
     }
 
+    void Enable_Effect()
+    {
+        if(current_rage >= attack_cost)
+        {
+            current_rage -= attack_cost;
+            if (null != ui_rage_controller.rage_controller)
+            {
+                ui_rage_controller.rage_controller.Set_Current(current_rage / 100.0f);
+            }
+            BroadcastMessage("Set_Effect_Active", true);
+            
+        }
+    }
+
     void On_Impact()
     {
         current_rage += 10;
@@ -29,7 +43,6 @@ public class rage_component : MonoBehaviour {
     {
         if(current_rage >= attack_cost)
         {
-
             current_rage -= attack_cost;
         }
     }

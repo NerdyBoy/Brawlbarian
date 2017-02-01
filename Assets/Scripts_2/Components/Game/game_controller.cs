@@ -14,8 +14,6 @@ public class game_controller : MonoBehaviour {
     [SerializeField]
     private float time_in_seconds;
 
-    countdown game_countdown;
-
     game_state_controller state_controller;
 
     level_management level_manager;
@@ -23,10 +21,7 @@ public class game_controller : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         level_manager = GetComponent<level_management>();
-        game_countdown = this.gameObject.AddComponent<countdown>();
         state_controller = this.gameObject.AddComponent<game_state_controller>();
-        game_countdown.Set_Time(round_start_coundown_time);
-        game_countdown.Start_Timer();
         Position_Players();
 	}
 	
@@ -51,18 +46,13 @@ public class game_controller : MonoBehaviour {
 
     void Round_Start_Update()
     {
-        if(game_countdown.Get_Time_Remaining() <= 0)
-        {
-            game_countdown.Pause_Timer();
-            game_state_controller.current_state_controller.Switch_State(game_state_controller.game_states.in_play);
-        }
+        game_state_controller.current_state_controller.Switch_State(game_state_controller.game_states.in_play);
     }
 
     void In_Play_Update()
     {
-        if (null != furniture_container && (game_countdown.Get_Time_Remaining() <= 0 || furniture_container.transform.childCount <= 0))
+        if (null != furniture_container && furniture_container.transform.childCount <= 0)
         {
-            game_countdown.Pause_Timer();
             game_state_controller.current_state_controller.Switch_State(game_state_controller.game_states.round_end);
         }
     }
@@ -74,35 +64,25 @@ public class game_controller : MonoBehaviour {
 
     void Round_End_Update()
     {
-        if(game_countdown.Get_Time_Remaining() <= 0)
-        {
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            level_manager.Load_Next_Scene();
-        }
+        level_manager.Load_Next_Scene();        
     }
 
     void Begin_Play()
     {
-        game_countdown.Set_Time(time_in_seconds);
-        game_countdown.Start_Timer();
     }
 
     void Begin_Pause()
     {
         cursor_display.Enable_Cursor();
-        game_countdown.Pause_Timer();
     }
 
     void End_Pause()
     {
         cursor_display.Disable_Cursor();
-        game_countdown.Start_Timer();
     }
 
     void Begin_Round_End()
     {
-        game_countdown.Set_Time(3);
-        game_countdown.Start_Timer();
     }
 
     void Position_Players()

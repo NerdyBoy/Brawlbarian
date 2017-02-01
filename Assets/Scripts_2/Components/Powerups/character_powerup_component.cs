@@ -21,7 +21,6 @@ public class character_powerup_component : MonoBehaviour, character_powerup_inte
         }
         if (null != damage_modifier)
         {
-            print("DAMAGE COMPONENT FOUND");
             StartCoroutine(Damage_Modifier(_modify_amount, _lifetime));
         }
     }
