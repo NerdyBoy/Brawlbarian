@@ -130,11 +130,13 @@ public class weapon_handling_component : MonoBehaviour, input_button_interface{
             source.Play();
         } 
         Physics.IgnoreLayerCollision(weapon_layer, destruction_layer, false);
+        BroadcastMessage("Enable_Collider");
     }
 
     void Attack_End()
     {
         Physics.IgnoreLayerCollision(weapon_layer, destruction_layer, true);
+        BroadcastMessage("Disable_Collider");
     }
 
     void Launch_Equipped_Weapon()
