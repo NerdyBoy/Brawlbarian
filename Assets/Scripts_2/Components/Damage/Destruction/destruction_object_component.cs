@@ -20,10 +20,7 @@ public class destruction_object_component : destruction_component {
                 Rigidbody rbody = destroyed.transform.GetChild(i).gameObject.GetComponentInChildren<Rigidbody>();
                 if (null != rbody && object_rigidbody != null)
                 {
-                    //Destroy(rbody.gameObject);
                     rbody.AddExplosionForce(explosive_force, this.transform.position, explosion_radius);
-                    //rbody.gameObject.GetComponent<Collider>().enabled = false;
-                    //rbody.velocity = object_rigidbody.velocity;
                 }
             }
 

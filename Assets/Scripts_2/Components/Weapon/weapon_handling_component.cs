@@ -29,6 +29,7 @@ public class weapon_handling_component : MonoBehaviour, input_button_interface{
         source = GetComponent<AudioSource>();
         if(null != equipped_weapon)
         {
+            found_weapon = equipped_weapon;
             Equip_Weapon(equipped_weapon);
         }
     }
@@ -49,7 +50,7 @@ public class weapon_handling_component : MonoBehaviour, input_button_interface{
         {
             if(null != equipped_weapon)
             {
-                
+                this.gameObject.SendMessage("Enable_Effect");
             }
         }
     }
@@ -77,6 +78,11 @@ public class weapon_handling_component : MonoBehaviour, input_button_interface{
             Position_Weapon(_weapon);
             Ignore_Weapon_Collision(_weapon, true);
             equipped_weapon = _weapon;
+            Collider[] colliders = equipped_weapon.GetComponentsInChildren<Collider>();
+            for(int i = 0; i < colliders.Length; i++)
+            {
+                Physics.IgnoreCollision(colliders[i], this.transform.root.GetComponent<Collider>());
+            }
             SendMessage("Weapon_Equipped", true);
         }
     }
@@ -110,7 +116,11 @@ public class weapon_handling_component : MonoBehaviour, input_button_interface{
 
     private void Ignore_Weapon_Collision(weapon_component _weapon, bool _ignore_collision)
     {
-        Physics.IgnoreCollision(GetComponent<Collider>(), _weapon.gameObject.GetComponent<Collider>(), _ignore_collision);
+        Collider[] weapon_colliders = _weapon.gameObject.GetComponentsInChildren<Collider>();
+        for (int i = 0; i < weapon_colliders.Length; i++)
+        {
+            Physics.IgnoreCollision(GetComponent<Collider>(), _weapon.gameObject.GetComponent<Collider>(), _ignore_collision);
+        }
     }
 
     void Attack_Start()
@@ -120,11 +130,13 @@ public class weapon_handling_component : MonoBehaviour, input_button_interface{
             source.Play();
         } 
         Physics.IgnoreLayerCollision(weapon_layer, destruction_layer, false);
+        BroadcastMessage("Enable_Collider");
     }
 
     void Attack_End()
     {
         Physics.IgnoreLayerCollision(weapon_layer, destruction_layer, true);
+        BroadcastMessage("Disable_Collider");
     }
 
     void Launch_Equipped_Weapon()
