@@ -13,7 +13,6 @@ public class fire_spread_component : MonoBehaviour {
 
     public GameObject fire_prefab;
     BoxCollider fire_collider;
-    int health = 100;
     public float fire_spread_time;
     float spawn_distance;
     int spawn_times = 0;

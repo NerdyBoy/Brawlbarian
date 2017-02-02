@@ -10,13 +10,13 @@ public class effect_controller : MonoBehaviour {
     public float effect_time;
     public elemental_base_component[] elemental_components;
     elemental_base_component current_effect;
+    public bool enb = false;
 
 	// Use this for initialization
 	void Start () {
         //Physics.IgnoreCollision(effect_collider, FindObjectOfType<character_controller>().gameObject.GetComponent<Collider>(), true);
         effect_collider = GetComponent<BoxCollider>();
         elemental_components = GetComponents<elemental_base_component>();
-        Set_Effect_Active(true);
 	}
 
     public void Set_Effect_Active(bool _active)
@@ -43,10 +43,12 @@ public class effect_controller : MonoBehaviour {
 
     IEnumerator Toggle_Effect()
     {
+        enb = true;
         effect_collider.enabled = true;
         yield return new WaitForSeconds(effect_time);
         effect_collider.enabled = false;
         current_effect = null;
+        enb = false;
     }
 
     private void OnCollisionEnter(Collision _collision)

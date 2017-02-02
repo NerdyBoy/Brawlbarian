@@ -2,8 +2,6 @@
 using System.Collections;
 
 public class destroy_after_time : MonoBehaviour {
-    [SerializeField]
-    GameObject[] powerups;
 
     [SerializeField]
     AudioClip[] smash;
@@ -14,14 +12,6 @@ public class destroy_after_time : MonoBehaviour {
 
     private void Start()
     {
-        int power_rand = Random.Range(0, 20);
-        if(1 == power_rand)
-        {
-            if (powerups.Length > 0)
-            {
-                Instantiate(powerups[Random.Range(0, powerups.Length)], this.transform.position, Quaternion.identity);
-            }
-        }
         source = GetComponent<AudioSource>();
         if (smash.Length != 0 && null != source)
         {

@@ -11,9 +11,12 @@ public class hitting_component : MonoBehaviour {
 
     private void OnCollisionEnter(Collision _collision)
     {
-        if (false == source.isPlaying)
+        if (null != source)
         {
-            source.Play();
+            if (false == source.isPlaying)
+            {
+                source.Play();
+            }
         }
         hit_tracking_component hit_tracker = _collision.gameObject.GetComponent<hit_tracking_component>();
         if(null != hit_tracker)
