@@ -5,7 +5,7 @@ public class rage_component : MonoBehaviour {
 
     public float max_rage = 100.0f;
     public float current_rage = 0.0f;
-    public float attack_cost;
+    public float attack_cost = 100.0f;
 
     private void Start()
     {
@@ -32,7 +32,10 @@ public class rage_component : MonoBehaviour {
 
     void On_Impact()
     {
-        current_rage += 10;
+        if (current_rage < 100)
+        {
+            current_rage += 10;
+        }
         if (null != ui_rage_controller.rage_controller)
         {
             ui_rage_controller.rage_controller.Set_Current(current_rage / 100.0f);

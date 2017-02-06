@@ -12,6 +12,7 @@ public class destroy_after_time : MonoBehaviour {
 
     private void Start()
     {
+        StartCoroutine(Destroy_After_Lifetime());
         source = GetComponent<AudioSource>();
         if (smash.Length != 0 && null != source)
         {
@@ -19,6 +20,25 @@ public class destroy_after_time : MonoBehaviour {
             source.clip = smash[rand];
             source.Play();
         }
-        Destroy(this.gameObject, lifetime);
+        //Destroy(this.gameObject, lifetime);
+    }
+
+    IEnumerator Destroy_After_Lifetime()
+    {
+        yield return new WaitForSeconds(lifetime);
+        for (int i = 0; i < this.transform.childCount; i++)
+        {
+            Rigidbody rig = this.transform.GetChild(i).GetComponent<Rigidbody>();
+            Collider col = this.transform.GetChild(i).GetComponent<Collider>();
+            if(rig != null)
+            {
+                rig.isKinematic = true;
+            }
+            if(col != null)
+            {
+                col.enabled = false;
+            }
+        }
+        Destroy(this.gameObject);
     }
 }
