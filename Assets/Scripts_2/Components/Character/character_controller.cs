@@ -27,7 +27,7 @@ public class character_controller : MonoBehaviour, input_button_interface
 
     private bool can_attack = true;
 
-    int attack_counter = 2;
+    int attack_counter = 1;
     
     private void Start()
     {
@@ -64,38 +64,56 @@ public class character_controller : MonoBehaviour, input_button_interface
 
             if(action_buttons.primary_button == _action_button && action_button_states.down == _action_button_state)
             {
-                if (0 == attack_counter % 2)
+                if (attack_counter == 1)
                 {
                     attack_direction = this.transform.right;
                     character_animator.SetTrigger("swipe_right");
                     next_activation_time = current_time + activation_time_delay;
                 }
-                else
+                else if(attack_counter == 2)
                 {
                     attack_direction = -this.transform.right;
                     character_animator.SetTrigger("swipe_left");
                     next_activation_time = current_time + activation_time_delay;
+                    attack_counter = 0;
                 }
                 attack_counter++;
                 //Move_Into_Range();
                 //attack down
             }
-            else if(action_buttons.flip_button == _action_button && action_button_states.down == _action_button_state)
+            else if(_action_button == action_buttons.secondary_button && _action_button_state == action_button_states.down)
+            {
+                RaycastHit hit_object = Get_Object();
+                if (null != hit_object.collider)
+                {
+                    Flick_Up_Object(hit_object.collider.gameObject);
+                }
+            }
+            /*else if(action_buttons.flip_button == _action_button && action_button_states.down == _action_button_state)
             {
                 RaycastHit hit_object = Get_Object();
                 if(null != hit_object.collider)
                 {
                     StartCoroutine(Lunge_Flip(hit_object));
                 }
-                /*attack_direction = this.transform.right;
-                character_animator.SetTrigger("thrust");
-                next_activation_time = current_time + activation_time_delay;
-                Move_Into_Range();*/
-                //attack forward
-            }
-            else if(action_buttons.special_button == _action_button && action_button_states.down == _action_button_state)
+                //attack_direction = this.transform.right;
+                //character_animator.SetTrigger("thrust");
+                //next_activation_time = current_time + activation_time_delay;
+                //Move_Into_Range();
+            }*/
+            else if(action_buttons.use_button == _action_button && action_button_states.down == _action_button_state)
             {
-                SendMessage("Elemental_Attack");
+                //SendMessage("Elemental_Attack");
+                BroadcastMessage("Activate_Special_Attack");
+            }
+
+            if(_action_button == action_buttons.flip_button && _action_button_state == action_button_states.down)
+            {
+                time_controller_component.time_controller.Warp_Time(0.025f, 0.55f);
+            }
+            else if(_action_button == action_buttons.flip_button && _action_button_state == action_button_states.up)
+            {
+                time_controller_component.time_controller.Warp_Time(1.0f, 300f);
             }
         }
     }
@@ -160,6 +178,11 @@ public class character_controller : MonoBehaviour, input_button_interface
         Enable_Collision_And_Rigidbody();
     }
 
+    void Flick_Up_Object(GameObject _object)
+    {
+        _object.GetComponent<Rigidbody>().AddForce(Vector3.up * 5, ForceMode.Impulse);
+    }
+
     IEnumerator Lunge_Flip(RaycastHit _hit_object)
     {
         Vector3 target_position = _hit_object.point + (-this.transform.forward * 1.15f);
@@ -179,7 +202,6 @@ public class character_controller : MonoBehaviour, input_button_interface
 
     IEnumerator Flip_Object(RaycastHit _hit_object)
     {
-        print(Time.fixedDeltaTime);
         Time.timeScale = 0.25f;
         Time.fixedDeltaTime = 0.005f;
         attack_direction = this.transform.up;

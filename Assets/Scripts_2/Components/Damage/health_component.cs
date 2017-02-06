@@ -3,10 +3,7 @@ using UnityEngine.EventSystems;
 using System.Collections;
 
 public class health_component : MonoBehaviour, health_interface {
-
-    private static readonly ExecuteEvents.EventFunction<destruction_interface> s_on_health_is_zero
-        = delegate (destruction_interface _handler, BaseEventData _data) { };
-
+    
     [SerializeField]
     private float health_value = 0;
 
@@ -14,9 +11,9 @@ public class health_component : MonoBehaviour, health_interface {
     {
         health_value += _amount;
 
-        if(0.0f >= health_value)
+        if (health_value <= 0.0f)
         {
-            ExecuteEvents.Execute<destruction_interface>(this.gameObject, null, (destruction_interface _handler, BaseEventData _data) => _handler.On_Health_Is_Zero());
+            this.gameObject.SendMessage("On_Health_Is_Zero", SendMessageOptions.DontRequireReceiver);
         }
         else
         {

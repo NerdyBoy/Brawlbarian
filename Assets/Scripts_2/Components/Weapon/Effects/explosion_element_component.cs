@@ -14,8 +14,8 @@ public class explosion_element_component : elemental_base_component {
 
     void Explode()
     {
+        print("BOOM");
         RaycastHit[] hits = Physics.SphereCastAll(this.transform.position, radius, this.transform.forward);
-        print(hits.Length);
         for(int i = 0; i < hits.Length; i++)
         {
             if(null != hits[i].collider)
