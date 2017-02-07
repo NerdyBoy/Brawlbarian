@@ -10,6 +10,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Playable_Scenes/Level_01.unity
   - enabled: 1
+    path: Assets/Scenes/Playable_Scenes/Level_03.unity
+  - enabled: 1
     path: Assets/Scenes/Playable_Scenes/Level_One.unity
   - enabled: 1
     path: Assets/Scenes/Playable_Scenes/Level_Two.unity

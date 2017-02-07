@@ -76,7 +76,7 @@ GameObject:
   - 23: {fileID: 23000011733465376}
   - 95: {fileID: 95000011443988820}
   - 65: {fileID: 65000012261970296}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FloorCeiling_FloortileSimple_Tavern_AB (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

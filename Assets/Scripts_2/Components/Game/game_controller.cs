@@ -5,6 +5,8 @@ using System.Collections;
 [RequireComponent(typeof(level_management))]
 public class game_controller : MonoBehaviour {
 
+    
+
     [SerializeField]
     private GameObject furniture_container;
 
@@ -24,9 +26,33 @@ public class game_controller : MonoBehaviour {
         state_controller = this.gameObject.AddComponent<game_state_controller>();
         Position_Players();
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    private void OnApplicationPause(bool pause)
+    {
+        if(pause == false)
+        {
+            cursor_display.Disable_Cursor();
+        }
+    }
+
+    private void OnLevelWasLoaded(int level)
+    {
+        if (level != 0 && level != 5)
+        {
+            cursor_display.Disable_Cursor();
+        }
+    }
+
+    private void OnApplicationFocus(bool focus)
+    {
+        if(focus == true)
+        {
+            cursor_display.Disable_Cursor();
+        }
+    }
+
+    // Update is called once per frame
+    void Update () {
         switch (state_controller.Get_Current_State())
         {
             case game_state_controller.game_states.round_start:

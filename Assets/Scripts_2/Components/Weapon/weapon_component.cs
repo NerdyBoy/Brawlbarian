@@ -21,13 +21,11 @@ public class weapon_component : MonoBehaviour {
 
     void Enable_Collider()
     {
-        print("ATTACK START");
         weapon_collider.isTrigger = false;
     }
 
     void Disable_Collider()
     {
-        print("ATTACK END");
         weapon_collider.isTrigger = true;
     }
 
