@@ -23,7 +23,7 @@ GameObject:
   - 23: {fileID: 23000014283295516}
   - 95: {fileID: 95000010532681334}
   - 65: {fileID: 65000010118015476}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall_HBeam_Tavern_AB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,10 +36,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012265026994}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.08, y: -0.9, z: -16.92}
-  m_LocalScale: {x: 1.4186022, y: 1.8470984, z: 1.4186022}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -5.2240977, y: -5.6966095, z: -23.724453}
+  m_LocalScale: {x: 1.4186032, y: 1.8470984, z: 1.4186032}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -87,7 +87,7 @@ BoxCollider:
   m_GameObject: {fileID: 1000012265026994}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 3.8178086, y: 0.33121008, z: 0.26713192}
   m_Center: {x: -2.1147578, y: 0, z: -0.000000007450581}

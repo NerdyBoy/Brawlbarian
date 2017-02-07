@@ -38,7 +38,7 @@ GameObject:
   - 23: {fileID: 23000010651302142}
   - 95: {fileID: 95000013250722602}
   - 65: {fileID: 65000013684663520}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FloorCeiling_FloortileSimple_Tavern_AB (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011192947926}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.360098, y: -0.2546091, z: -19.834454}
+  m_LocalPosition: {x: -6.360098, y: -0.2546091, z: -19.834454}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:

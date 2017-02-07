@@ -23,7 +23,8 @@ GameObject:
   - 23: {fileID: 23000010902319158}
   - 95: {fileID: 95000014269171552}
   - 65: {fileID: 65000012144384870}
-  m_Layer: 0
+  - 208: {fileID: 208000014003522416}
+  m_Layer: 9
   m_Name: Wall_PillarTall_Tavern_AB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,8 +37,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013105815980}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.111, y: -4.56, z: 2.531}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.255098, y: -5.6076093, z: -17.458454}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -108,3 +109,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!208 &208000014003522416
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013105815980}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.372, y: 2.8500001, z: 0.372}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: 2.8500001, z: 0}
+  m_TimeToStationary: 0.5
