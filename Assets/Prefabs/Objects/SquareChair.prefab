@@ -445,6 +445,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1000011985592124
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000011198714532}
+  m_Layer: 13
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1000012044280144
 GameObject:
   m_ObjectHideFlags: 1
@@ -957,14 +972,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011900019668}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.9865646, y: 0.0978086, z: -6.039119}
+  m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.8230019, y: 0, z: -0.75789636}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4000011078067518}
   - {fileID: 4000014154944076}
   - {fileID: 4000011737022794}
+  - {fileID: 4000011198714532}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &4000010234881960
@@ -1174,6 +1190,19 @@ Transform:
   - {fileID: 4000011942959936}
   m_Father: {fileID: 4000010212745830}
   m_RootOrder: 0
+--- !u!4 &4000011198714532
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011985592124}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000010212745830}
+  m_RootOrder: 3
 --- !u!4 &4000011317254700
 Transform:
   m_ObjectHideFlags: 1
@@ -1807,8 +1836,8 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011900019668}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
+  m_Mass: 20
+  m_Drag: 1
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1926,8 +1955,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   replacement_object: {fileID: 1000013187879834, guid: aab068c5147048b4db71af19c603459d,
     type: 2}
-  explosive_force: 1500
-  explosion_radius: 1
+  explosive_force: 50
+  explosion_radius: 0.25
 --- !u!114 &114000013907746566
 MonoBehaviour:
   m_ObjectHideFlags: 1
