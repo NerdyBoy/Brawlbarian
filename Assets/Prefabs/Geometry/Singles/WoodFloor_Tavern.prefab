@@ -23,7 +23,7 @@ GameObject:
   - 23: {fileID: 23000013372008060}
   - 95: {fileID: 95000010064923128}
   - 65: {fileID: 65000013493624218}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: WoodFloor_Tavern
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,10 +36,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010636216732}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.8, y: 5.7, z: 27.83}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.1999016, y: -6.5208044, z: 16.515547}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 179.99998, z: 179.99998}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0

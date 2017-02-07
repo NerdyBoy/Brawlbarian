@@ -37,12 +37,12 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.37356448, g: 0.3811204, b: 0.35887685, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 7
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -3299,6 +3299,21 @@ Prefab:
     - target: {fileID: 1000011494858598, guid: 80c16caf7cc8e014d8aeec2bc621460f, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012400153032, guid: 80c16caf7cc8e014d8aeec2bc621460f,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012400153032, guid: 80c16caf7cc8e014d8aeec2bc621460f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -10.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012400153032, guid: 80c16caf7cc8e014d8aeec2bc621460f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.06
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 80c16caf7cc8e014d8aeec2bc621460f, type: 2}
