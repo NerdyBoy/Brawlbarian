@@ -1470,11 +1470,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69d57c4ed785a8f4199a34726accd926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerups:
-  - {fileID: 1000010877518352, guid: 67f4007e46d936344b4779e6694aa6a1, type: 2}
-  - {fileID: 1000013674319394, guid: a2c213b8bc5a02044a0b4bb72cd743b6, type: 2}
-  - {fileID: 1000010477595682, guid: c5d88c44fb3c3204888c3bae5c2854e6, type: 2}
-  - {fileID: 1000013084638948, guid: 9fba9e85f278cc94d9b951f099b35e38, type: 2}
   smash:
   - {fileID: 8300000, guid: 12e9f230cab49724f834849452e22c6b, type: 3}
   - {fileID: 8300000, guid: 014cc36c0d851bc4fac9a8c5a9dca65d, type: 3}

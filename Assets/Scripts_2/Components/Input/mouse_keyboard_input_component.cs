@@ -40,6 +40,10 @@ public class mouse_keyboard_input_component : input_component {
         {
             On_Button(action_buttons.flip_button, action_button_states.down);
         }
+        if (Input.GetKeyUp(KeyCode.F))
+        {
+            On_Button(action_buttons.flip_button, action_button_states.up);
+        }
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {

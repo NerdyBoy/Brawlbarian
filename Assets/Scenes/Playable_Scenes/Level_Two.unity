@@ -4408,7 +4408,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 43
+  m_RootOrder: 44
 --- !u!114 &716457628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4651,7 +4651,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013266007020, guid: 06356e1f3fcc9174dac4dc2313b91b78, type: 2}
       propertyPath: m_RootOrder
-      value: 44
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 1000013004276908, guid: 06356e1f3fcc9174dac4dc2313b91b78, type: 2}
       propertyPath: m_Name
@@ -6896,7 +6896,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013398324618, guid: 56faa4d38be8b4f47bf28df0f0d00d45, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1000011704941788, guid: 56faa4d38be8b4f47bf28df0f0d00d45, type: 2}
       propertyPath: m_Name
@@ -7940,7 +7940,7 @@ Transform:
   - {fileID: 477793976}
   - {fileID: 862542305}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1001 &1232433114
 Prefab:
   m_ObjectHideFlags: 0

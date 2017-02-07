@@ -8,6 +8,7 @@ public class fire_spread_component : MonoBehaviour {
     public float life_time;
     public GameObject origin;
     public float distance_from_start_origin;
+    public float max_range = 5;
     Vector3[] spread_directions;
     Vector3 spread_direction;
 
@@ -96,7 +97,7 @@ public class fire_spread_component : MonoBehaviour {
         GameObject fire = Instantiate(fire_prefab, instantiation_point + (_direction * spawn_distance), Quaternion.identity) as GameObject;
         if(null != parent_object)
         {
-            fire.transform.parent = parent_object.transform;
+            //fire.transform.parent = parent_object.transform;
         }
         fire_spread_component comp = fire.GetComponent<fire_spread_component>();
         if(null != origin)
@@ -116,7 +117,7 @@ public class fire_spread_component : MonoBehaviour {
 
     bool In_Range()
     {
-        if(5 > distance_from_start_origin)
+        if(max_range > distance_from_start_origin)
         {
             return true;
         }

@@ -56,7 +56,6 @@ GameObject:
   - 23: {fileID: 23000013170281544}
   - 65: {fileID: 65000010383819080}
   - 54: {fileID: 54000010674076412}
-  - 114: {fileID: 114000012379260482}
   - 114: {fileID: 114000010384394956}
   - 114: {fileID: 114000011993405660}
   - 114: {fileID: 114000012525634904}
@@ -64,6 +63,7 @@ GameObject:
   - 114: {fileID: 114000012439436006}
   - 114: {fileID: 114000011978025494}
   - 114: {fileID: 114000014246176478}
+  - 114: {fileID: 114000012780597550}
   m_Layer: 13
   m_Name: destructible_light
   m_TagString: Untagged
@@ -147,10 +147,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011430891008}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 4.51, y: -0.30456245, z: -4.015}
-  m_LocalScale: {x: 1.0000014, y: 1, z: 1.0000014}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.09229578, y: 0.7010574, z: -0.09229578, w: 0.7010575}
+  m_LocalPosition: {x: 9.591992, y: -2.7917576, z: 21.61939}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 14.9470005, y: 450, z: 0}
   m_Children:
   - {fileID: 4000010035097028}
   m_Father: {fileID: 0}
@@ -162,7 +162,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010017806756}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.042, z: 0.29}
+  m_LocalPosition: {x: 0.05, y: 1.71, z: 0.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -250,7 +250,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011430891008}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -303,17 +303,17 @@ Light:
   m_Enabled: 1
   serializedVersion: 7
   m_Type: 2
-  m_Color: {r: 0.53676474, g: 0.2814476, b: 0.007893607, a: 1}
-  m_Intensity: 1
-  m_Range: 10
+  m_Color: {r: 0.9485294, g: 0.6159443, b: 0.16041304, a: 1}
+  m_Intensity: 2.47
+  m_Range: 6.97
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
+    m_Strength: 0.73
+    m_Bias: 0
     m_NormalBias: 0.4
     m_NearPlane: 0.2
   m_Cookie: {fileID: 0}
@@ -325,7 +325,7 @@ Light:
     m_Bits: 4294967295
   m_Lightmapping: 1
   m_AreaSize: {x: 1, y: 0}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 3.05
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!114 &114000010384394956
@@ -339,7 +339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc85eec5375d1d842a5daa4184cd57d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health_value: 100
+  health_value: 4000
 --- !u!114 &114000011978025494
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -351,7 +351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f1c4b81b15924e4cb459d5b450a5ced, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage_amount: 0
+  damage_amount: 5
 --- !u!114 &114000011993405660
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -363,20 +363,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d86681f1d722f241aa57be50b036df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114000012379260482
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011430891008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd22cbf6b897d1843b93d4c3d1628ace, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  replacement_object: {fileID: 0}
-  explosive_force: 0
-  explosion_radius: 0
 --- !u!114 &114000012439436006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -400,6 +386,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9820a528b8d05b49ba53b36807751a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114000012780597550
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011430891008}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d33288df0b83f4f847c54993a86e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light_replacement: {fileID: 0}
+  fire_spread_component: {fileID: 1000011953099610, guid: 7e3798005555eb443a7aef0c8f101e06,
+    type: 2}
 --- !u!114 &114000013725028794
 MonoBehaviour:
   m_ObjectHideFlags: 1

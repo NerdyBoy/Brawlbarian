@@ -11,8 +11,8 @@ public class fire_element_component : elemental_base_component {
         if(true == _collision.collider.CompareTag("flammable"))
         {
             GameObject fire = Instantiate(fire_spread_prefab, Vector3.zero, Quaternion.identity) as GameObject;
-            fire.transform.parent = _collision.collider.transform;
-            fire.transform.localPosition = Vector3.zero;
+            //fire.transform.parent = _collision.collider.transform;
+            //fire.transform.localPosition = Vector3.zero;
         }
     }
 }
