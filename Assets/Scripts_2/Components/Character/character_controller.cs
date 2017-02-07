@@ -28,11 +28,14 @@ public class character_controller : MonoBehaviour, input_button_interface
     private bool can_attack = true;
 
     int attack_counter = 1;
+
+    rage_component rage;
     
     private void Start()
     {
         DontDestroyOnLoad(this.gameObject);
         SceneManager.sceneLoaded += OnSceneLoaded;
+        rage = GetComponent<rage_component>();
         OnSceneLoaded(SceneManager.GetActiveScene(), LoadSceneMode.Single);
     }
 
@@ -79,7 +82,8 @@ public class character_controller : MonoBehaviour, input_button_interface
                 }
                 attack_counter++;
                 //Move_Into_Range();
-                //attack down
+                //attack downs
+                
             }
             else if(_action_button == action_buttons.secondary_button && _action_button_state == action_button_states.down)
             {
@@ -104,7 +108,10 @@ public class character_controller : MonoBehaviour, input_button_interface
             else if(action_buttons.use_button == _action_button && action_button_states.down == _action_button_state)
             {
                 //SendMessage("Elemental_Attack");
-                BroadcastMessage("Activate_Special_Attack");
+                if (rage.current_rage >= rage.attack_cost)
+                {
+                    BroadcastMessage("Activate_Special_Attack");
+                }
             }
 
             if(_action_button == action_buttons.flip_button && _action_button_state == action_button_states.down)

@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(health_component))]
 public class destruction_component : MonoBehaviour, destruction_interface {
 
     private void Update()

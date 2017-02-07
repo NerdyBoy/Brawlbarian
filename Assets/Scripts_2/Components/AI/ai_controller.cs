@@ -1,48 +1,93 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(NavMeshAgent))]
-public class ai_controller : MonoBehaviour {
+public class ai_controller : MonoBehaviour
+{
 
     public float ai_speed;
+    public float initial_attack_delay;
     public float ai_attack_delay;
-    public float ai_attack_distance;
-    public float ai_attack_cooldown;
-    public AnimationCurve ai_speed_curve;
+    private bool can_attack = false;
+    private bool should_attack = false;
     character_controller player_character;
     NavMeshAgent navmesh_agent;
-    private bool can_attack = true;
+    Animator ai_animator;
+    ai_weapon weapon;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         player_character = FindObjectOfType<character_controller>();
         navmesh_agent = GetComponent<NavMeshAgent>();
         navmesh_agent.speed = ai_speed;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        navmesh_agent.SetDestination(player_character.transform.position);
-        navmesh_agent.speed = navmesh_agent.remainingDistance;
-        print(navmesh_agent.remainingDistance);
-        if((navmesh_agent.remainingDistance < ai_attack_distance))
+        ai_animator = GetComponent<Animator>();
+        weapon = GetComponentInChildren<ai_weapon>();
+        StartCoroutine(Initial_Attack_Delay_Wait());
+        navmesh_agent.speed = 2f;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if(player_character == null)
         {
-            print("ATTACK");
-            StartCoroutine(AI_Attack());
+            player_character = FindObjectOfType<character_controller>();
         }
-	}
+        if (player_character != null)
+        {
+            Vector3 ai_to_player = player_character.transform.position - this.transform.position;
+            navmesh_agent.SetDestination(player_character.transform.position + -(ai_to_player.normalized * 2));
+            //navmesh_agent.speed = 3.5f;
+        }
+    }
 
     IEnumerator AI_Attack()
     {
-        can_attack = true;
-        yield return new WaitForSeconds(ai_attack_delay);
-        if(navmesh_agent.remainingDistance < ai_attack_distance)
+        while (should_attack == true)
         {
-            print("ATTTAAAACCCCKKKK");
-            player_character.SendMessage("On_Modify_Health", -100);
+            
+            ai_animator.SetTrigger("attack");
+            yield return new WaitForSeconds(ai_attack_delay);
         }
-        can_attack = false;
-        yield return new WaitForSeconds(ai_attack_cooldown);
+    }
 
+    void Attack_Start()
+    {
+        if (can_attack == true)
+        {
+            weapon.attacking = true;
+        }
+    }
+
+    void Attack_End()
+    {
+        weapon.attacking = false;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("player"))
+        {
+            should_attack = true;
+            if (can_attack == true)
+            {
+                StartCoroutine(AI_Attack());
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("player"))
+        {
+            should_attack = false;
+            StopCoroutine(AI_Attack());
+        }
+    }
+
+    IEnumerator Initial_Attack_Delay_Wait()
+    {
+        yield return new WaitForSeconds(initial_attack_delay);
+        can_attack = true;
     }
 }
