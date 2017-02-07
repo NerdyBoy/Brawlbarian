@@ -147,10 +147,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011430891008}
-  m_LocalRotation: {x: -0, y: -0.0000004768371, z: -0, w: 1}
-  m_LocalPosition: {x: 21.692, y: 7.519, z: 23.45}
+  m_LocalRotation: {x: 0.09229578, y: 0.7010574, z: -0.09229578, w: 0.7010575}
+  m_LocalPosition: {x: 9.591992, y: -2.7917576, z: 21.61939}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 360, z: 0}
+  m_LocalEulerAnglesHint: {x: 14.9470005, y: 450, z: 0}
   m_Children:
   - {fileID: 4000010035097028}
   m_Father: {fileID: 0}
@@ -250,7 +250,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011430891008}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -339,7 +339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc85eec5375d1d842a5daa4184cd57d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health_value: 1
+  health_value: 4000
 --- !u!114 &114000011978025494
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -351,7 +351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f1c4b81b15924e4cb459d5b450a5ced, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage_amount: 0
+  damage_amount: 5
 --- !u!114 &114000011993405660
 MonoBehaviour:
   m_ObjectHideFlags: 1
