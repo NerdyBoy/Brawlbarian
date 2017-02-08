@@ -34,19 +34,23 @@ public class character_controller : MonoBehaviour, input_button_interface
     private void Start()
     {
         DontDestroyOnLoad(this.gameObject);
-        SceneManager.sceneLoaded += OnSceneLoaded;
         rage = GetComponent<rage_component>();
-        OnSceneLoaded(SceneManager.GetActiveScene(), LoadSceneMode.Single);
     }
 
-    private void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
+    private void OnLevelWasLoaded(int level)
     {
         GameObject spawn = GameObject.FindGameObjectWithTag("spawn_point");
-        if(null != spawn)
+        if (null != spawn)
         {
             this.transform.position = spawn.transform.position;
             this.transform.rotation = spawn.transform.rotation;
         }
+        else
+        {
+            this.transform.position = Vector3.zero;
+        }
+
+        rage_component.global_rage_component.current_rage = 0.0f;
     }
 
     void Weapon_Equipped(bool _weapon_equipped)
