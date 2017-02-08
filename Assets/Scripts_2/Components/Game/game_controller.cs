@@ -23,7 +23,7 @@ public class game_controller : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         level_manager = GetComponent<level_management>();
-        state_controller = this.gameObject.AddComponent<game_state_controller>();
+        state_controller = GetComponent<game_state_controller>();
         Position_Players();
 	}
 
@@ -77,10 +77,10 @@ public class game_controller : MonoBehaviour {
 
     void In_Play_Update()
     {
-        if (null != furniture_container && furniture_container.transform.childCount <= 0)
+        /*if (null != furniture_container && furniture_container.transform.childCount <= 0)
         {
             game_state_controller.current_state_controller.Switch_State(game_state_controller.game_states.round_end);
-        }
+        }*/
     }
 
     void Paused_Update()

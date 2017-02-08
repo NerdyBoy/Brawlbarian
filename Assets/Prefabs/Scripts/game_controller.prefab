@@ -23,6 +23,7 @@ GameObject:
   - 114: {fileID: 114000012729544670}
   - 114: {fileID: 114000011031362864}
   - 114: {fileID: 114000012841948764}
+  - 114: {fileID: 114000013979458454}
   m_Layer: 0
   m_Name: game_controller
   m_TagString: Untagged
@@ -37,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012337916292}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.81, y: 1.3653564, z: -2.432}
+  m_LocalPosition: {x: -1.3891602, y: 1.3653564, z: -0.29699707}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -49,7 +50,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012337916292}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff6ac8cfc3167dd438b7f91e1deadcb1, type: 3}
   m_Name: 
@@ -66,8 +67,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   furniture_container: {fileID: 0}
-  round_start_coundown_time: 2
-  time_in_seconds: 60
+  round_start_coundown_time: 1
+  time_in_seconds: 600
 --- !u!114 &114000012729544670
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -88,5 +89,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9c0c978749e0a16469da97af837568f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114000013979458454
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012337916292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 140394a4f62dc334998d8379e999003b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
