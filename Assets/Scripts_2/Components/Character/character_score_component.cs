@@ -11,7 +11,7 @@ public class character_score_component : MonoBehaviour, character_score_interfac
     public void Modify_Score(int _amount)
     {
         score += _amount;
-        BroadcastMessage("Update_Score", score);
+        BroadcastMessage("Update_Score", score, SendMessageOptions.DontRequireReceiver);
     }
 
     public int Get_Score()

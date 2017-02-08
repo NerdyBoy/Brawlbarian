@@ -225,6 +225,7 @@ GameObject:
   - 4: {fileID: 4000013086219128}
   - 95: {fileID: 95000014271454196}
   - 65: {fileID: 65000010087027910}
+  - 208: {fileID: 208000010401978390}
   m_Layer: 0
   m_Name: Furniture_Bar_Tavern_DR_04fbx
   m_TagString: Untagged
@@ -1477,3 +1478,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!208 &208000010401978390
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012764205044}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.858813, y: 0.5333055, z: 5.473675}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.0000003539007, y: -0.5217845, z: 0.000005074817}
+  m_TimeToStationary: 0.5
