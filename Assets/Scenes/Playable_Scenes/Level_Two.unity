@@ -2828,7 +2828,7 @@ Light:
   serializedVersion: 7
   m_Type: 1
   m_Color: {r: 1, g: 0.7342799, b: 0.03676468, a: 1}
-  m_Intensity: 0.55
+  m_Intensity: 0.36
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -4992,7 +4992,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
 --- !u!114 &716457628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9208,7 +9208,7 @@ Transform:
   - {fileID: 477793976}
   - {fileID: 1545390337}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
 --- !u!1001 &1232433114
 Prefab:
   m_ObjectHideFlags: 0
