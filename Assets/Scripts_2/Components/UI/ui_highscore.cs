@@ -20,6 +20,10 @@ public class ui_highscore : MonoBehaviour {
         {
             highscore = PlayerPrefs.GetInt("highscore");
         }
+        else
+        {
+            PlayerPrefs.SetInt("highscore", 15000);
+        }
         StartCoroutine(Find_Player());
         highscore_text.text = "Highscore: " + highscore;
 	}
