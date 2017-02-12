@@ -21,7 +21,6 @@ public class ai_controller : MonoBehaviour
         navmesh_agent = GetComponent<NavMeshAgent>();
         navmesh_agent.speed = ai_speed;
         ai_animator = GetComponent<Animator>();
-        ai_animator.SetTrigger("hit");
         weapon = GetComponentInChildren<ai_weapon>();
         StartCoroutine(Initial_Attack_Delay_Wait());
         navmesh_agent.speed = 2f;
@@ -75,12 +74,6 @@ public class ai_controller : MonoBehaviour
                 StartCoroutine(AI_Attack());
             }
         }
-        if(other.gameObject.CompareTag("weapon_hit_point"))
-        {
-            print("BLAH");
-            ai_animator.SetTrigger("hit");
-            StartCoroutine(Hit());
-        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -96,14 +89,5 @@ public class ai_controller : MonoBehaviour
     {
         yield return new WaitForSeconds(initial_attack_delay);
         can_attack = true;
-    }
-
-    IEnumerator Hit()
-    {
-        ai_animator.SetTrigger("Hit");
-        float start_speed = navmesh_agent.speed;
-        navmesh_agent.speed = 0;
-        yield return new WaitForSeconds(1);
-        navmesh_agent.speed = start_speed;
     }
 }
