@@ -48,6 +48,11 @@ GameObject:
   - 114: {fileID: 114000010301199832}
   - 114: {fileID: 114000014256106010}
   - 114: {fileID: 114000010247793426}
+<<<<<<< HEAD
+  - 65: {fileID: 65000012709335066}
+  - 65: {fileID: 65000013521132140}
+=======
+>>>>>>> origin/master
   m_Layer: 0
   m_Name: WeaponRack_PropFloor
   m_TagString: Untagged
@@ -74,10 +79,17 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011036256598}
+<<<<<<< HEAD
+  m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -1.031, y: -6.5199842, z: 25.698}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 0}
+=======
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 19.079418, y: 5.704625, z: 40.555923}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> origin/master
   m_Children:
   - {fileID: 4000010975682908}
   m_Father: {fileID: 0}
@@ -125,7 +137,11 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011036256598}
   serializedVersion: 2
+<<<<<<< HEAD
+  m_Mass: 100
+=======
   m_Mass: 50
+>>>>>>> origin/master
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -143,8 +159,37 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
+<<<<<<< HEAD
+  m_Size: {x: 2.0904312, y: 1.66639, z: 0.22928597}
+  m_Center: {x: 0.028360367, y: 0.7872038, z: -0.31015015}
+--- !u!65 &65000012709335066
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011036256598}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9145508, y: 0.55229187, z: 0.63365006}
+  m_Center: {x: -0.0029888153, y: 0.22385406, z: 0.18317795}
+--- !u!65 &65000013521132140
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011036256598}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.28242058, y: 2.8134766, z: 0.22928596}
+  m_Center: {x: 0.21053886, y: 1.3607473, z: -0.31015015}
+=======
   m_Size: {x: 2.0904312, y: 1.769211, z: 1}
   m_Center: {x: 0.028360367, y: 0.73579264, z: 0}
+>>>>>>> origin/master
 --- !u!95 &95000013707025812
 Animator:
   serializedVersion: 3
@@ -246,7 +291,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc85eec5375d1d842a5daa4184cd57d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  health_value: 50
+=======
   health_value: 200
+>>>>>>> origin/master
 --- !u!114 &114000014003938390
 MonoBehaviour:
   m_ObjectHideFlags: 1
