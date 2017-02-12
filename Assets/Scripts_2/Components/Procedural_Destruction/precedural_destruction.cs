@@ -25,12 +25,14 @@ public class precedural_destruction : MonoBehaviour {
 
     List<int> Get_All_Triangles_On_Side(Mesh _object_mesh, GameObject _center_point)
     {
+        List<int> indexes_on_side = new List<int>();
         int[] triangles = _object_mesh.triangles;
-        for(int i = 0; i < triangles.Length; i+=3)
+        for (int i = 0; i < triangles.Length; i += 3)
         {
             bool on_side = true;
             //do check
-            
+        }
+        return indexes_on_side;
     }
 
     GameObject Create_Center_Point(Vector3 _position)
