@@ -48,7 +48,7 @@ Material:
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: 0f7b8e346104cbc4c808c4c7278e6288, type: 3}
+        m_Texture: {fileID: 2800000, guid: 268771fd24eacb1428e899fd0f09b5a7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -60,7 +60,7 @@ Material:
     - first:
         name: _OcclusionMap
       second:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 432f2bea6c2962741aab21ead18084a2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -87,19 +87,19 @@ Material:
       second: 1
     - first:
         name: _Glossiness
-      second: 0.425
+      second: 0.092
     - first:
         name: _GlossyReflections
       second: 1
     - first:
         name: _Metallic
-      second: 0
+      second: 0.127
     - first:
         name: _Mode
       second: 0
     - first:
         name: _OcclusionStrength
-      second: 1
+      second: 0.279
     - first:
         name: _Parallax
       second: 0.02

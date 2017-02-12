@@ -835,6 +835,8 @@ MonoBehaviour:
     type: 2}
   explosive_force: 50
   explosion_radius: 0.25
+  particle_emitter_prefab: {fileID: 1000010783320022, guid: 64547c327ba23754cbb39591c9017092,
+    type: 2}
 --- !u!114 &114000013336276814
 MonoBehaviour:
   m_ObjectHideFlags: 1
