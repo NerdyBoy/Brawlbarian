@@ -1,40 +1,32 @@
 fileFormatVersion: 2
-guid: 13f96e9d456175640a67c43853876de1
-timeCreated: 1479300919
+guid: 747908ebc28ab2444b4dd6cdf7f9b808
+timeCreated: 1486655739
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
-    100002: pCylinder22
-    100004: polySurface286
-    100006: polySurface287
-    100008: polySurface288
-    100010: polySurface289
-    100012: polySurface289 1
-    100014: transform17
-    100016: transform18
-    100018: transform19
-    100020: transform20
-    100022: transform21
+    100002: Shelves:pasted__polySurface995
+    100004: Shelves:pasted__polySurface996
+    100006: Shelves:polySurface1007
+    100008: Shelves:polySurface994
+    100010: Shelves:transform1
+    100012: Shelves:transform2
+    100014: Shelves:transform3
     400000: //RootNode
-    400002: pCylinder22
-    400004: polySurface286
-    400006: polySurface287
-    400008: polySurface288
-    400010: polySurface289
-    400012: polySurface289 1
-    400014: transform17
-    400016: transform18
-    400018: transform19
-    400020: transform20
-    400022: transform21
-    2300000: //RootNode
-    2300002: polySurface289
-    3300000: //RootNode
-    3300002: polySurface289
-    4300000: pCylinder22
-    4300002: polySurface289
+    400002: Shelves:pasted__polySurface995
+    400004: Shelves:pasted__polySurface996
+    400006: Shelves:polySurface1007
+    400008: Shelves:polySurface994
+    400010: Shelves:transform1
+    400012: Shelves:transform2
+    400014: Shelves:transform3
+    2300000: Shelves:polySurface1007
+    2300002: //RootNode
+    3300000: Shelves:polySurface1007
+    3300002: //RootNode
+    4300000: Shelves:polySurface1007
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -93,7 +85,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

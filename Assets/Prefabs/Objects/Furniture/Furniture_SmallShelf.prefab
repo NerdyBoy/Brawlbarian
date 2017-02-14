@@ -9,47 +9,45 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1000013105815980}
+  m_RootGameObject: {fileID: 1000011320073560}
   m_IsPrefabParent: 1
---- !u!1 &1000013105815980
+--- !u!1 &1000011320073560
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 4000012339605608}
-  - 33: {fileID: 33000010866825112}
-  - 23: {fileID: 23000010902319158}
-  - 95: {fileID: 95000014269171552}
-  - 65: {fileID: 65000012144384870}
-  - 208: {fileID: 208000014003522416}
-  m_Layer: 9
-  m_Name: Wall_PillarTall_Tavern_AB
+  - 4: {fileID: 4000012111860998}
+  - 33: {fileID: 33000013000136818}
+  - 23: {fileID: 23000013426207538}
+  - 95: {fileID: 95000011461952610}
+  m_Layer: 0
+  m_Name: Furniture_SmallShelf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4000012339605608
+--- !u!4 &4000012111860998
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013105815980}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.6590977, y: -6.5206094, z: 19.515547}
+  m_GameObject: {fileID: 1000011320073560}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: -0.028026734}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!23 &23000010902319158
+--- !u!23 &23000013426207538
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013105815980}
+  m_GameObject: {fileID: 1000011320073560}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -57,7 +55,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: e97f0ae2d71bdce459aa685ccccab9b9, type: 2}
+  - {fileID: 2100000, guid: 33b3070eb31310243bf7b4d2e51e2d40, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -73,34 +71,22 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &33000010866825112
+--- !u!33 &33000013000136818
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013105815980}
-  m_Mesh: {fileID: 4300000, guid: 724de06def640bf489dd235120c8fd1e, type: 3}
---- !u!65 &65000012144384870
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013105815980}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.66819286, y: 5.699437, z: 0.6753384}
-  m_Center: {x: -0.019690514, y: 2.8497186, z: 0.00020980835}
---- !u!95 &95000014269171552
+  m_GameObject: {fileID: 1000011320073560}
+  m_Mesh: {fileID: 4300000, guid: 747908ebc28ab2444b4dd6cdf7f9b808, type: 3}
+--- !u!95 &95000011461952610
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013105815980}
+  m_GameObject: {fileID: 1000011320073560}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 724de06def640bf489dd235120c8fd1e, type: 3}
+  m_Avatar: {fileID: 9000000, guid: 747908ebc28ab2444b4dd6cdf7f9b808, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -109,18 +95,3 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!208 &208000014003522416
-NavMeshObstacle:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013105815980}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.372, y: 2.8500001, z: 0.372}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 0
-  m_Center: {x: 0, y: 2.8500001, z: 0}
-  m_TimeToStationary: 0.5
