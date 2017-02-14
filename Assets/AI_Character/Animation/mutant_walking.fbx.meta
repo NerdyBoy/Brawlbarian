@@ -141,7 +141,7 @@ ModelImporter:
     400130: Spine
     400132: Spine1
     400134: Spine2
-    7400000: mixamo.com
+    7400000: mutant_walk
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -168,7 +168,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: mixamo.com
+      name: mutant_walk
       takeName: mixamo.com
       firstFrame: 0
       lastFrame: 43
@@ -180,10 +180,10 @@ ModelImporter:
       hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 0
-      loopBlendOrientation: 0
+      loopBlendOrientation: 1
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
+      keepOriginalOrientation: 1
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0
       heightFromFeet: 0

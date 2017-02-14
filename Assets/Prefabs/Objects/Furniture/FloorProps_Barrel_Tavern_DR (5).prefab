@@ -94,12 +94,11 @@ GameObject:
   - 114: {fileID: 114000011637051640}
   - 114: {fileID: 114000013535584100}
   - 114: {fileID: 114000013420688492}
-  - 114: {fileID: 114000013361214776}
   - 114: {fileID: 114000010579129322}
   - 114: {fileID: 114000013787605554}
   m_Layer: 13
   m_Name: FloorProps_Barrel_Tavern_DR (5)
-  m_TagString: Untagged
+  m_TagString: flammable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -867,7 +866,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!65 &65000011183034346
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -895,6 +894,8 @@ MonoBehaviour:
     type: 2}
   explosive_force: 1500
   explosion_radius: 1
+  particle_emitter_prefab: {fileID: 1000010783320022, guid: 64547c327ba23754cbb39591c9017092,
+    type: 2}
 --- !u!114 &114000011637051640
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -930,17 +931,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health_value: 50
---- !u!114 &114000013361214776
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010700031912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a12fbdd013a4c6341ae749084f096102, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114000013420688492
 MonoBehaviour:
   m_ObjectHideFlags: 1

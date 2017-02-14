@@ -9,9 +9,16 @@ public class destruction_object_component : destruction_component {
     public float explosive_force;
     public float explosion_radius;
 
+    public GameObject particle_emitter_prefab;
+
     public override void On_Health_Is_Zero()
     {
-        if(null != replacement_object)
+        if(particle_emitter_prefab != null)
+        {
+            GameObject obj = Instantiate(particle_emitter_prefab, this.transform.position, Quaternion.identity) as GameObject;
+            obj.transform.Rotate(new Vector3(90, 0, 0));
+        }
+        if(replacement_object != null)
         {
             Rigidbody object_rigidbody = GetComponent<Rigidbody>();
             GameObject destroyed = Instantiate(replacement_object, this.transform.position, this.transform.rotation) as GameObject;
