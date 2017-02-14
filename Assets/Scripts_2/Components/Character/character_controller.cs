@@ -35,6 +35,8 @@ public class character_controller : MonoBehaviour, input_button_interface
     {
         DontDestroyOnLoad(this.gameObject);
         rage = GetComponent<rage_component>();
+        Physics.IgnoreLayerCollision(LayerMask.NameToLayer("player_ignore_layer"), LayerMask.NameToLayer("player_layer"));
+        //Physics.IgnoreLayerCollision(LayerMask.NameToLayer("player_ignore_layer"), LayerMask.NameToLayer("player_ignore_layer"));
     }
 
     private void OnLevelWasLoaded(int level)

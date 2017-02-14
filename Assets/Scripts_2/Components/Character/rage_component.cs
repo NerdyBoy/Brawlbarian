@@ -10,6 +10,12 @@ public class rage_component : MonoBehaviour {
     public float current_rage = 0.0f;
     public float attack_cost = 100.0f;
 
+    private void OnLevelWasLoaded(int level)
+    {
+        total_rage = 0;
+        current_rage = 0;
+    }
+
     private void Start()
     {
         if(global_rage_component == null)
@@ -43,6 +49,7 @@ public class rage_component : MonoBehaviour {
         if (current_rage < 100)
         {
             current_rage += 10;
+            total_rage += 10;
             
         }
         if (null != ui_rage_controller.rage_controller)

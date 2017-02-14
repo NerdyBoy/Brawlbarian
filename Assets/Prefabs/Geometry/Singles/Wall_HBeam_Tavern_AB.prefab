@@ -25,7 +25,7 @@ GameObject:
   - 65: {fileID: 65000010118015476}
   m_Layer: 9
   m_Name: Wall_HBeam_Tavern_AB
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,10 +36,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012265026994}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -5.2240977, y: -5.6966095, z: -23.724453}
+  m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -6.660097, y: -6.5208044, z: 25.515549}
   m_LocalScale: {x: 1.4186032, y: 1.8470984, z: 1.4186032}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0

@@ -1,0 +1,134 @@
+fileFormatVersion: 2
+guid: e39487bf6397787449d11eb1937ece62
+timeCreated: 1486654618
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Shelves:pasted__polySurface1000
+    100004: Shelves:pasted__polySurface1001
+    100006: Shelves:pasted__polySurface1002
+    100008: Shelves:pasted__polySurface997
+    100010: Shelves:pasted__polySurface999
+    100012: Shelves:pCube65
+    100014: Shelves:pCube67
+    100016: Shelves:polySurface1000
+    100018: Shelves:polySurface1001
+    100020: Shelves:polySurface1002
+    100022: Shelves:polySurface998
+    100024: Shelves:polySurface999
+    400000: //RootNode
+    400002: Shelves:pasted__polySurface1000
+    400004: Shelves:pasted__polySurface1001
+    400006: Shelves:pasted__polySurface1002
+    400008: Shelves:pasted__polySurface997
+    400010: Shelves:pasted__polySurface999
+    400012: Shelves:pCube65
+    400014: Shelves:pCube67
+    400016: Shelves:polySurface1000
+    400018: Shelves:polySurface1001
+    400020: Shelves:polySurface1002
+    400022: Shelves:polySurface998
+    400024: Shelves:polySurface999
+    2300000: Shelves:pasted__polySurface1000
+    2300002: Shelves:pasted__polySurface1001
+    2300004: Shelves:pasted__polySurface1002
+    2300006: Shelves:pasted__polySurface997
+    2300008: Shelves:pasted__polySurface999
+    2300010: Shelves:pCube65
+    2300012: Shelves:pCube67
+    2300014: Shelves:polySurface1000
+    2300016: Shelves:polySurface1001
+    2300018: Shelves:polySurface1002
+    2300020: Shelves:polySurface998
+    2300022: Shelves:polySurface999
+    3300000: Shelves:pasted__polySurface1000
+    3300002: Shelves:pasted__polySurface1001
+    3300004: Shelves:pasted__polySurface1002
+    3300006: Shelves:pasted__polySurface997
+    3300008: Shelves:pasted__polySurface999
+    3300010: Shelves:pCube65
+    3300012: Shelves:pCube67
+    3300014: Shelves:polySurface1000
+    3300016: Shelves:polySurface1001
+    3300018: Shelves:polySurface1002
+    3300020: Shelves:polySurface998
+    3300022: Shelves:polySurface999
+    4300000: Shelves:pCube65
+    4300002: Shelves:pCube67
+    4300004: Shelves:polySurface998
+    4300006: Shelves:polySurface999
+    4300008: Shelves:polySurface1000
+    4300010: Shelves:polySurface1001
+    4300012: Shelves:polySurface1002
+    4300014: Shelves:pasted__polySurface997
+    4300016: Shelves:pasted__polySurface999
+    4300018: Shelves:pasted__polySurface1000
+    4300020: Shelves:pasted__polySurface1001
+    4300022: Shelves:pasted__polySurface1002
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
