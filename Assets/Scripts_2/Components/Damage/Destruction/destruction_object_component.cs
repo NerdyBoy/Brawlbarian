@@ -30,8 +30,9 @@ public class destruction_object_component : destruction_component {
                     rbody.AddExplosionForce(explosive_force, this.transform.position, explosion_radius);
                 }
             }
-
+            rage_component.global_rage_component.total_rage += 10;
         }
+        
         Destroy(this.gameObject);
     }
 }

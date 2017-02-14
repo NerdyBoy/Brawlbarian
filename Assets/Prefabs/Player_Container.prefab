@@ -589,7 +589,7 @@ GameObject:
   - 114: {fileID: 114000012896435012}
   - 114: {fileID: 114000012271500586}
   - 114: {fileID: 114000010233175534}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Player_Container
   m_TagString: player
   m_Icon: {fileID: 0}

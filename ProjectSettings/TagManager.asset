@@ -27,8 +27,8 @@ TagManager:
   - weapon_layer
   - box_representation
   - destructible_layer
-  - 
-  - 
+  - player_ignore_layer
+  - player_layer
   - 
   - 
   - 

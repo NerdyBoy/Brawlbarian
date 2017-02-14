@@ -21,6 +21,23 @@ public class mouse_keyboard_input_component : input_component {
     {
         base.Handle_Button_Input();
 
+        //hacky pause shit, fix this
+        if(game_state_controller.current_state_controller.Get_Current_State() == game_state_controller.game_states.in_play)
+        {
+            if(Input.GetKeyDown(KeyCode.Escape))
+            {
+                pause_controller.controller.Enable_Pause_Menu();
+            }
+        }
+        else if(game_state_controller.current_state_controller.Get_Current_State() == game_state_controller.game_states.paused)
+        {
+            if(Input.GetKeyDown(KeyCode.Escape))
+            {
+                print("DISABLING");
+                pause_controller.controller.Disable_Pause_Menu();
+            }
+        }
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             On_Button(action_buttons.jump_button, action_button_states.down);
