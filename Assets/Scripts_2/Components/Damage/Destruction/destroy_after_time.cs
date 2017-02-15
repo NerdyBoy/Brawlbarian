@@ -39,6 +39,10 @@ public class destroy_after_time : MonoBehaviour {
                 col.enabled = false;
             }
         }
+        if(destroyed_fragment_cleaner.fragment_cleaner != null)
+        {
+            destroyed_fragment_cleaner.fragment_cleaner.Remove_Self(this.gameObject);
+        }
         Destroy(this.gameObject);
     }
 }

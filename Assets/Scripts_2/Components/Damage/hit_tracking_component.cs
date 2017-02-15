@@ -5,6 +5,7 @@ using System;
 public class hit_tracking_component : MonoBehaviour, hit_tracking_interface {
 
     private character_controller root_hit_character;
+    private character_score_component score_component;
     private GameObject hit_object;
 
     private int number_of_objects_hit = 0;
@@ -44,7 +45,16 @@ public class hit_tracking_component : MonoBehaviour, hit_tracking_interface {
             if(null != hit_tracker.Get_Hit_Root_Character())
             {
                 Set_Hit_Root_Character(hit_tracker.Get_Hit_Root_Character());
+                if (score_component == null)
+                {
+                    score_component = FindObjectOfType<character_score_component>();
+                }
+                if (score_component != null)
+                {
+                    score_component.Modify_Score(10 * number_of_objects_hit);
+                }
             }
+            
         }
     }
 }
