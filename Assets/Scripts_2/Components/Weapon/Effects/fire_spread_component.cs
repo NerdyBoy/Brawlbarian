@@ -229,9 +229,12 @@ public class fire_spread_component : MonoBehaviour {
                     _center.y,
                     _center.z + _radius * Mathf.Cos(i * Mathf.Deg2Rad)
             );
-            GameObject fire = Instantiate(fire_object, position, flame.transform.rotation) as GameObject;
-            fire.transform.parent = this.transform;
-            fire_objects.Add(fire);
+            if(fire_object != null)
+              {
+                GameObject fire = Instantiate(fire_object, position, flame.transform.rotation) as GameObject;
+                fire.transform.parent = this.transform;
+                fire_objects.Add(fire);
+            }
         }
     }    
 

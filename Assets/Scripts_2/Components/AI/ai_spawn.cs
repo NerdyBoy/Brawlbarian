@@ -6,23 +6,14 @@ public class ai_spawn : MonoBehaviour {
     
     public GameObject ai_prefab;
     public GameObject furniture_object;
-    public float destruction_limit_percentage;
-    private float initial_number;
-    private float destruction_number;
+    public float rage_limit;
     bool spawned = false;
 
 	// Use this for initialization
-	void Start () {
-	    if(ai_prefab != null && furniture_object != null)
-        {
-            initial_number = furniture_object.transform.childCount;
-            destruction_number = initial_number * destruction_limit_percentage;
-        }
-	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (spawned == false && furniture_object.transform.childCount < destruction_number)
+        if (spawned == false && rage_component.global_rage_component.total_rage > rage_limit)
         {
             Spawn_AI();
             spawned = true;
@@ -31,6 +22,9 @@ public class ai_spawn : MonoBehaviour {
 
     void Spawn_AI()
     {
-        Instantiate(ai_prefab, this.transform.position, this.transform.rotation);
+        if (ai_prefab != null)
+        {
+            Instantiate(ai_prefab, this.transform.position, this.transform.rotation);
+        }
     }
 }

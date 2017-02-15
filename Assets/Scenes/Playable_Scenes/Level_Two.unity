@@ -6231,7 +6231,7 @@ Prefab:
     - target: {fileID: 114000011652316642, guid: b1bb115c3ea001d41a54fac576b15116,
         type: 2}
       propertyPath: rage_limit
-      value: 200
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114000011652316642, guid: b1bb115c3ea001d41a54fac576b15116,
         type: 2}

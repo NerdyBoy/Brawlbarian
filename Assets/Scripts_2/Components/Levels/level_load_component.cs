@@ -17,7 +17,6 @@ public class level_load_component : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        print("TRIGGER ENTER");
         if (other.CompareTag("player"))
         {
             if (level_number != -1)

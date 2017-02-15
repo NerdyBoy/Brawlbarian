@@ -13,7 +13,7 @@ public class t_player_destroyer : MonoBehaviour {
     }
 
     void Destroy_All_Players(Scene scene, LoadSceneMode scene_mode) {
-        t_player[] players = FindObjectsOfType<t_player>();
+        character_controller[] players = FindObjectsOfType<character_controller>();
         if (players.Length > 0) {
             for (int i = 0; i < players.Length; i++) {
                 Destroy(players[i].gameObject);
