@@ -193,7 +193,11 @@ public class character_controller : MonoBehaviour, input_button_interface
 
     void Flick_Up_Object(GameObject _object)
     {
-        _object.GetComponent<Rigidbody>().AddForce(Vector3.up * 5, ForceMode.Impulse);
+        Rigidbody rbody = _object.GetComponent<Rigidbody>();
+        if (rbody != null)
+        {
+            rbody.AddForce(Vector3.up * (rbody.mass * 5), ForceMode.Impulse);
+        }
     }
 
     IEnumerator Lunge_Flip(RaycastHit _hit_object)
@@ -218,7 +222,9 @@ public class character_controller : MonoBehaviour, input_button_interface
         Time.timeScale = 0.25f;
         Time.fixedDeltaTime = 0.005f;
         attack_direction = this.transform.up;
-        _hit_object.collider.GetComponent<Rigidbody>().AddForce(Vector3.up * 10, ForceMode.Impulse);
+        Rigidbody rbody = _hit_object.collider.GetComponent<Rigidbody>();
+
+        rbody.AddForce(Vector3.up * 10000, ForceMode.Impulse);
         next_activation_time = Time.fixedTime + activation_time_delay;
         yield return new WaitForSeconds(0.25f);
         Time.timeScale = 1.0f;

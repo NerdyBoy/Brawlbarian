@@ -4433,6 +4433,11 @@ Prefab:
       propertyPath: destruction_limit_percentage
       value: 0.75
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011652316642, guid: b1bb115c3ea001d41a54fac576b15116,
+        type: 2}
+      propertyPath: rage_limit
+      value: 770
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1bb115c3ea001d41a54fac576b15116, type: 2}
   m_IsPrefabParent: 0
@@ -5493,7 +5498,7 @@ Transform:
   - {fileID: 862542305}
   - {fileID: 334696857}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
 --- !u!1001 &1233835625
 Prefab:
   m_ObjectHideFlags: 0

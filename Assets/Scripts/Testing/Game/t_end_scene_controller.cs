@@ -9,7 +9,7 @@ public class t_end_scene_controller : MonoBehaviour {
     [SerializeField]
     private Text high_score_text = null;
 
-    private t_player player = null;
+    private character_score_component score = null;
 
     void OnLevelWasLoaded() {
         StartCoroutine(Get_Player());
@@ -21,12 +21,12 @@ public class t_end_scene_controller : MonoBehaviour {
     }
 
     IEnumerator Get_Player() {
-        while (null == player) {
-            player = GameObject.FindGameObjectWithTag("player").GetComponent<t_player>();
+        while (null == score) {
+            score = FindObjectOfType<character_score_component>();
             yield return new WaitForSeconds(0);
         }
-        final_score_text.text = "Final score: " + player.total_score;
+        final_score_text.text = "Final score: " + score.Get_Score().ToString();
 
-        Destroy(player.gameObject);
+        Destroy(score.gameObject);
     }
 }

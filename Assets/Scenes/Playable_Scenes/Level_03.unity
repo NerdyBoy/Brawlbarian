@@ -13100,6 +13100,11 @@ Prefab:
       propertyPath: destruction_limit_percentage
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011652316642, guid: b1bb115c3ea001d41a54fac576b15116,
+        type: 2}
+      propertyPath: rage_limit
+      value: 2200
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1bb115c3ea001d41a54fac576b15116, type: 2}
   m_IsPrefabParent: 0
@@ -38891,7 +38896,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
 --- !u!1001 &2030365731
 Prefab:
   m_ObjectHideFlags: 0

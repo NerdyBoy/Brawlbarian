@@ -41,7 +41,7 @@ public class ui_highscore : MonoBehaviour {
     void Update_Scores()
     {
         current_score_text.text = "Current Score: " + character.GetComponent<character_score_component>().Get_Score().ToString();
-        if (character.GetComponent<character_score_component>().Get_Score() > hard_score)
+        if (character.GetComponent<character_score_component>().Get_Score() > highscore)
         {
             StartCoroutine(Update_High_Score());
         }

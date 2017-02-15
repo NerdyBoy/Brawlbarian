@@ -4,7 +4,7 @@ using System.Collections;
 public class explosion : base_special {
 
     public float sphere_radius = 10.0f;
-    public float blast_force = 2.0f;
+    public float blast_force = 4500.0f;
     character_controller character_reference;
     private void Start()
     {
@@ -25,7 +25,7 @@ public class explosion : base_special {
                 {
                     hit_outs[i].collider.SendMessage("Set_Hit_Root_Character", character_reference, SendMessageOptions.DontRequireReceiver);
                     hit_outs[i].collider.SendMessage("On_Modify_Health", -10, SendMessageOptions.DontRequireReceiver);
-                    phys.On_Add_Force((hit_outs[i].transform.position - this.transform.position).normalized * blast_force);
+                    phys.On_Add_Force((hit_outs[i].transform.position - this.transform.position).normalized * 4500);
                 }
             }
         }
