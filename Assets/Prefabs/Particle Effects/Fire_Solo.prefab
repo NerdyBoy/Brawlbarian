@@ -21,7 +21,6 @@ GameObject:
   - 4: {fileID: 4000014188688580}
   - 198: {fileID: 198000010559127930}
   - 199: {fileID: 199000011213574016}
-  - 65: {fileID: 65000014137010722}
   m_Layer: 0
   m_Name: Ember (1)
   m_TagString: Untagged
@@ -44,7 +43,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1000011945072166
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,7 +88,6 @@ GameObject:
   - 4: {fileID: 4000010970835352}
   - 198: {fileID: 198000012037684990}
   - 199: {fileID: 199000013637510780}
-  - 65: {fileID: 65000010651402490}
   m_Layer: 0
   m_Name: Ember
   m_TagString: Untagged
@@ -156,7 +154,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011945072166}
   m_LocalRotation: {x: -0.49999928, y: 0.5000008, z: 0.49999928, w: 0.5000008}
-  m_LocalPosition: {x: 0.003999472, y: 0.33699995, z: -1.503}
+  m_LocalPosition: {x: 15.329667, y: 5.704625, z: 35.171387}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: -89.981, y: 0, z: 0}
   m_Children:
@@ -166,30 +164,6 @@ Transform:
   - {fileID: 4000010965552016}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!65 &65000010651402490
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013668494526}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &65000014137010722
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010446731766}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!108 &108000011831866982
 Light:
   m_ObjectHideFlags: 1

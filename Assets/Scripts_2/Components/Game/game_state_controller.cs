@@ -7,7 +7,7 @@ public class game_state_controller : MonoBehaviour
     public enum game_states { round_start, in_play, paused, round_end };
 
     public static game_state_controller current_state_controller;
-    private game_states current_state;
+    public game_states current_state;
 
     // Use this for initialization
     void Start()

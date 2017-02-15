@@ -52,8 +52,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000013202960058}
-  - 65: {fileID: 65000014209318856}
   - 114: {fileID: 114000011412279356}
+  - 135: {fileID: 135000010701968866}
   m_Layer: 0
   m_Name: fire
   m_TagString: inflammable
@@ -95,25 +95,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011953099610}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.234, y: 1.753, z: 1.1691562}
+  m_LocalPosition: {x: 18.463, y: 6.325, z: 33.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4000012395708742}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!65 &65000014209318856
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011953099610}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.67294604, y: 1, z: 0.803121}
-  m_Center: {x: 0.041683197, y: 0, z: 0.02812624}
 --- !u!108 &108000014138581578
 Light:
   m_ObjectHideFlags: 1
@@ -159,11 +147,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e9e052043bbcce40b39cce1f31a02a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life_time: 5
-  origin: {fileID: 0}
-  distance_from_start_origin: 0
-  fire_prefab: {fileID: 1000011953099610}
-  fire_spread_time: 0.25
+  lifetime: 5
+  grow_speed: 1
+  fire_object: {fileID: 1000011945072166, guid: 47bc5243a87258d44a2b6728ab720737,
+    type: 2}
+  fire_spread_object: {fileID: 0}
+--- !u!135 &135000010701968866
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011953099610}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!198 &198000010814706774
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -597,8 +597,8 @@ ParticleSystem:
     serializedVersion: 2
     enabled: 1
     type: 4
-    radius: 0.22
-    angle: 10.22
+    radius: 0.19
+    angle: 0
     length: 5
     boxX: 1
     boxY: 1
@@ -618,7 +618,7 @@ ParticleSystem:
     serializedVersion: 2
     m_Type: 0
     rate:
-      scalar: 33.14
+      scalar: 33
       maxCurve:
         serializedVersion: 2
         m_Curve:

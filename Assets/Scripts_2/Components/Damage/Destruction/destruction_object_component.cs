@@ -11,6 +11,13 @@ public class destruction_object_component : destruction_component {
 
     public GameObject particle_emitter_prefab;
 
+    character_score_component score_component;
+
+    void Start()
+    {
+        score_component = FindObjectOfType<character_score_component>();
+    }
+
     public override void On_Health_Is_Zero()
     {
         if(particle_emitter_prefab != null)
@@ -30,7 +37,16 @@ public class destruction_object_component : destruction_component {
                     rbody.AddExplosionForce(explosive_force, this.transform.position, explosion_radius);
                 }
             }
+            rage_component.global_rage_component.total_rage += 10;
+        }
+        if(score_component == null)
+        {
+            score_component = FindObjectOfType<character_score_component>();
+        }
 
+        if(score_component != null)
+        {
+            score_component.Modify_Score(10);
         }
         Destroy(this.gameObject);
     }
