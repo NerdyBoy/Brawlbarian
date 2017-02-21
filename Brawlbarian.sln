@@ -1,7 +1,9 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brawlbarian.CSharp", "Brawlbarian.CSharp.csproj", "{1FF10E80-42D0-D965-6516-5330B4ED54F4}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{FB3A3557-A177-8F3B-EE34-18CAE3BB2662}") = "Brawlbarian", "Assembly-CSharp.csproj", "{43504E27-69D3-C066-A322-F15C93358D2E}"
+EndProject
+Project("{FB3A3557-A177-8F3B-EE34-18CAE3BB2662}") = "Brawlbarian", "Assembly-UnityScript.unityproj", "{14E1734F-0D3C-A5A9-F7A7-52FAF240CF9B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,12 +11,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1FF10E80-42D0-D965-6516-5330B4ED54F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1FF10E80-42D0-D965-6516-5330B4ED54F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1FF10E80-42D0-D965-6516-5330B4ED54F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1FF10E80-42D0-D965-6516-5330B4ED54F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43504E27-69D3-C066-A322-F15C93358D2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43504E27-69D3-C066-A322-F15C93358D2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43504E27-69D3-C066-A322-F15C93358D2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43504E27-69D3-C066-A322-F15C93358D2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14E1734F-0D3C-A5A9-F7A7-52FAF240CF9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14E1734F-0D3C-A5A9-F7A7-52FAF240CF9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14E1734F-0D3C-A5A9-F7A7-52FAF240CF9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14E1734F-0D3C-A5A9-F7A7-52FAF240CF9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal

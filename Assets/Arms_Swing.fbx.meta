@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: 70b00d78b1e915742b4fe3cfcc1f1f78
+timeCreated: 1487203112
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: ArmorBasic1
+    100002: ArmorBasic1 1
+    100004: Arms
+    100006: //RootNode
+    100008: Brawlbarian1
+    100010: Brawlbarian1 1
+    100012: Brawlbarian_grp_geo
+    100014: Brawlbarian_jnt_l_elbow
+    100016: Brawlbarian_jnt_l_index01
+    100018: Brawlbarian_jnt_l_index02
+    100020: Brawlbarian_jnt_l_index03
+    100022: Brawlbarian_jnt_l_middle01
+    100024: Brawlbarian_jnt_l_middle02
+    100026: Brawlbarian_jnt_l_middle03
+    100028: Brawlbarian_jnt_l_middle04
+    100030: Brawlbarian_jnt_l_pinky01
+    100032: Brawlbarian_jnt_l_pinky02
+    100034: Brawlbarian_jnt_l_pinky03
+    100036: Brawlbarian_jnt_l_pinky04
+    100038: Brawlbarian_jnt_l_pointy04
+    100040: Brawlbarian_jnt_l_ring01
+    100042: Brawlbarian_jnt_l_ring02
+    100044: Brawlbarian_jnt_l_ring03
+    100046: Brawlbarian_jnt_l_ring04
+    100048: Brawlbarian_jnt_l_shoulder
+    100050: Brawlbarian_jnt_l_thumb01
+    100052: Brawlbarian_jnt_l_thumb02
+    100054: Brawlbarian_jnt_l_thumb03
+    100056: Brawlbarian_jnt_l_wrist
+    100058: Brawlbarian_jnt_neck
+    100060: Brawlbarian_jnt_r_elbow
+    100062: Brawlbarian_jnt_r_index01
+    100064: Brawlbarian_jnt_r_index02
+    100066: Brawlbarian_jnt_r_middle01
+    100068: Brawlbarian_jnt_r_middle02
+    100070: Brawlbarian_jnt_r_middle03
+    100072: Brawlbarian_jnt_r_middle04
+    100074: Brawlbarian_jnt_r_pinky01
+    100076: Brawlbarian_jnt_r_pinky02
+    100078: Brawlbarian_jnt_r_pinky03
+    100080: Brawlbarian_jnt_r_pinky04
+    100082: Brawlbarian_jnt_r_pointy03
+    100084: Brawlbarian_jnt_r_pointy04
+    100086: Brawlbarian_jnt_r_ring01
+    100088: Brawlbarian_jnt_r_ring02
+    100090: Brawlbarian_jnt_r_ring03
+    100092: Brawlbarian_jnt_r_ring04
+    100094: Brawlbarian_jnt_r_shoulder
+    100096: Brawlbarian_jnt_r_thumb01
+    100098: Brawlbarian_jnt_r_thumb02
+    100100: Brawlbarian_jnt_r_thumb03
+    100102: Brawlbarian_jnt_r_wrist
+    100104: Brawlbarian_jnt_root
+    100106: DoulbeHandedAxe1
+    100108: FullCharacter
+    100110: Grip_location
+    400000: ArmorBasic1
+    400002: ArmorBasic1 1
+    400004: Arms
+    400006: //RootNode
+    400008: Brawlbarian1
+    400010: Brawlbarian1 1
+    400012: Brawlbarian_grp_geo
+    400014: Brawlbarian_jnt_l_elbow
+    400016: Brawlbarian_jnt_l_index01
+    400018: Brawlbarian_jnt_l_index02
+    400020: Brawlbarian_jnt_l_index03
+    400022: Brawlbarian_jnt_l_middle01
+    400024: Brawlbarian_jnt_l_middle02
+    400026: Brawlbarian_jnt_l_middle03
+    400028: Brawlbarian_jnt_l_middle04
+    400030: Brawlbarian_jnt_l_pinky01
+    400032: Brawlbarian_jnt_l_pinky02
+    400034: Brawlbarian_jnt_l_pinky03
+    400036: Brawlbarian_jnt_l_pinky04
+    400038: Brawlbarian_jnt_l_pointy04
+    400040: Brawlbarian_jnt_l_ring01
+    400042: Brawlbarian_jnt_l_ring02
+    400044: Brawlbarian_jnt_l_ring03
+    400046: Brawlbarian_jnt_l_ring04
+    400048: Brawlbarian_jnt_l_shoulder
+    400050: Brawlbarian_jnt_l_thumb01
+    400052: Brawlbarian_jnt_l_thumb02
+    400054: Brawlbarian_jnt_l_thumb03
+    400056: Brawlbarian_jnt_l_wrist
+    400058: Brawlbarian_jnt_neck
+    400060: Brawlbarian_jnt_r_elbow
+    400062: Brawlbarian_jnt_r_index01
+    400064: Brawlbarian_jnt_r_index02
+    400066: Brawlbarian_jnt_r_middle01
+    400068: Brawlbarian_jnt_r_middle02
+    400070: Brawlbarian_jnt_r_middle03
+    400072: Brawlbarian_jnt_r_middle04
+    400074: Brawlbarian_jnt_r_pinky01
+    400076: Brawlbarian_jnt_r_pinky02
+    400078: Brawlbarian_jnt_r_pinky03
+    400080: Brawlbarian_jnt_r_pinky04
+    400082: Brawlbarian_jnt_r_pointy03
+    400084: Brawlbarian_jnt_r_pointy04
+    400086: Brawlbarian_jnt_r_ring01
+    400088: Brawlbarian_jnt_r_ring02
+    400090: Brawlbarian_jnt_r_ring03
+    400092: Brawlbarian_jnt_r_ring04
+    400094: Brawlbarian_jnt_r_shoulder
+    400096: Brawlbarian_jnt_r_thumb01
+    400098: Brawlbarian_jnt_r_thumb02
+    400100: Brawlbarian_jnt_r_thumb03
+    400102: Brawlbarian_jnt_r_wrist
+    400104: Brawlbarian_jnt_root
+    400106: DoulbeHandedAxe1
+    400108: FullCharacter
+    400110: Grip_location
+    2300000: ArmorBasic1 1
+    2300002: Brawlbarian1 1
+    2300004: DoulbeHandedAxe1
+    3300000: ArmorBasic1 1
+    3300002: Brawlbarian1 1
+    3300004: DoulbeHandedAxe1
+    4300000: ArmorBasic1
+    4300002: Brawlbarian1
+    4300004: ArmorBasic1
+    4300006: Brawlbarian1
+    4300008: DoulbeHandedAxe1
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: ArmorBasic1
+    13700002: Brawlbarian1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0.2
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Brawlbarian_grp_geo
+        weight: 1
+      - path: Brawlbarian_grp_geo/Arms
+        weight: 1
+      - path: Brawlbarian_grp_geo/Arms/ArmorBasic1
+        weight: 1
+      - path: Brawlbarian_grp_geo/Arms/Brawlbarian1
+        weight: 1
+      - path: Brawlbarian_grp_geo/FullCharacter
+        weight: 1
+      - path: Brawlbarian_grp_geo/FullCharacter/ArmorBasic1 1
+        weight: 1
+      - path: Brawlbarian_grp_geo/FullCharacter/Brawlbarian1 1
+        weight: 1
+      - path: Brawlbarian_grp_geo/Grip_location
+        weight: 1
+      - path: Brawlbarian_grp_geo/Grip_location/DoulbeHandedAxe1
+        weight: 1
+      - path: Brawlbarian_jnt_root
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_l_shoulder
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_l_shoulder/Brawlbarian_jnt_l_elbow
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_l_shoulder/Brawlbarian_jnt_l_elbow/Brawlbarian_jnt_l_wrist
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_l_shoulder/Brawlbarian_jnt_l_elbow/Brawlbarian_jnt_l_wrist/Brawlbarian_jnt_l_index01
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_l_shoulder/Brawlbarian_jnt_l_elbow/Brawlbarian_jnt_l_wrist/Brawlbarian_jnt_l_index01/Brawlbarian_jnt_l_index02
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_l_shoulder/Brawlbarian_jnt_l_elbow/Brawlbarian_jnt_l_wrist/Brawlbarian_jnt_l_index01/Brawlbarian_jnt_l_index02/Brawlbarian_jnt_l_index03
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_l_shoulder/Brawlbarian_jnt_l_elbow/Brawlbarian_jnt_l_wrist/Brawlbarian_jnt_l_index01/Brawlbarian_jnt_l_index02/Brawlbarian_jnt_l_index03/Brawlbarian_jnt_l_pointy04
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_l_shoulder/Brawlbarian_jnt_l_elbow/Brawlbarian_jnt_l_wrist/Brawlbarian_jnt_l_middle01
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_l_shoulder/Brawlbarian_jnt_l_elbow/Brawlbarian_jnt_l_wrist/Brawlbarian_jnt_l_middle01/Brawlbarian_jnt_l_middle02
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_l_shoulder/Brawlbarian_jnt_l_elbow/Brawlbarian_jnt_l_wrist/Brawlbarian_jnt_l_middle01/Brawlbarian_jnt_l_middle02/Brawlbarian_jnt_l_middle03
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_l_shoulder/Brawlbarian_jnt_l_elbow/Brawlbarian_jnt_l_wrist/Brawlbarian_jnt_l_middle01/Brawlbarian_jnt_l_middle02/Brawlbarian_jnt_l_middle03/Brawlbarian_jnt_l_middle04
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_l_shoulder/Brawlbarian_jnt_l_elbow/Brawlbarian_jnt_l_wrist/Brawlbarian_jnt_l_pinky01
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_l_shoulder/Brawlbarian_jnt_l_elbow/Brawlbarian_jnt_l_wrist/Brawlbarian_jnt_l_pinky01/Brawlbarian_jnt_l_pinky02
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_l_shoulder/Brawlbarian_jnt_l_elbow/Brawlbarian_jnt_l_wrist/Brawlbarian_jnt_l_pinky01/Brawlbarian_jnt_l_pinky02/Brawlbarian_jnt_l_pinky03
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_l_shoulder/Brawlbarian_jnt_l_elbow/Brawlbarian_jnt_l_wrist/Brawlbarian_jnt_l_pinky01/Brawlbarian_jnt_l_pinky02/Brawlbarian_jnt_l_pinky03/Brawlbarian_jnt_l_pinky04
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_l_shoulder/Brawlbarian_jnt_l_elbow/Brawlbarian_jnt_l_wrist/Brawlbarian_jnt_l_ring01
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_l_shoulder/Brawlbarian_jnt_l_elbow/Brawlbarian_jnt_l_wrist/Brawlbarian_jnt_l_ring01/Brawlbarian_jnt_l_ring02
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_l_shoulder/Brawlbarian_jnt_l_elbow/Brawlbarian_jnt_l_wrist/Brawlbarian_jnt_l_ring01/Brawlbarian_jnt_l_ring02/Brawlbarian_jnt_l_ring03
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_l_shoulder/Brawlbarian_jnt_l_elbow/Brawlbarian_jnt_l_wrist/Brawlbarian_jnt_l_ring01/Brawlbarian_jnt_l_ring02/Brawlbarian_jnt_l_ring03/Brawlbarian_jnt_l_ring04
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_l_shoulder/Brawlbarian_jnt_l_elbow/Brawlbarian_jnt_l_wrist/Brawlbarian_jnt_l_thumb01
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_l_shoulder/Brawlbarian_jnt_l_elbow/Brawlbarian_jnt_l_wrist/Brawlbarian_jnt_l_thumb01/Brawlbarian_jnt_l_thumb02
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_l_shoulder/Brawlbarian_jnt_l_elbow/Brawlbarian_jnt_l_wrist/Brawlbarian_jnt_l_thumb01/Brawlbarian_jnt_l_thumb02/Brawlbarian_jnt_l_thumb03
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_r_shoulder
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_r_shoulder/Brawlbarian_jnt_r_elbow
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_r_shoulder/Brawlbarian_jnt_r_elbow/Brawlbarian_jnt_r_wrist
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_r_shoulder/Brawlbarian_jnt_r_elbow/Brawlbarian_jnt_r_wrist/Brawlbarian_jnt_r_index01
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_r_shoulder/Brawlbarian_jnt_r_elbow/Brawlbarian_jnt_r_wrist/Brawlbarian_jnt_r_index01/Brawlbarian_jnt_r_index02
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_r_shoulder/Brawlbarian_jnt_r_elbow/Brawlbarian_jnt_r_wrist/Brawlbarian_jnt_r_index01/Brawlbarian_jnt_r_index02/Brawlbarian_jnt_r_pointy03
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_r_shoulder/Brawlbarian_jnt_r_elbow/Brawlbarian_jnt_r_wrist/Brawlbarian_jnt_r_index01/Brawlbarian_jnt_r_index02/Brawlbarian_jnt_r_pointy03/Brawlbarian_jnt_r_pointy04
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_r_shoulder/Brawlbarian_jnt_r_elbow/Brawlbarian_jnt_r_wrist/Brawlbarian_jnt_r_middle01
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_r_shoulder/Brawlbarian_jnt_r_elbow/Brawlbarian_jnt_r_wrist/Brawlbarian_jnt_r_middle01/Brawlbarian_jnt_r_middle02
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_r_shoulder/Brawlbarian_jnt_r_elbow/Brawlbarian_jnt_r_wrist/Brawlbarian_jnt_r_middle01/Brawlbarian_jnt_r_middle02/Brawlbarian_jnt_r_middle03
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_r_shoulder/Brawlbarian_jnt_r_elbow/Brawlbarian_jnt_r_wrist/Brawlbarian_jnt_r_middle01/Brawlbarian_jnt_r_middle02/Brawlbarian_jnt_r_middle03/Brawlbarian_jnt_r_middle04
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_r_shoulder/Brawlbarian_jnt_r_elbow/Brawlbarian_jnt_r_wrist/Brawlbarian_jnt_r_pinky01
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_r_shoulder/Brawlbarian_jnt_r_elbow/Brawlbarian_jnt_r_wrist/Brawlbarian_jnt_r_pinky01/Brawlbarian_jnt_r_pinky02
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_r_shoulder/Brawlbarian_jnt_r_elbow/Brawlbarian_jnt_r_wrist/Brawlbarian_jnt_r_pinky01/Brawlbarian_jnt_r_pinky02/Brawlbarian_jnt_r_pinky03
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_r_shoulder/Brawlbarian_jnt_r_elbow/Brawlbarian_jnt_r_wrist/Brawlbarian_jnt_r_pinky01/Brawlbarian_jnt_r_pinky02/Brawlbarian_jnt_r_pinky03/Brawlbarian_jnt_r_pinky04
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_r_shoulder/Brawlbarian_jnt_r_elbow/Brawlbarian_jnt_r_wrist/Brawlbarian_jnt_r_ring01
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_r_shoulder/Brawlbarian_jnt_r_elbow/Brawlbarian_jnt_r_wrist/Brawlbarian_jnt_r_ring01/Brawlbarian_jnt_r_ring02
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_r_shoulder/Brawlbarian_jnt_r_elbow/Brawlbarian_jnt_r_wrist/Brawlbarian_jnt_r_ring01/Brawlbarian_jnt_r_ring02/Brawlbarian_jnt_r_ring03
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_r_shoulder/Brawlbarian_jnt_r_elbow/Brawlbarian_jnt_r_wrist/Brawlbarian_jnt_r_ring01/Brawlbarian_jnt_r_ring02/Brawlbarian_jnt_r_ring03/Brawlbarian_jnt_r_ring04
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_r_shoulder/Brawlbarian_jnt_r_elbow/Brawlbarian_jnt_r_wrist/Brawlbarian_jnt_r_thumb01
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_r_shoulder/Brawlbarian_jnt_r_elbow/Brawlbarian_jnt_r_wrist/Brawlbarian_jnt_r_thumb01/Brawlbarian_jnt_r_thumb02
+        weight: 1
+      - path: Brawlbarian_jnt_root/Brawlbarian_jnt_neck/Brawlbarian_jnt_r_shoulder/Brawlbarian_jnt_r_elbow/Brawlbarian_jnt_r_wrist/Brawlbarian_jnt_r_thumb01/Brawlbarian_jnt_r_thumb02/Brawlbarian_jnt_r_thumb03
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
