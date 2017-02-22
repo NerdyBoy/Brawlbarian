@@ -46,7 +46,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011094270218}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.156412, y: 5.703805, z: 33.73941}
+  m_LocalPosition: {x: 4.734, y: 0.493, z: 1.292}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -214,6 +214,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   replacement_object: {fileID: 1000012164497018, guid: 11c7b39d76facb340b9043ca7da44c6e,
+    type: 2}
+  chicken_object: {fileID: 1000012549956348, guid: 8c34c948defef30458000bb6e4a475fd,
     type: 2}
   explosive_force: 1500
   explosion_radius: 1

@@ -25,6 +25,7 @@ GameObject:
   - 114: {fileID: 114000012841948764}
   - 114: {fileID: 114000013979458454}
   - 114: {fileID: 114000011365203462}
+  - 114: {fileID: 114000011441144838}
   m_Layer: 0
   m_Name: game_controller
   m_TagString: Untagged
@@ -51,7 +52,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012337916292}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff6ac8cfc3167dd438b7f91e1deadcb1, type: 3}
   m_Name: 
@@ -82,6 +83,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fragment_limit: 300
+--- !u!114 &114000011441144838
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012337916292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d6d327f473b8ed4f84f3d07fb54920d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chicken_chance: 9
 --- !u!114 &114000012729544670
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -2200,6 +2200,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   replacement_object: {fileID: 1000013187879834, guid: aab068c5147048b4db71af19c603459d,
     type: 2}
+  chicken_object: {fileID: 1000012549956348, guid: 8c34c948defef30458000bb6e4a475fd,
+    type: 2}
   explosive_force: 10
   explosion_radius: 0.25
   particle_emitter_prefab: {fileID: 1000010783320022, guid: 64547c327ba23754cbb39591c9017092,
