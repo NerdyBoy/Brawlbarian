@@ -29,7 +29,7 @@ TagManager:
   - destructible_layer
   - player_ignore_layer
   - player_layer
-  - 
+  - weapon_ignore_layer
   - 
   - 
   - 

@@ -7,17 +7,14 @@ public class ai_weapon : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+        Physics.IgnoreCollision(GetComponent<Collider>(), this.transform.root.GetComponent<Collider>());
 	}
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("player"))
+        if(other.gameObject.CompareTag("player") && attacking == true)
         {
-            if(attacking == true)
-            {
-                other.gameObject.SendMessage("On_Player_Modify_Health", -100);
-            }
+            Application.LoadLevel(4);
         }
     }
 }

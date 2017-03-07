@@ -19,7 +19,7 @@ public class door_animation : MonoBehaviour {
 
     void Update()
     {
-        if(open == false && rage_component.global_rage_component != null && rage_component.global_rage_component.total_rage > rage_limit)
+        if(open == false && Rage.rage != null && Rage.rage.total_rage > rage_limit)
         {
             StartCoroutine(Open_Door());
             open = true;

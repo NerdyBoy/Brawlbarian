@@ -13,6 +13,18 @@ public class pause_controller : MonoBehaviour {
             controller = this;
         }
 	}
+
+    public void Toggle_Pause()
+    {
+        if(pause_object.activeSelf == true)
+        {
+            Disable_Pause_Menu();
+        }
+        else
+        {
+            Enable_Pause_Menu();
+        }
+    }
 	
 	public void Enable_Pause_Menu()
     {

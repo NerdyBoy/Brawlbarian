@@ -890,6 +890,7 @@ GameObject:
   - 114: {fileID: 114000013299826184}
   - 114: {fileID: 114000010267935228}
   - 65: {fileID: 65000013935129344}
+  - 208: {fileID: 208000013407277956}
   m_Layer: 13
   m_Name: Square_Stool
   m_TagString: flammable
@@ -1104,7 +1105,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014013118336}
   m_LocalRotation: {x: -0, y: -0.0451637, z: -0, w: 0.9989796}
-  m_LocalPosition: {x: -0.153, y: 0.5, z: 1.557}
+  m_LocalPosition: {x: -9.949928, y: 3.8, z: 5.9112663}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -5.03, z: 0}
   m_Children:
@@ -2114,3 +2115,18 @@ MonoBehaviour:
   explosion_radius: 1
   particle_emitter_prefab: {fileID: 1000010783320022, guid: 64547c327ba23754cbb39591c9017092,
     type: 2}
+--- !u!208 &208000013407277956
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014013118336}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.20500001, y: 0.179, z: 0.19700001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.179, z: 0}
+  m_TimeToStationary: 0.5

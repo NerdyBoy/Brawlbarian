@@ -24,14 +24,13 @@ GameObject:
   - 95: {fileID: 95000011477558978}
   - 54: {fileID: 54000010700945794}
   - 65: {fileID: 65000012519034192}
-  - 114: {fileID: 114000012446102060}
   m_Layer: 0
   m_Name: Bratwurst
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4000011411364150
 Transform:
   m_ObjectHideFlags: 1
@@ -39,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011887646168}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.369, y: 6.4015, z: 35.504}
+  m_LocalPosition: {x: 4.987631, y: 1.248, z: 6.0674534}
   m_LocalScale: {x: 1.2398044, y: 1.2398043, z: 1.2398043}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -95,7 +94,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!65 &65000012519034192
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -125,14 +124,3 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114000012446102060
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011887646168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9820a528b8d05b49ba53b36807751a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

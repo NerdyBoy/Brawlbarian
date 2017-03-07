@@ -17,7 +17,7 @@ public class rage_filler : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("player"))
         {
-            rage_component.global_rage_component.total_rage = 1000.0f;
+            Rage.rage.total_rage = 1000.0f;
         }
     }
 }

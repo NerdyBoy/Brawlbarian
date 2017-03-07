@@ -22,6 +22,7 @@ GameObject:
   - 33: {fileID: 33000011365291582}
   - 23: {fileID: 23000010813692288}
   - 95: {fileID: 95000014038569502}
+  - 114: {fileID: 114000013392634920}
   m_Layer: 0
   m_Name: FloorProps_Rug1
   m_TagString: floor
@@ -35,10 +36,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014028251600}
-  m_LocalRotation: {x: -0, y: 0.99965775, z: -0, w: 0.026161466}
-  m_LocalPosition: {x: 9.949902, y: -6.4896092, z: 21.635548}
-  m_LocalScale: {x: 0.78884417, y: 0.7888439, z: 2.1601331}
-  m_LocalEulerAnglesHint: {x: 0, y: 177.089, z: 0}
+  m_LocalRotation: {x: -0, y: 0.6710283, z: -0, w: 0.7414318}
+  m_LocalPosition: {x: -0.135, y: 0.532, z: -0.147}
+  m_LocalScale: {x: 0.7888446, y: 0.7888439, z: 2.1601346}
+  m_LocalEulerAnglesHint: {x: 0, y: 84.453, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -95,3 +96,15 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114000013392634920
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014028251600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97cdc7f3a8a6496469272c04846f23ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  is_on_fire: 0

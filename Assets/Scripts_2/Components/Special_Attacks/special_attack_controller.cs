@@ -4,15 +4,27 @@ using System.Collections;
 public class special_attack_controller : MonoBehaviour {
 
     base_special[] specials;
+    int next_special = 0;
+
 
 	// Use this for initialization
 	void Start () {
         specials = GetComponentsInChildren<base_special>();
+        Decide_Next_Special();
 	}
-	
-    void Activate_Special_Attack()
+
+    public void Decide_Next_Special()
     {
-        int attack_index = Random.Range(0, specials.Length);
-        specials[attack_index].Activate_Attack();
+        next_special = Random.Range(0, specials.Length);
+        if (UI_Special_Attack.ui_special_attack != null)
+        {
+            UI_Special_Attack.ui_special_attack.Set_Image(next_special);
+        }
+    }
+	
+    public void Activate_Special_Attack()
+    {
+        specials[next_special].Activate_Attack();
+        Decide_Next_Special();
     }
 }

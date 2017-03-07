@@ -222,6 +222,7 @@ GameObject:
   - 95: {fileID: 95000012493192988}
   - 114: {fileID: 114000010618874150}
   - 82: {fileID: 82000011348285070}
+  - 114: {fileID: 114000012609026966}
   m_Layer: 14
   m_Name: SquareBarStoolBROKEN
   m_TagString: Untagged
@@ -240,6 +241,8 @@ GameObject:
   - 33: {fileID: 33000010856537866}
   - 23: {fileID: 23000012699681000}
   - 114: {fileID: 114000014221442664}
+  - 54: {fileID: 54000013412379038}
+  - 65: {fileID: 65000013655423812}
   m_Layer: 14
   m_Name: polySurface913
   m_TagString: Untagged
@@ -1270,6 +1273,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!54 &54000013412379038
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012395748052}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!54 &54000013669977234
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -1444,6 +1462,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.10425198, y: 0.7749484, z: 0.08437967}
   m_Center: {x: -0.7429576, y: 0.367883, z: 6.1708956}
+--- !u!65 &65000013655423812
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012395748052}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.049800158, y: 0.0767948, z: 0.38730812}
+  m_Center: {x: -0.6890379, y: 0.31557986, z: 6.011741}
 --- !u!65 &65000014056590416
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1697,6 +1727,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29dddbb1594a4d544a06c02d71f677c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114000012609026966
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012164497018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3683efa34bfea514692159a8dea44611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114000012806856020

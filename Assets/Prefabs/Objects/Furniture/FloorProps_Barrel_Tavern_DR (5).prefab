@@ -89,13 +89,11 @@ GameObject:
   - 4: {fileID: 4000011243566500}
   - 54: {fileID: 54000014122846280}
   - 65: {fileID: 65000011183034346}
-  - 114: {fileID: 114000013270402640}
-  - 114: {fileID: 114000012236101556}
-  - 114: {fileID: 114000011637051640}
-  - 114: {fileID: 114000013535584100}
-  - 114: {fileID: 114000013420688492}
-  - 114: {fileID: 114000010579129322}
-  - 114: {fileID: 114000013787605554}
+  - 208: {fileID: 208000011588674266}
+  - 114: {fileID: 114000012536873932}
+  - 114: {fileID: 114000010937512236}
+  - 114: {fileID: 114000013264798066}
+  - 114: {fileID: 114000012027311610}
   m_Layer: 13
   m_Name: FloorProps_Barrel_Tavern_DR (5)
   m_TagString: flammable
@@ -272,7 +270,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010700031912}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.659286, y: 5.704625, z: 39.936165}
+  m_LocalPosition: {x: 6.9966307, y: 0.512, z: -8.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -866,7 +864,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!65 &65000011183034346
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -879,7 +877,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6154155, y: 0.799258, z: 0.628922}
   m_Center: {x: -0.009773254, y: 0.38568652, z: 0.019105434}
---- !u!114 &114000010579129322
+--- !u!114 &114000010937512236
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -887,16 +885,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000010700031912}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd22cbf6b897d1843b93d4c3d1628ace, type: 3}
+  m_Script: {fileID: 11500000, guid: 882d7451bc5a5ef4a8418d94fa8055b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   replacement_object: {fileID: 1000011588221056, guid: 5fd2434407053d04da09cb4390bb64af,
     type: 2}
-  explosive_force: 1500
-  explosion_radius: 1
-  particle_emitter_prefab: {fileID: 1000010783320022, guid: 64547c327ba23754cbb39591c9017092,
+  particle_system_object: {fileID: 1000010783320022, guid: 64547c327ba23754cbb39591c9017092,
     type: 2}
---- !u!114 &114000011637051640
+--- !u!114 &114000012027311610
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -904,11 +900,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000010700031912}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f1c4b81b15924e4cb459d5b450a5ced, type: 3}
+  m_Script: {fileID: 11500000, guid: 97cdc7f3a8a6496469272c04846f23ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage_amount: 0
---- !u!114 &114000012236101556
+  is_burning: 0
+  fire_prefab: {fileID: 0}
+  lifetime: 15
+--- !u!114 &114000012536873932
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -916,10 +914,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000010700031912}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9820a528b8d05b49ba53b36807751a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 624c6397c1b8a6a449999d127f261b98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114000013270402640
+  health: 100
+--- !u!114 &114000013264798066
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -927,42 +926,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000010700031912}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc85eec5375d1d842a5daa4184cd57d9, type: 3}
+  m_Script: {fileID: 11500000, guid: 38a99d487369ed1438bb39309555bcb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health_value: 50
---- !u!114 &114000013420688492
-MonoBehaviour:
+--- !u!208 &208000011588674266
+NavMeshObstacle:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010700031912}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35ae88bf27ca5f14fa342b881075c159, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114000013535584100
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010700031912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07f223eeebece7e46804d7be8d3dfabe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  monitor_point: {fileID: 0}
---- !u!114 &114000013787605554
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010700031912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3419c2c539eb49145b4c8ac6b70f3228, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  overwrite_physics: 0
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.30770776, y: 0.399629, z: 0.314461}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.009773254, y: 0.38568652, z: 0.019105434}
+  m_TimeToStationary: 0.5

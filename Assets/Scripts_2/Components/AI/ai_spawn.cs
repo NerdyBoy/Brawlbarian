@@ -13,7 +13,7 @@ public class ai_spawn : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (spawned == false && rage_component.global_rage_component.total_rage > rage_limit)
+        if(spawned == false && Rage.rage != null && Rage.rage.total_rage > rage_limit)
         {
             Spawn_AI();
             spawned = true;

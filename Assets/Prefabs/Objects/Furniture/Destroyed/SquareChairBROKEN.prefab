@@ -282,6 +282,7 @@ GameObject:
   - 95: {fileID: 95000011186696198}
   - 114: {fileID: 114000010973981848}
   - 82: {fileID: 82000013223993090}
+  - 114: {fileID: 114000012020358278}
   m_Layer: 14
   m_Name: SquareChairBROKEN
   m_TagString: Untagged
@@ -1790,6 +1791,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29dddbb1594a4d544a06c02d71f677c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114000012020358278
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013187879834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3683efa34bfea514692159a8dea44611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114000012192487154

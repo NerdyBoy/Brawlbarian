@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000013235137748}
   - 65: {fileID: 65000011457379754}
-  - 114: {fileID: 114000013593218306}
   - 114: {fileID: 114000011924685146}
   m_Layer: 0
   m_Name: flame_thrower
@@ -161,24 +160,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fire_start: {fileID: 1000011953099610, guid: 7e3798005555eb443a7aef0c8f101e06, type: 2}
---- !u!114 &114000013593218306
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012098523070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e9e052043bbcce40b39cce1f31a02a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  life_time: 2
-  origin: {fileID: 0}
-  distance_from_start_origin: 0
-  max_range: 0
-  fire_prefab: {fileID: 1000011953099610, guid: 7e3798005555eb443a7aef0c8f101e06,
-    type: 2}
-  fire_spread_time: 0.25
 --- !u!198 &198000013409251496
 ParticleSystem:
   m_ObjectHideFlags: 1

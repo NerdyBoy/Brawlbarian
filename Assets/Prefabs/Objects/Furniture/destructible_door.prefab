@@ -22,9 +22,6 @@ GameObject:
   - 95: {fileID: 95000013981309816}
   - 54: {fileID: 54000012719228920}
   - 65: {fileID: 65000012984547746}
-  - 114: {fileID: 114000012724152240}
-  - 114: {fileID: 114000012808452028}
-  - 114: {fileID: 114000012190199674}
   m_Layer: 0
   m_Name: destructible_door
   m_TagString: Untagged
@@ -2041,42 +2038,3 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114000012190199674
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010022840122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc85eec5375d1d842a5daa4184cd57d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health_value: 10
---- !u!114 &114000012724152240
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010022840122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07f223eeebece7e46804d7be8d3dfabe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  monitor_point: {fileID: 0}
---- !u!114 &114000012808452028
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010022840122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd22cbf6b897d1843b93d4c3d1628ace, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  replacement_object: {fileID: 1000013693374304, guid: f65dba5aedc87ba4ba724c071506e9ac,
-    type: 2}
-  explosive_force: 0
-  explosion_radius: 0

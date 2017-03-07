@@ -153,60 +153,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
---- !u!1 &346877117
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 346877119}
-  - 114: {fileID: 346877118}
-  - 114: {fileID: 346877120}
-  m_Layer: 0
-  m_Name: end_scene_controller
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &346877118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 346877117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed6c45d6118c07f4a80ac0fc705308d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  final_score_text: {fileID: 0}
-  high_score_text: {fileID: 0}
---- !u!4 &346877119
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 346877117}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 571.9375, y: 311.73438, z: -20.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
---- !u!114 &346877120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 346877117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5119d72c1b1ad8c40998deed0dba433b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &536363262
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,7 +199,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 536363262}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 304963886856fab4eacdda7ea4e80e14, type: 3}
+  m_Script: {fileID: 11500000, guid: b44c7fadf43fd044a9e293b0fa634d88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &536363265
@@ -296,8 +242,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 536363264}
-        m_MethodName: Quit_To_Main_Menu
-        m_Mode: 1
+        m_MethodName: Load_Level_By_Num
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -909,7 +855,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2070738556}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94f0ec7de7d004c40b4b47d620abcafe, type: 3}
+  m_Script: {fileID: 11500000, guid: cfc37c8a40125df4ca0e358e34bf4b48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   highscore_text: {fileID: 1932148035}

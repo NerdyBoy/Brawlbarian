@@ -72,7 +72,6 @@ GameObject:
   - 4: {fileID: 4000013266007020}
   - 65: {fileID: 65000013259577318}
   - 54: {fileID: 54000012851445994}
-  - 114: {fileID: 114000010536186636}
   m_Layer: 0
   m_Name: Furniture_Tankard_Tavern_DR_02
   m_TagString: Untagged
@@ -270,14 +269,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.19359368, y: 0.23199224, z: 0.20406604}
   m_Center: {x: 0.026182175, y: 0.11171007, z: 0.031418324}
---- !u!114 &114000010536186636
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013004276908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9820a528b8d05b49ba53b36807751a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

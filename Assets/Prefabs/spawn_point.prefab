@@ -19,8 +19,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000011967352606}
-  - 114: {fileID: 114000012982215636}
   - 222: {fileID: 222000013579079734}
+  - 114: {fileID: 114000013861769294}
   m_Layer: 0
   m_Name: spawn_point
   m_TagString: spawn_point
@@ -35,13 +35,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011494858598}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -10.950001, y: 0.060001373, z: 1.6}
+  m_LocalPosition: {x: -10.950001, y: 1, z: 1.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &114000012982215636
+--- !u!114 &114000013861769294
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000011494858598}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd40fb6cdb1c47d4ab1968a39bbae23f, type: 3}
+  m_Script: {fileID: 11500000, guid: 160fe2dba12fb304a936af2bf5431e73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player_prefab: {fileID: 1000012023382200, guid: b57e2191ae34424489bfe8d5113e6ff2,

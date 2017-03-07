@@ -9,7 +9,7 @@ public class ai_controller : MonoBehaviour
     public float ai_attack_delay;
     private bool can_attack = false;
     private bool should_attack = false;
-    character_controller player_character;
+    Character_Controller player_character;
     NavMeshAgent navmesh_agent;
     Animator ai_animator;
     ai_weapon weapon;
@@ -17,7 +17,7 @@ public class ai_controller : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        player_character = FindObjectOfType<character_controller>();
+        player_character = FindObjectOfType<Character_Controller>();
         navmesh_agent = GetComponent<NavMeshAgent>();
         navmesh_agent.speed = ai_speed;
         ai_animator = GetComponent<Animator>();
@@ -32,7 +32,7 @@ public class ai_controller : MonoBehaviour
     {
         if(player_character == null)
         {
-            player_character = FindObjectOfType<character_controller>();
+            player_character = FindObjectOfType<Character_Controller>();
         }
         if (player_character != null)
         {
@@ -46,7 +46,6 @@ public class ai_controller : MonoBehaviour
     {
         while (should_attack == true)
         {
-            
             ai_animator.SetTrigger("attack");
             yield return new WaitForSeconds(ai_attack_delay);
         }
@@ -77,7 +76,6 @@ public class ai_controller : MonoBehaviour
         }
         if(other.gameObject.CompareTag("weapon_hit_point"))
         {
-            print("BLAH");
             ai_animator.SetTrigger("hit");
             StartCoroutine(Hit());
         }
@@ -100,7 +98,6 @@ public class ai_controller : MonoBehaviour
 
     IEnumerator Hit()
     {
-        ai_animator.SetTrigger("Hit");
         float start_speed = navmesh_agent.speed;
         navmesh_agent.speed = 0;
         yield return new WaitForSeconds(1);

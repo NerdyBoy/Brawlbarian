@@ -25,7 +25,7 @@ GameObject:
   - 64: {fileID: 64000010085299066}
   - 65: {fileID: 65000011991392766}
   - 114: {fileID: 114000011242280606}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: polySurface249.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   - 64: {fileID: 64000013207230600}
   - 65: {fileID: 65000010127786436}
   - 114: {fileID: 114000011007927672}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: polySurface249.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,7 +63,7 @@ GameObject:
   - 4: {fileID: 4000013785909602}
   - 114: {fileID: 114000010728376964}
   - 82: {fileID: 82000012680154228}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: door_broken_use_this
   m_TagString: Untagged
   m_Icon: {fileID: 0}
